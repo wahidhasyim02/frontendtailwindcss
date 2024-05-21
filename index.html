@@ -46,13 +46,23 @@
             </span>
             <span id="text-menu" class="">Menu</span>
           </div>
-          <div id="icon-apps" class="flex items-center gap-2 hidden">
-            <img
-              src="./public/img/billing_cash.png"
-              alt=""
-              class="inline w-6 h-6"
-            />
-            <span id="apps-name">Billing Cash</span>
+          <div id="icon-apps" class="flex items-center hidden">
+            <div id="app-billing-cash" class="flex items-center gap-2">
+              <img
+                src="./public/img/billing_cash.png"
+                alt=""
+                class="inline w-6 h-6"
+              />
+              <span id="apps-name">Billing Cash</span>
+            </div>
+            <div id="app-billing-charge" class="flex items-center gap-2">
+              <img
+                src="./public/img/billing_charge.png"
+                alt=""
+                class="inline w-6 h-6"
+              />
+              <span id="apps-name">Billing Charge</span>
+            </div>
           </div>
         </div>
         <div class="flex items-center gap-3">
@@ -1233,6 +1243,868 @@
               class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
             >
               10.
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>JT-235</div>
+              <div>JT-235</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>PKLHP</div>
+              <div>B320</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>D</div>
+              <div>D</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>WAAA</div>
+              <div>WRRR</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/11:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/09:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/10:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/08:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div id="checked">
+                <span
+                  class="material-symbols-outlined text-base text-green-600"
+                >
+                  check_circle
+                </span>
+              </div>
+              <div id="no-checked">
+                <span
+                  class="material-symbols-outlined text-base text-slate-500"
+                >
+                  cancel
+                </span>
+              </div>
+            </th>
+            <th class="font-normal py-3">
+              <div>NML</div>
+              <div>NML</div>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!--Ini adalah Table Billing Charge-->
+    <section
+      id="table_billing_charge"
+      class="right-auto left-auto top-6 hidden"
+    >
+      <table
+        class="w-[95%] h-[85%] table-fixed dark:text-slate-300 text-base mt-10 mx-auto bg-indigo-100 dark:bg-slate-900 rounded-lg"
+      >
+        <thead class="w-full text-white sticky top-0">
+          <tr>
+            <th
+              class="w-16 rounded-tl-lg border-r border-indigo-500 bg-indigo-600 hover:bg-indigo-700 text-center items-center justify-center px-2 py-4"
+            >
+              <input type="checkbox" />
+            </th>
+            <th
+              class="bg-indigo-600 hover:bg-indigo-700 text-center items-center justify-center px-2 py-4"
+            >
+              Callsign
+            </th>
+            <th
+              class="border-r border-indigo-500 bg-indigo-600 hover:bg-indigo-700 text-center items-center justify-center px-2 py-4"
+            >
+              Registration
+            </th>
+            <th
+              class="border-r border-indigo-500 bg-indigo-600 hover:bg-indigo-700 text-center items-center justify-center px-2 py-4"
+            >
+              Scope
+            </th>
+            <th
+              class="border-r border-indigo-500 bg-indigo-600 hover:bg-indigo-700 text-center items-center justify-center px-2 py-4"
+            >
+              Airport
+            </th>
+            <th
+              class="border-r border-indigo-500 bg-indigo-600 hover:bg-indigo-700 text-center items-center justify-center px-2 py-4"
+            >
+              Schedule
+            </th>
+            <th
+              class="border-r border-indigo-500 bg-indigo-600 hover:bg-indigo-700 text-center items-center justify-center px-2 py-4"
+            >
+              Estimate
+            </th>
+            <th
+              class="border-r border-indigo-500 bg-indigo-600 hover:bg-indigo-700 text-center items-center justify-center px-2 py-4"
+            >
+              Block
+            </th>
+            <th
+              class="border-r border-indigo-500 bg-indigo-600 hover:bg-indigo-700 text-center items-center justify-center px-2 py-4"
+            >
+              Actual
+            </th>
+            <th
+              class="border-r border-indigo-500 bg-indigo-600 hover:bg-indigo-700 text-center items-center justify-center px-2 py-4"
+            >
+              Avio
+            </th>
+            <th
+              class="rounded-tr-lg bg-indigo-600 hover:bg-indigo-700 text-center items-center justify-center px-2 py-4"
+            >
+              Fstate
+            </th>
+          </tr>
+        </thead>
+
+        <tbody class="h-[65%] overflow-y-scroll font-normal">
+          <tr
+            class="font-normal bg-indigo-50 hover:bg-indigo-200 dark:bg-slate-800 dark:hover:bg-slate-700"
+          >
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <input type="checkbox" />
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>JT-235</div>
+              <div>JT-235</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>PKLHP</div>
+              <div>B320</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>D</div>
+              <div>D</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>WAAA</div>
+              <div>WRRR</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/11:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/09:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/10:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/08:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div id="checked">
+                <span
+                  class="material-symbols-outlined text-base text-green-600"
+                >
+                  check_circle
+                </span>
+              </div>
+              <div id="no-checked">
+                <span
+                  class="material-symbols-outlined text-base text-slate-500"
+                >
+                  cancel
+                </span>
+              </div>
+            </th>
+            <th class="font-normal py-3">
+              <div>NML</div>
+              <div>NML</div>
+            </th>
+          </tr>
+          <tr
+            class="font-normal bg-indigo-100 hover:bg-indigo-200 dark:bg-slate-900 dark:hover:bg-slate-700"
+          >
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <input type="checkbox" />
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>JT-235</div>
+              <div>JT-235</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>PKLHP</div>
+              <div>B320</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>D</div>
+              <div>D</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>WAAA</div>
+              <div>WRRR</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/11:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/09:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/10:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/08:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div id="checked">
+                <span
+                  class="material-symbols-outlined text-base text-green-600"
+                >
+                  check_circle
+                </span>
+              </div>
+              <div id="no-checked">
+                <span
+                  class="material-symbols-outlined text-base text-slate-500"
+                >
+                  cancel
+                </span>
+              </div>
+            </th>
+            <th class="font-normal py-3">
+              <div>NML</div>
+              <div>NML</div>
+            </th>
+          </tr>
+          <tr
+            class="font-normal bg-indigo-50 hover:bg-indigo-200 dark:bg-slate-800 dark:hover:bg-slate-700"
+          >
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <input type="checkbox" />
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>JT-235</div>
+              <div>JT-235</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>PKLHP</div>
+              <div>B320</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>D</div>
+              <div>D</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>WAAA</div>
+              <div>WRRR</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/11:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/09:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/10:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/08:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div id="checked">
+                <span
+                  class="material-symbols-outlined text-base text-green-600"
+                >
+                  check_circle
+                </span>
+              </div>
+              <div id="no-checked">
+                <span
+                  class="material-symbols-outlined text-base text-slate-500"
+                >
+                  cancel
+                </span>
+              </div>
+            </th>
+            <th class="font-normal py-3">
+              <div>NML</div>
+              <div>NML</div>
+            </th>
+          </tr>
+          <tr
+            class="font-normal bg-indigo-100 hover:bg-indigo-200 dark:bg-slate-900 dark:hover:bg-slate-700"
+          >
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <input type="checkbox" />
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>JT-235</div>
+              <div>JT-235</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>PKLHP</div>
+              <div>B320</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>D</div>
+              <div>D</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>WAAA</div>
+              <div>WRRR</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/11:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/09:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/10:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/08:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div id="checked">
+                <span
+                  class="material-symbols-outlined text-base text-green-600"
+                >
+                  check_circle
+                </span>
+              </div>
+              <div id="no-checked">
+                <span
+                  class="material-symbols-outlined text-base text-slate-500"
+                >
+                  cancel
+                </span>
+              </div>
+            </th>
+            <th class="font-normal py-3">
+              <div>NML</div>
+              <div>NML</div>
+            </th>
+          </tr>
+          <tr
+            class="font-normal bg-indigo-50 hover:bg-indigo-200 dark:bg-slate-800 dark:hover:bg-slate-700"
+          >
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <input type="checkbox" />
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>JT-235</div>
+              <div>JT-235</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>PKLHP</div>
+              <div>B320</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>D</div>
+              <div>D</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>WAAA</div>
+              <div>WRRR</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/11:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/09:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/10:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/08:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div id="checked">
+                <span
+                  class="material-symbols-outlined text-base text-green-600"
+                >
+                  check_circle
+                </span>
+              </div>
+              <div id="no-checked">
+                <span
+                  class="material-symbols-outlined text-base text-slate-500"
+                >
+                  cancel
+                </span>
+              </div>
+            </th>
+            <th class="font-normal py-3">
+              <div>NML</div>
+              <div>NML</div>
+            </th>
+          </tr>
+          <tr
+            class="font-normal bg-indigo-100 hover:bg-indigo-200 dark:bg-slate-900 dark:hover:bg-slate-700"
+          >
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <input type="checkbox" />
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>JT-235</div>
+              <div>JT-235</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>PKLHP</div>
+              <div>B320</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>D</div>
+              <div>D</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>WAAA</div>
+              <div>WRRR</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/11:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/09:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/10:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/08:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div id="checked">
+                <span
+                  class="material-symbols-outlined text-base text-green-600"
+                >
+                  check_circle
+                </span>
+              </div>
+              <div id="no-checked">
+                <span
+                  class="material-symbols-outlined text-base text-slate-500"
+                >
+                  cancel
+                </span>
+              </div>
+            </th>
+            <th class="font-normal py-3">
+              <div>NML</div>
+              <div>NML</div>
+            </th>
+          </tr>
+          <tr
+            class="font-normal bg-indigo-50 hover:bg-indigo-200 dark:bg-slate-800 dark:hover:bg-slate-700"
+          >
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <input type="checkbox" />
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>JT-235</div>
+              <div>JT-235</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>PKLHP</div>
+              <div>B320</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>D</div>
+              <div>D</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>WAAA</div>
+              <div>WRRR</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/11:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/09:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/10:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/08:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div id="checked">
+                <span
+                  class="material-symbols-outlined text-base text-green-600"
+                >
+                  check_circle
+                </span>
+              </div>
+              <div id="no-checked">
+                <span
+                  class="material-symbols-outlined text-base text-slate-500"
+                >
+                  cancel
+                </span>
+              </div>
+            </th>
+            <th class="font-normal py-3">
+              <div>NML</div>
+              <div>NML</div>
+            </th>
+          </tr>
+          <tr
+            class="font-normal bg-indigo-100 hover:bg-indigo-200 dark:bg-slate-900 dark:hover:bg-slate-700"
+          >
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <input type="checkbox" />
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>JT-235</div>
+              <div>JT-235</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>PKLHP</div>
+              <div>B320</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>D</div>
+              <div>D</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>WAAA</div>
+              <div>WRRR</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/11:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/09:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/10:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/08:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div id="checked">
+                <span
+                  class="material-symbols-outlined text-base text-green-600"
+                >
+                  check_circle
+                </span>
+              </div>
+              <div id="no-checked">
+                <span
+                  class="material-symbols-outlined text-base text-slate-500"
+                >
+                  cancel
+                </span>
+              </div>
+            </th>
+            <th class="font-normal py-3">
+              <div>NML</div>
+              <div>NML</div>
+            </th>
+          </tr>
+          <tr
+            class="font-normal bg-indigo-50 hover:bg-indigo-200 dark:bg-slate-800 dark:hover:bg-slate-700"
+          >
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <input type="checkbox" />
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>JT-235</div>
+              <div>JT-235</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>PKLHP</div>
+              <div>B320</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>D</div>
+              <div>D</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>WAAA</div>
+              <div>WRRR</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/11:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/09:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/10:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div>03/08:00</div>
+              <div>03/08:00</div>
+            </th>
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <div id="checked">
+                <span
+                  class="material-symbols-outlined text-base text-green-600"
+                >
+                  check_circle
+                </span>
+              </div>
+              <div id="no-checked">
+                <span
+                  class="material-symbols-outlined text-base text-slate-500"
+                >
+                  cancel
+                </span>
+              </div>
+            </th>
+            <th class="font-normal py-3">
+              <div>NML</div>
+              <div>NML</div>
+            </th>
+          </tr>
+          <tr
+            class="font-normal bg-indigo-100 hover:bg-indigo-200 dark:bg-slate-900 dark:hover:bg-slate-700"
+          >
+            <th
+              class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
+            >
+              <input type="checkbox" />
             </th>
             <th
               class="font-normal py-3 border-r border-indigo-200 dark:border-slate-700"
