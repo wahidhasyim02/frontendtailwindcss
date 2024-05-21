@@ -157,6 +157,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const savedTimeZone = JSON.parse(localStorage.getItem("selectedTimeZone"));
   if (savedTimeZone) {
     updateTimeZone(savedTimeZone.offset, savedTimeZone.label);
+  } else {
+    // Set default timezone to UTC if none is saved
+    updateTimeZone(
+      timeZoneMappings["tz-utc"].offset,
+      timeZoneMappings["tz-utc"].label
+    );
   }
 });
 
