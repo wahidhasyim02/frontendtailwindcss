@@ -68,140 +68,162 @@
             <span id="clock" class="font-semibold"></span>
             <span id="timezone"></span>
           </div>
-          <span
-            class="inline-flex items-center border-r pr-1 dark:border-zinc-700 gap-1"
-            >Halo,
-            <div class="flex items-center">
-              <div
-                id="account-setting"
-                onclick="window.location.href='#'"
-                class="flex items-center font-semibold hover:text-zinc-400 hover:dark:text-zinc-50 cursor-pointer"
-              >
-                <span>Wahid</span>
-                <span class="material-symbols-outlined content-center text-l">
-                  expand_more
-                </span>
+
+          <div class="flex items-center">
+            <div
+              id="account-setting"
+              onclick="window.location.href='#'"
+              class="flex items-center font-semibold hover:text-zinc-400 hover:dark:text-zinc-50 cursor-pointer"
+            >
+              <div class="flex bg-cover">
+                <img
+                  id="profile-img"
+                  src="./public/img/profile-img.jpg"
+                  class="rounded-full w-6"
+                  alt=""
+                />
               </div>
-
-              <!--Ini adalah menu setting-->
-              <div
-                id="popup-setting"
-                class="hidden z-10 absolute bg-white bg-opacity-80 backdrop-blur-sm dark:bg-zinc-800 dark:bg-opacity-95 dark:backdrop-blur-sm rounded-xl right-16 top-10 p-4"
-              >
-                <ul class="p-2">
-                  <li
-                    onclick="window.location.href='';"
-                    class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
-                  >
-                    <span
-                      class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
-                    >
-                      person_edit
-                    </span>
-                    <span>Change Profile</span>
-                  </li>
-                  <li
-                    onclick="window.location.href='';"
-                    class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
-                  >
-                    <span
-                      class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
-                    >
-                      lock
-                    </span>
-                    <span>Change Password</span>
-                  </li>
-                  <li
-                    id="toggle-darkmode"
-                    class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
-                  >
-                    <span
-                      id="icon-darkmode"
-                      class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
-                    >
-                      dark_mode
-                    </span>
-                    <span id="text-darkmode">Dark Mode</span>
-                  </li>
-                  <li
-                    onclick="window.location.href='';"
-                    class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
-                  >
-                    <span
-                      class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
-                    >
-                      logout
-                    </span>
-                    <span>Log Out</span>
-                  </li>
-                  <li class="items-center flex px-2 py-1 gap-2 rounded-md">
-                    <span class="pl-2">Choose Timezone</span>
-                  </li>
-
-                  <li
-                    id="tz-utc"
-                    onclick="window.location.href='';"
-                    class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
-                  >
-                    <span
-                      class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
-                    >
-                      schedule
-                    </span>
-                    <span>UTC</span>
-                  </li>
-                  <li
-                    id="tz-gmt7"
-                    onclick="window.location.href='';"
-                    class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
-                  >
-                    <span
-                      class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
-                    >
-                      schedule
-                    </span>
-                    <span>WIB / Jakarta</span>
-                  </li>
-                  <li
-                    id="tz-gmt8"
-                    onclick="window.location.href='';"
-                    class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
-                  >
-                    <span
-                      class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
-                    >
-                      schedule
-                    </span>
-                    <span>WITA / Makassar</span>
-                  </li>
-                  <li
-                    id="tz-gmt9"
-                    onclick="window.location.href='';"
-                    class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
-                  >
-                    <span
-                      class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
-                    >
-                      schedule
-                    </span>
-                    <span>WIT / Jayapura</span>
-                  </li>
-
-                  <li
-                    onclick="window.location.href='';"
-                    class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
-                  >
-                    <span
-                      class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
-                    >
-                      license
-                    </span>
-                    <span>Licences</span>
-                  </li>
-                </ul>
-              </div>
+              <span class="material-symbols-outlined content-center text-l">
+                expand_more
+              </span>
             </div>
-          </span>
+
+            <!--Ini adalah menu setting-->
+            <div
+              id="popup-setting"
+              class="flex flex-col gap-2 items-center hidden z-10 absolute bg-white bg-opacity-80 backdrop-blur-sm dark:bg-zinc-800 dark:bg-opacity-95 dark:backdrop-blur-sm rounded-xl right-16 top-10 p-4"
+            >
+              <div class="flex flex-col items-center gap-2 bg-cover">
+                <img
+                  id="profile-img"
+                  src="./public/img/profile-img.jpg"
+                  class="rounded-full w-16"
+                  alt=""
+                />
+                <span
+                  id="edit-profile-img"
+                  class="absolute material-symbols-outlined rounded-full top-14 right-20 text-center items-center content-center cursor-pointer bg-white text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300 hover:text-violet-600 dark:hover:text-violet-400 hover:bg-zinc-100 dark:hover:bg-zinc-700 shadow-md text-base w-6 h-6"
+                >
+                  edit
+                </span>
+                <span id="account-name" class="font-semibold"
+                  >Wahid Hasyim</span
+                >
+              </div>
+              <ul class="p-2 border-t dark:border-zinc-700">
+                <li
+                  onclick="window.location.href='';"
+                  class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
+                >
+                  <span
+                    class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
+                  >
+                    person_edit
+                  </span>
+                  <span>Change Profile</span>
+                </li>
+                <li
+                  onclick="window.location.href='';"
+                  class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
+                >
+                  <span
+                    class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
+                  >
+                    lock
+                  </span>
+                  <span>Change Password</span>
+                </li>
+                <li
+                  id="toggle-darkmode"
+                  class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
+                >
+                  <span
+                    id="icon-darkmode"
+                    class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
+                  >
+                    dark_mode
+                  </span>
+                  <span id="text-darkmode">Dark Mode</span>
+                </li>
+                <li
+                  onclick="window.location.href='';"
+                  class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
+                >
+                  <span
+                    class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
+                  >
+                    logout
+                  </span>
+                  <span>Log Out</span>
+                </li>
+                <li class="items-center flex px-2 py-1 gap-2 rounded-md">
+                  <span class="pl-2">Choose Timezone</span>
+                </li>
+
+                <li
+                  id="tz-utc"
+                  onclick="window.location.href='';"
+                  class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
+                >
+                  <span
+                    class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
+                  >
+                    schedule
+                  </span>
+                  <span>UTC</span>
+                </li>
+                <li
+                  id="tz-gmt7"
+                  onclick="window.location.href='';"
+                  class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
+                >
+                  <span
+                    class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
+                  >
+                    schedule
+                  </span>
+                  <span>WIB / Jakarta</span>
+                </li>
+                <li
+                  id="tz-gmt8"
+                  onclick="window.location.href='';"
+                  class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
+                >
+                  <span
+                    class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
+                  >
+                    schedule
+                  </span>
+                  <span>WITA / Makassar</span>
+                </li>
+                <li
+                  id="tz-gmt9"
+                  onclick="window.location.href='';"
+                  class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
+                >
+                  <span
+                    class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
+                  >
+                    schedule
+                  </span>
+                  <span>WIT / Jayapura</span>
+                </li>
+
+                <li
+                  onclick="window.location.href='';"
+                  class="cursor-pointer items-center hover:bg-violet-600 hover:text-white flex px-2 py-1 gap-2 rounded-md"
+                >
+                  <span
+                    class="material-symbols-outlined w-7 h-7 text-center items-center text-xl"
+                  >
+                    license
+                  </span>
+                  <span>Licences</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <!--Menu help-->
           <span
             onclick="window.location.href='#'"
