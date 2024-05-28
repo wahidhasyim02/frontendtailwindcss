@@ -1126,6 +1126,22 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:outline:hover {
+  outline-style: solid;
+}
+
+.hover\:outline-4:hover {
+  outline-width: 4px;
+}
+
+.hover\:outline-8:hover {
+  outline-width: 8px;
+}
+
+.hover\:outline-zinc-200:hover {
+  outline-color: #e4e4e7;
+}
+
 .focus\:border:focus {
   border-width: 1px;
 }
@@ -1231,4 +1247,8 @@ video {
 .hover\:dark\:text-zinc-50:where(.dark, .dark *):hover {
   --tw-text-opacity: 1;
   color: rgb(250 250 250 / var(--tw-text-opacity));
+}
+
+.dark\:hover\:outline-zinc-600:hover:where(.dark, .dark *) {
+  outline-color: #52525b;
 }
