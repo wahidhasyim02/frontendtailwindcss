@@ -76,7 +76,7 @@
               class="flex items-center font-semibold hover:text-zinc-400 hover:dark:text-zinc-50 cursor-pointer"
             >
               <div
-                class="flex bg-cover cursor-pointer hover:outline hover:outline-4 hover:outline-zinc-200 dark:hover:outline-zinc-600 rounded-full"
+                class="flex bg-cover bg-zinc-200 h-6 w-6 cursor-pointer hover:outline hover:outline-4 hover:outline-zinc-200 dark:hover:outline-zinc-600 rounded-full"
               >
                 <img
                   id="profile-img"
@@ -96,21 +96,29 @@
               class="flex flex-col gap-2 items-center hidden z-10 absolute bg-white bg-opacity-80 backdrop-blur-sm dark:bg-zinc-800 dark:bg-opacity-95 dark:backdrop-blur-sm rounded-xl right-16 top-10 p-4"
             >
               <div class="flex flex-col items-center gap-2 bg-cover">
-                <img
-                  id="profile-img"
-                  src="./public/img/profile-img.jpg"
-                  class="rounded-full w-16 cursor-pointer hover:outline hover:outline-8 hover:outline-zinc-200 dark:hover:outline-zinc-600"
-                  alt=""
-                />
-                <span
-                  id="edit-profile-img"
-                  class="absolute material-symbols-outlined rounded-full mt-12 right-20 text-center items-center content-center cursor-pointer bg-white text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300 hover:text-violet-600 dark:hover:text-violet-400 hover:bg-zinc-100 dark:hover:bg-zinc-700 shadow-md text-base w-6 h-6"
+                <div
+                  for="edit-profile-img"
+                  onclick="window.location.href='';"
+                  class="flex bg-cover bg-zinc-200 h-16 w-16 rounded-full"
                 >
-                  edit
-                </span>
-                <span id="account-name" class="font-semibold"
-                  >Wahid Hasyim</span
-                >
+                  <img
+                    id="profile-img"
+                    src="./public/img/profile-img.jpg"
+                    class="rounded-full w-16 h-16"
+                    alt=""
+                  />
+                  <span
+                    id="edit-profile-img"
+                    class="absolute material-symbols-outlined rounded-full mt-10 right-20 text-center items-center content-center cursor-pointer bg-white text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300 hover:text-violet-600 dark:hover:text-violet-400 hover:bg-zinc-100 dark:hover:bg-zinc-700 shadow-md text-base w-6 h-6"
+                  >
+                    edit
+                  </span>
+                </div>
+
+                <div>
+                  <span>Halo,</span>
+                  <span id="account-name" class="font-semibold">Wahid</span>
+                </div>
               </div>
               <ul class="p-2 border-t dark:border-zinc-700">
                 <li
