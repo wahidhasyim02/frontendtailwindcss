@@ -1131,11 +1131,11 @@ video {
 }
 
 .hover\:outline-4:hover {
-  outline-width: 4px;
+  outline-width: 10px;
 }
 
 .hover\:outline-8:hover {
-  outline-width: 8px;
+  outline-width: 18px;
 }
 
 .hover\:outline-zinc-200:hover {
