@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./src/**/*.{html,js}", "./index.html"],
   theme: {
     extend: {
       fontFamily: {
@@ -8,6 +8,9 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('/public/img/bg_light.jpg')",
+      },
+      width: {
+        22.5: "5.625rem",
       },
     },
   },

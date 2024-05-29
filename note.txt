@@ -1,0 +1,31 @@
+Light:  text-zinc-500
+Dark: text-zinc-400
+hover:text-violet-800
+hover:dark:text-violet-600
+
+Body
+bg-zinc-100 
+dark:bg-zinc-900
+text-zinc-500 dark:text-zinc-400
+
+close
+bg-white dark:bg-zinc-700 hover:bg-zinc-100 hover:dark:bg-zinc-600
+hover:text-violet-800 hover:dark:text-violet-600
+
+
+Container
+bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-80 dark:bg-opacity-85 text-sm font-semibold text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-xl
+
+button
+ text-white 
+ bg-violet-700 
+ hover:bg-violet-800 
+ hover:dark:bg-violet-600 
+ rounded-xl 
+ border border-zinc-300/20 dark:border-zinc-300/20
+
+border dark:border-zinc-700
+
+
+bg header
+bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-70 dark:bg-opacity-70 font-semibold  border-b border-zinc-300/15 dark:border-zinc-300/5 shadow-md
