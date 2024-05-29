@@ -14,7 +14,7 @@ hover:text-violet-800 hover:dark:text-violet-600
 
 
 Container
-bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-80 dark:bg-opacity-85 text-sm font-semibold text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-xl
+bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-semibold text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-xl
 
 button
  text-white 
