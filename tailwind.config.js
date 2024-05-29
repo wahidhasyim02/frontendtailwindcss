@@ -9,8 +9,15 @@ module.exports = {
       backgroundImage: {
         hero: "url('/public/img/bg_light.jpg')",
       },
-      width: {
+      spacing: {
+        "8%": "8%",
         22.5: "5.625rem",
+        175: "43.75rem",
+        "30%": "30%",
+        "65%": "65%",
+        "75%": "75%",
+        "85%": "85%",
+        "95%": "95%",
       },
     },
   },

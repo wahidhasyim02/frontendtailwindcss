@@ -213,9 +213,16 @@ function applyState(state) {
   document
     .getElementById("table_billing_charge")
     .classList.toggle("hidden", !state.tableBillingChargeVisible);
-  document
-    .getElementById("icon-apps")
-    .classList.toggle("hidden", !state.iconAppsVisible);
+
+  const iconAppsElement = document.getElementById("icon-apps");
+  if (state.iconAppsVisible) {
+    iconAppsElement.classList.remove("hidden");
+    iconAppsElement.classList.add("flex");
+  } else {
+    iconAppsElement.classList.remove("flex");
+    iconAppsElement.classList.add("hidden");
+  }
+
   document
     .getElementById("app-billing-cash")
     .classList.toggle("hidden", !state.appBillingCashVisible);
