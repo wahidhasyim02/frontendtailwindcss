@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener untuk menampilkan/menyembunyikan menu saat tombol menu diklik
   tombolMenu.addEventListener("click", function (event) {
     event.preventDefault();
+    menu.classList.add("z-50");
     menu.classList.toggle("hidden");
   });
 
@@ -41,9 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   var accountSetting = document.getElementById("account-setting");
   var popupsetting = document.getElementById("popup-setting");
+  var header = document.getElementById("header");
 
   accountSetting.addEventListener("click", function (event) {
     event.preventDefault();
+    header.style.zIndex = "1000";
+    popupsetting.style.zIndex = "1000";
     popupsetting.classList.toggle("hidden");
   });
   // Event listener untuk menambahkan kelas hidden ke menu saat klik di luar area menu
