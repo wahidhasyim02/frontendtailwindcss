@@ -59,6 +59,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Script memunculkan Change Profile
+document.addEventListener("DOMContentLoaded", function () {
+  var popupChangeprofile = document.getElementById("popup-change-profile");
+  var changeProfile = document.getElementById("change-profile");
+  var closeChangeprofile = document.getElementById("close-change-profile");
+
+  // Event listener untuk menampilkan/menyembunyikan popup change profile saat tombol menu diklik
+  changeProfile.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupChangeprofile.classList.toggle("hidden");
+  });
+  // Event listener untuk menambahkan kelas hidden ke popup change profile saat klik di tombol close
+  closeChangeprofile.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupChangeprofile.classList.toggle("hidden");
+  });
+});
+
 // Script untuk pengaturan darkmode
 document.addEventListener("DOMContentLoaded", function () {
   var toggleDarkMode = document.getElementById("toggle-darkmode");
