@@ -43,7 +43,7 @@
             </span>
             <span id="text-menu">Menu</span>
           </div>
-          <div id="icon-apps" class="flex items-center hidden">
+          <div id="icon-apps" class="items-center hidden">
             <div id="app-billing-cash" class="flex items-center gap-2">
               <img
                 src="./public/img/billing_cash.png"
@@ -72,7 +72,6 @@
           <div class="flex items-center">
             <div
               id="account-setting"
-              onclick="window.location.href='#'"
               class="flex items-center font-semibold hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer"
             >
               <div
@@ -93,7 +92,7 @@
             <!--Ini adalah menu setting-->
             <div
               id="popup-setting"
-              class="flex flex-col gap-2 items-center hidden z-10 absolute bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-semibold text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl right-16 top-10 p-4"
+              class="flex-col gap-2 items-center hidden z-10 absolute bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-semibold text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl right-16 top-10 p-4"
             >
               <div class="flex flex-col items-center gap-2 bg-cover">
                 <div
@@ -228,7 +227,6 @@
 
           <!--Menu help-->
           <span
-            onclick="window.location.href='#'"
             class="material-symbols-outlined hover:text-violet-800 hover:Dark:text-violet-600 content-center cursor-pointer text-xl"
             >help
           </span>
@@ -239,14 +237,13 @@
     <!--Ini adalah container menu-->
     <section
       id="menu"
-      class="w-10/12 h-5/6 left-[8%] right-[8%] top-6 py-10 hidden fixed z-50"
+      class="w-10/12 h-5/6 left-8% right-8% top-6 py-10 hidden fixed z-50"
     >
       <div
-        class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-70 dark:bg-opacity-85 border border-white dark:border-zinc-700 border-opacity-50 dark:border-opacity-30 rounded-3xl text-base text-zinc-700 dark:text-zinc-100 p-12 mx-auto h-[700px] flex flex-col"
+        class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-70 dark:bg-opacity-85 border border-white dark:border-zinc-700 border-opacity-50 dark:border-opacity-30 rounded-3xl text-base text-zinc-700 dark:text-zinc-100 p-12 mx-auto h-175 flex flex-col"
       >
         <div
           id="close-menu"
-          onclick="window.location.href='#'"
           class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-white dark:bg-zinc-700 hover:bg-zinc-100 hover:dark:bg-zinc-600 hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer"
         >
           <span class="material-symbols-outlined content-center text-l m-auto">
@@ -254,7 +251,7 @@
           </span>
         </div>
         <div
-          class="flex w-[75%] mx-auto mt-2 mb-4 bg-white dark:bg-zinc-800 rounded-xl shadow"
+          class="flex w-75% mx-auto mt-2 mb-4 bg-white dark:bg-zinc-800 rounded-xl shadow"
         >
           <label
             id="label-search"
@@ -481,14 +478,13 @@
     <!--Ini adalah Popup Change Profile-->
     <section
       id="popup-change-profile"
-      class="hidden left-1/4 right-1/4 h-[30%] top-6 py-10 fixed z-10"
+      class="hidden left-1/4 right-1/4 h-30% top-6 py-10 fixed z-10"
     >
       <div
         class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col space-y-2"
       >
         <div
           id="close-change-profile"
-          onclick="window.location.href='#'"
           class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-white dark:bg-zinc-700 hover:bg-zinc-100 hover:dark:bg-zinc-600 hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer"
         >
           <span class="material-symbols-outlined content-center text-l m-auto">
@@ -537,7 +533,7 @@
     <!--Ini adalah Table Billing Cash-->
     <section id="table_billing_cash" class="right-auto left-auto top-6 hidden">
       <table
-        class="w-[95%] h-[85%] table-fixed dark:text-zinc-300 text-base mt-10 mx-auto bg-violet-100 dark:bg-zinc-900 rounded-lg"
+        class="w-95% h-85% table-fixed dark:text-zinc-300 text-base mt-10 mx-auto bg-violet-100 dark:bg-zinc-900 rounded-lg"
       >
         <thead class="w-full text-white sticky top-0">
           <tr>
@@ -599,7 +595,7 @@
           </tr>
         </thead>
 
-        <tbody class="h-[65%] overflow-y-scroll font-normal">
+        <tbody class="h-65% overflow-y-scroll font-normal">
           <tr
             class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
           >
@@ -1379,7 +1375,7 @@
       class="right-auto left-auto top-6 hidden"
     >
       <table
-        class="w-[95%] h-[85%] table-fixed dark:text-zinc-300 text-base mt-10 mx-auto bg-violet-100 dark:bg-zinc-900 rounded-lg"
+        class="w-95% h-85% table-fixed dark:text-zinc-300 text-base mt-10 mx-auto bg-violet-100 dark:bg-zinc-900 rounded-lg"
       >
         <thead class="w-full text-white sticky top-0">
           <tr>
@@ -1441,7 +1437,7 @@
           </tr>
         </thead>
 
-        <tbody class="h-[65%] overflow-y-scroll font-normal">
+        <tbody class="h-65% overflow-y-scroll font-normal">
           <tr
             class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
           >
