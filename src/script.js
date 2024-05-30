@@ -63,35 +63,36 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Script memunculkan Change Profile
+// Script memunculkan Change Profile dan change password
 document.addEventListener("DOMContentLoaded", function () {
   var popupChangeprofile = document.getElementById("popup-change-profile");
   var changeProfile = document.getElementById("change-profile");
   var closeChangeprofile = document.getElementById("close-change-profile");
+  var popupChangepassword = document.getElementById("popup-change-password");
+  var changePassword = document.getElementById("change-password");
+  var closeChangepassword = document.getElementById("close-change-password");
 
   // Event listener untuk menampilkan/menyembunyikan popup change profile saat tombol menu diklik
   changeProfile.addEventListener("click", function (event) {
     event.preventDefault();
+    popupChangeprofile.style.zIndex = "1000"; // Set zIndex lebih besar
+    popupChangepassword.style.zIndex = "10";
     popupChangeprofile.classList.toggle("hidden");
   });
+
   // Event listener untuk menambahkan kelas hidden ke popup change profile saat klik di tombol close
   closeChangeprofile.addEventListener("click", function (event) {
     event.preventDefault();
     popupChangeprofile.classList.toggle("hidden");
   });
-});
-
-// Script memunculkan Change Password
-document.addEventListener("DOMContentLoaded", function () {
-  var popupChangepassword = document.getElementById("popup-change-password");
-  var changePassword = document.getElementById("change-password");
-  var closeChangepassword = document.getElementById("close-change-password");
-
   // Event listener untuk menampilkan/menyembunyikan popup change password saat tombol menu diklik
   changePassword.addEventListener("click", function (event) {
     event.preventDefault();
+    popupChangepassword.style.zIndex = "1000"; // Set zIndex lebih besar
+    popupChangeprofile.style.zIndex = "10";
     popupChangepassword.classList.toggle("hidden");
   });
+
   // Event listener untuk menambahkan kelas hidden ke popup change password saat klik di tombol close
   closeChangepassword.addEventListener("click", function (event) {
     event.preventDefault();
