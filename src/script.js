@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
   changeProfile.addEventListener("click", function (event) {
     event.preventDefault();
     popupChangeprofile.classList.add("z-1000"); // Set zIndex lebih besar
-    popupChangepassword.classList.add("hidden");
+    popupChangepassword.classList.toggle("hidden");
     popupChangeprofile.classList.toggle("hidden");
   });
 
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
   changePassword.addEventListener("click", function (event) {
     event.preventDefault();
     popupChangepassword.classList.add("z-1000"); // Set zIndex lebih besar
-    popupChangeprofile.classList.add("hidden");
+    popupChangeprofile.classList.toggle("hidden");
     popupChangepassword.classList.toggle("hidden");
   });
 
