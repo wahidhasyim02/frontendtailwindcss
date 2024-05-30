@@ -632,10 +632,6 @@ video {
   top: 1.5rem;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .z-1000 {
   z-index: 1000;
 }
