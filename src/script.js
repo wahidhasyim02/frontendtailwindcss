@@ -75,8 +75,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener untuk menampilkan/menyembunyikan popup change profile saat tombol menu diklik
   changeProfile.addEventListener("click", function (event) {
     event.preventDefault();
-    popupChangeprofile.classList.add("z-1000"); // Set zIndex lebih besar
-    popupChangepassword.classList.add("hidden");
+    popupChangeprofile.classList.add("z-1000");
+    popupChangeprofile.classList.remove("z-10"); // Set zIndex lebih besar
+    popupChangepassword.classList.add("z-10");
+    popupChangepassword.classList.remove("z-1000");
     popupChangeprofile.classList.toggle("hidden");
   });
 
@@ -88,8 +90,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener untuk menampilkan/menyembunyikan popup change password saat tombol menu diklik
   changePassword.addEventListener("click", function (event) {
     event.preventDefault();
-    popupChangepassword.classList.add("z-1000"); // Set zIndex lebih besar
-    popupChangeprofile.classList.add("hidden");
+    popupChangepassword.classList.add("z-1000");
+    popupChangepassword.classList.remove("z-10"); // Set zIndex lebih besar
+    popupChangeprofile.classList.add("z-10");
+    popupChangeprofile.classList.remove("z-1000");
     popupChangepassword.classList.toggle("hidden");
   });
 
