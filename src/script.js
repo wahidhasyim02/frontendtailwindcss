@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener untuk menampilkan/menyembunyikan menu saat tombol menu diklik
   tombolMenu.addEventListener("click", function (event) {
     event.preventDefault();
-    menu.classList.add("z-50");
+    menu.classList.add("z-1100");
     menu.classList.toggle("hidden");
   });
 
@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   accountSetting.addEventListener("click", function (event) {
     event.preventDefault();
-    header.style.zIndex = "1000";
-    popupsetting.style.zIndex = "1000";
+    header.classList.add("z-1200");
+    popupsetting.classList.add("z-1200");
     popupsetting.classList.toggle("hidden");
   });
   // Event listener untuk menambahkan kelas hidden ke menu saat klik di luar area menu
@@ -75,8 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener untuk menampilkan/menyembunyikan popup change profile saat tombol menu diklik
   changeProfile.addEventListener("click", function (event) {
     event.preventDefault();
-    popupChangeprofile.style.zIndex = "1000"; // Set zIndex lebih besar
-    popupChangepassword.style.zIndex = "10";
+    popupChangeprofile.classList.add("z-1000"); // Set zIndex lebih besar
+    popupChangepassword.classList.add("hidden");
     popupChangeprofile.classList.toggle("hidden");
   });
 
@@ -88,8 +88,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener untuk menampilkan/menyembunyikan popup change password saat tombol menu diklik
   changePassword.addEventListener("click", function (event) {
     event.preventDefault();
-    popupChangepassword.style.zIndex = "1000"; // Set zIndex lebih besar
-    popupChangeprofile.style.zIndex = "10";
+    popupChangepassword.classList.add("z-1000"); // Set zIndex lebih besar
+    popupChangeprofile.classList.add("hidden");
     popupChangepassword.classList.toggle("hidden");
   });
 
