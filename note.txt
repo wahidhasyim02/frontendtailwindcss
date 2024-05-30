@@ -29,3 +29,124 @@ border dark:border-zinc-700
 
 bg header
 bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-70 dark:bg-opacity-70 font-semibold  border-b border-zinc-300/15 dark:border-zinc-300/5 shadow-md
+
+
+   <section
+      id="popup-change-profile"
+      class="hidden left-1/2 -translate-x-1/2 w-auto top-6 py-10 fixed z-10"
+    >
+      <div
+        class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col "
+      >
+        <div
+          id="close-change-profile"
+          class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-white dark:bg-zinc-700 hover:bg-zinc-100 hover:dark:bg-zinc-600 hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer"
+        >
+          <span class="material-symbols-outlined content-center text-l m-auto">
+            close
+          </span>
+        </div>
+        <span class="font-semibold">User Profile</span>
+        <div class="flex-col space-y-4 mt-4">
+          <div class="flex">
+            <label for="name" class="flex-auto">Name</label
+            ><input id="name"
+              type="text"
+              placeholder="Name"
+              class="flex-1 ml-16 px-3 py-1 rounded-md border border-zinc-400 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30"
+            />
+          </div>
+          <div class="flex-col space-y-4">
+            <label for="name">Profile Picture</label
+            ><img src="./public/img/profile-img.jpg" class="w-24" alt="" />
+            <div>
+              <span
+                class="border bg-zinc-100 dark:bg-zinc-700 rounded-md hover:bg-zinc-200 hover:dark:bg-zinc-600 border-zinc-300 dark:border-zinc-600 px-3 py-1"
+                >Choose File</span
+              >
+              <span class="inline">No file choosen</span>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <button
+              id="btn-save"
+              class="flex gap-2 items-center content-center text-white bg-violet-700 hover:bg-violet-800 hover:dark:bg-violet-600 rounded-xl border-2 border-zinc-300/20 dark:border-zinc-300/20 px-4 py-1"
+            >
+              <span class="material-symbols-outlined">save</span>Save
+            </button>
+            <button
+              id="btn-cancel"
+              class="flex gap-2 items-center content-center text-zinc-700 dark:text-zinc-300 hover:text-violet-600 px-4 py-1"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Ini a
+
+
+
+      
+    <!--Ini adalah Popup Change Password-->
+    <section
+      id="popup-change-password"
+      class="hidden left-1/2 -translate-x-1/2 w-auto top-6 py-10 fixed z-10"
+    >
+      <div
+        class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col "
+      >
+        <div
+          id="close-change-password"
+          class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-white dark:bg-zinc-700 hover:bg-zinc-100 hover:dark:bg-zinc-600 hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer"
+        >
+          <span class="material-symbols-outlined content-center text-l m-auto">
+            close
+          </span>
+        </div>
+        <span class="font-semibold">Change Password</span>
+        <div class="flex-col space-y-4 mt-6">
+          <div class="flex">
+            <label for="name" class="flex-auto">Old Password</label
+            ><input id="old-password"
+              type="password"
+              placeholder="********"
+              class="flex-1 ml-16 px-3 py-1 rounded-md border border-zinc-400 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30"
+            />
+          </div>
+          <div class=" flex  ">
+            <label for="name" class="flex-auto">New password</label
+            ><input id="new-password"
+              type="password"
+              placeholder="********"
+              class=" flex-1 ml-16 px-3 py-1 rounded-md border border-zinc-400 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30"
+            />
+          </input>
+          </div>
+          <div class="flex">
+            <label for="name" class="flex-auto">New password confirmation</label
+            ><input id="confirm-password"
+              type="password"
+              placeholder="********"
+              class="flex-1 ml-16 px-3 py-1 rounded-md border border-zinc-400 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30"
+            />
+          </div>
+          </div>
+          <div class="flex gap-2 mt-8 ">
+            <button
+              id="btn-save"
+              class="flex gap-2 items-center content-center text-white bg-violet-700 hover:bg-violet-800 hover:dark:bg-violet-600 rounded-xl border-2 border-zinc-300/20 dark:border-zinc-300/20 px-4 py-1"
+            >
+              <span class="material-symbols-outlined">save</span>Save
+            </button>
+            <button
+              id="btn-cancel"
+              class="flex gap-2 items-center content-center text-zinc-700 dark:text-zinc-300 hover:text-violet-600 px-4 py-1"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>

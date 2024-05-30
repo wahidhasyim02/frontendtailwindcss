@@ -81,6 +81,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Script memunculkan Change Password
+document.addEventListener("DOMContentLoaded", function () {
+  var popupChangepassword = document.getElementById("popup-change-password");
+  var changePassword = document.getElementById("change-password");
+  var closeChangepassword = document.getElementById("close-change-password");
+
+  // Event listener untuk menampilkan/menyembunyikan popup change password saat tombol menu diklik
+  changePassword.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupChangepassword.classList.toggle("hidden");
+  });
+  // Event listener untuk menambahkan kelas hidden ke popup change password saat klik di tombol close
+  closeChangepassword.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupChangepassword.classList.toggle("hidden");
+  });
+});
+
 // Script untuk pengaturan darkmode
 document.addEventListener("DOMContentLoaded", function () {
   var toggleDarkMode = document.getElementById("toggle-darkmode");

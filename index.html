@@ -130,7 +130,7 @@
                   </span>
                   <span>Change Profile</span>
                 </li>
-                <li
+                <li id="change-password"
                   class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md"
                 >
                   <span
@@ -237,7 +237,7 @@
     <!--Ini adalah container menu-->
     <section
       id="menu"
-      class="w-10/12 h-5/6 left-8% right-8% top-6 py-10 hidden fixed"
+      class="w-10/12 h-5/6 left-1/2 -translate-x-1/2 top-6 py-10 hidden fixed"
     >
       <div
         class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 border-white dark:border-zinc-700 border-opacity-50 dark:border-opacity-30 rounded-3xl text-base text-zinc-700 dark:text-zinc-100 p-12 mx-auto h-175 flex flex-col"
@@ -478,10 +478,10 @@
     <!--Ini adalah Popup Change Profile-->
     <section
       id="popup-change-profile"
-      class="hidden left-1/4 right-1/4 h-30% top-6 py-10 fixed z-10"
+      class="hidden left-1/2 -translate-x-1/2 w-auto top-6 py-10 fixed z-10"
     >
       <div
-        class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col space-y-2"
+        class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col "
       >
         <div
           id="close-change-profile"
@@ -492,15 +492,16 @@
           </span>
         </div>
         <span class="font-semibold">User Profile</span>
-        <div class="flex-col space-y-4">
-          <div class="">
-            <label for="name">Name</label
-            ><input
+        <div class="flex-col space-y-4 mt-6  ">
+          <div class="flex">
+            <label for="name" class="flex-auto">Name</label
+            ><input id="name"
               type="text"
               placeholder="Name"
-              class="ml-16 px-3 py-1 rounded-md border border-zinc-400 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30"
+              class="flex-1 ml-16 px-3 py-1 rounded-md border border-zinc-400 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30"
             />
           </div>
+         
           <div class="flex-col space-y-4">
             <label for="name">Profile Picture</label
             ><img src="./public/img/profile-img.jpg" class="w-24" alt="" />
@@ -511,8 +512,72 @@
               >
               <span class="inline">No file choosen</span>
             </div>
+          </div></div>
+          <div class="flex gap-2 mt-8">
+            <button
+              id="btn-save"
+              class="flex gap-2 items-center content-center text-white bg-violet-700 hover:bg-violet-800 hover:dark:bg-violet-600 rounded-xl border-2 border-zinc-300/20 dark:border-zinc-300/20 px-4 py-1"
+            >
+              <span class="material-symbols-outlined">save</span>Save
+            </button>
+            <button
+              id="btn-cancel"
+              class="flex gap-2 items-center content-center text-zinc-700 dark:text-zinc-300 hover:text-violet-600 px-4 py-1"
+            >
+              Cancel
+            </button>
           </div>
-          <div class="flex gap-2">
+        
+      </div>
+    </section>
+
+
+    
+    <!--Ini adalah Popup Change Password-->
+    <section
+      id="popup-change-password"
+      class="hidden left-1/2 -translate-x-1/2 w-auto top-6 py-10 fixed z-10"
+    >
+      <div
+        class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col "
+      >
+        <div
+          id="close-change-password"
+          class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-white dark:bg-zinc-700 hover:bg-zinc-100 hover:dark:bg-zinc-600 hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer"
+        >
+          <span class="material-symbols-outlined content-center text-l m-auto">
+            close
+          </span>
+        </div>
+        <span class="font-semibold">Change Password</span>
+        <div class="flex-col space-y-4 mt-6  ">
+          <div class="flex">
+            <label for="name" class="flex-auto">Old Password</label
+            ><input id="old-password"
+              type="password"
+              placeholder="********"
+              class="flex-1 ml-16 px-3 py-1 rounded-md border border-zinc-400 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30"
+            />
+          </div>
+          <div class=" flex  ">
+            <label for="name" class="flex-auto">New password</label
+            ><input id="new-password"
+              type="password"
+              placeholder="********"
+              class=" flex-1 ml-16 px-3 py-1 rounded-md border border-zinc-400 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30"
+            />
+          </input>
+          </div>
+          <div class="flex">
+            <label for="name" class="flex-auto">New password confirmation</label
+            ><input id="confirm-password"
+              type="password"
+              placeholder="********"
+              class="flex-1 ml-16 px-3 py-1 rounded-md border border-zinc-400 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30"
+            />
+          </div>
+          </div>
+          <div class="flex gap-2 mt-8 ">
             <button
               id="btn-save"
               class="flex gap-2 items-center content-center text-white bg-violet-700 hover:bg-violet-800 hover:dark:bg-violet-600 rounded-xl border-2 border-zinc-300/20 dark:border-zinc-300/20 px-4 py-1"
@@ -531,7 +596,7 @@
     </section>
 
     <!--Ini adalah Table Billing Cash-->
-    <section id="table_billing_cash" class="right-auto left-auto top-6 hidden">
+    <section id="table_billing_cash" class="top-6 hidden">
       <table
         class="w-95% h-85% table-fixed dark:text-zinc-300 text-base mt-10 mx-auto bg-violet-100 dark:bg-zinc-900 rounded-lg"
       >
@@ -1370,10 +1435,7 @@
       </table>
     </section>
     <!--Ini adalah Table Billing Charge-->
-    <section
-      id="table_billing_charge"
-      class="right-auto left-auto top-6 hidden"
-    >
+    <section id="table_billing_charge" class="top-6 hidden">
       <table
         class="w-95% h-85% table-fixed dark:text-zinc-300 text-base mt-10 mx-auto bg-violet-100 dark:bg-zinc-900 rounded-lg"
       >
@@ -1382,7 +1444,11 @@
             <th
               class="w-16 rounded-tl-lg border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4"
             >
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white checked:border-zinc-300 ring-2 ring-zinc-300 checked:ring-violet-500 rounded"
+              />
+              
             </th>
             <th
               class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4"
@@ -1444,7 +1510,10 @@
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
             >
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                class="appearance-none h-4 w-4 bg-white checked:bg-violet-600 border-2 border-white checked:border-zinc-300 ring-2 ring-zinc-300 checked:ring-violet-500 rounded"
+              />
             </th>
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
@@ -1521,7 +1590,10 @@
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
             >
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                class="appearance-none h-4 w-4 bg-white checked:bg-violet-600 border-2 border-white checked:border-zinc-300 ring-2 ring-zinc-300 checked:ring-violet-500 rounded"
+              />
             </th>
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
@@ -1598,7 +1670,10 @@
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
             >
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                class="appearance-none h-4 w-4 bg-white checked:bg-violet-600 border-2 border-white checked:border-zinc-300 ring-2 ring-zinc-300 checked:ring-violet-500 rounded"
+              />
             </th>
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
@@ -1675,7 +1750,10 @@
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
             >
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                class="appearance-none h-4 w-4 bg-white checked:bg-violet-600 border-2 border-white checked:border-zinc-300 ring-2 ring-zinc-300 checked:ring-violet-500 rounded"
+              />
             </th>
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
@@ -1752,7 +1830,10 @@
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
             >
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                class="appearance-none h-4 w-4 bg-white checked:bg-violet-600 border-2 border-white checked:border-zinc-300 ring-2 ring-zinc-300 checked:ring-violet-500 rounded"
+              />
             </th>
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
@@ -1829,7 +1910,10 @@
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
             >
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                class="appearance-none h-4 w-4 bg-white checked:bg-violet-600 border-2 border-white checked:border-zinc-300 ring-2 ring-zinc-300 checked:ring-violet-500 rounded"
+              />
             </th>
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
@@ -1906,7 +1990,10 @@
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
             >
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                class="appearance-none h-4 w-4 bg-white checked:bg-violet-600 border-2 border-white checked:border-zinc-300 ring-2 ring-zinc-300 checked:ring-violet-500 rounded"
+              />
             </th>
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
@@ -1983,7 +2070,10 @@
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
             >
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                class="appearance-none h-4 w-4 bg-white checked:bg-violet-600 border-2 border-white checked:border-zinc-300 ring-2 ring-zinc-300 checked:ring-violet-500 rounded"
+              />
             </th>
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
@@ -2060,7 +2150,10 @@
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
             >
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                class="appearance-none h-4 w-4 bg-white checked:bg-violet-600 border-2 border-white checked:border-zinc-300 ring-2 ring-zinc-300 checked:ring-violet-500 rounded"
+              />
             </th>
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
@@ -2137,7 +2230,10 @@
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
             >
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                class="appearance-none h-4 w-4 bg-white checked:bg-violet-600 border-2 border-white checked:border-zinc-300 ring-2 ring-zinc-300 checked:ring-violet-500 rounded"
+              />
             </th>
             <th
               class="font-normal py-3 border-r border-violet-200 dark:border-zinc-700"
