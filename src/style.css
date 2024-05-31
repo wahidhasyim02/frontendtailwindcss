@@ -588,6 +588,53 @@ video {
   }
 }
 
+input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #fff;
+  margin-left: 50%;
+  translate: -50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 9px;
+  height: 8px;
+  -webkit-clip-path: polygon(
+      22% 33%,
+      3% 57%,
+      36% 89%,
+      70% 50%,
+      100% 20%,
+      80% 0%,
+      36% 50%
+    );
+          clip-path: polygon(
+      22% 33%,
+      3% 57%,
+      36% 89%,
+      70% 50%,
+      100% 20%,
+      80% 0%,
+      36% 50%
+    );
+  transform: scale(0);
+  background-color: #f5f3ff;
+  align-items: center;
+  display: flex;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
 .fixed {
   position: fixed;
 }

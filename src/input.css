@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    accent-color: theme("colors.white");
+    margin-left: 50%;
+    translate: -50%;
+  }
+
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="checkbox"]::before {
+    content: "";
+    width: 9px;
+    height: 8px;
+    clip-path: polygon(
+      22% 33%,
+      3% 57%,
+      36% 89%,
+      70% 50%,
+      100% 20%,
+      80% 0%,
+      36% 50%
+    );
+    transform: scale(0);
+    background-color: theme("colors.[violet][50]");
+    align-items: center;
+    display: flex;
+  }
+
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+}
