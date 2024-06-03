@@ -72,10 +72,10 @@
           <div class="flex items-center">
             <div
               id="account-setting"
-              class="flex items-center font-semibold hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer"
+              class="flex group items-center font-semibold hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer"
             >
               <div
-                class="flex bg-cover bg-zinc-200 h-6 w-6 cursor-pointer hover:outline hover:outline-4 hover:outline-violet-800/50 dark:hover:outline-violet-600/50 rounded-full"
+                class="flex bg-cover bg-zinc-200 h-6 w-6 cursor-pointer group-hover:outline group-hover:outline-4 group-hover:outline-violet-800/50 dark:hover:outline-violet-600/50 rounded-full"
               >
                 <img
                   id="profile-img-header"
@@ -515,8 +515,7 @@
             <label for=" ">Profile Picture</label
             ><img  id="profile-img-change" src="./public/img/avatar.png" class="w-24" alt="" />
             <div>
-             
-             <label for="">
+              <label for="">
               <input type="file" id="choose-file" class="appearance-none"  >
              </label>
             </div>
@@ -2321,17 +2320,7 @@
     </section>
 
     <script src="./src/script.js"></script>
-    dy>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Cek apakah ada data login di local storage
-            const isLoggedIn = localStorage.getItem('isLoggedIn');
-
-            // Jika pengguna sudah login, arahkan ke halaman dashboard atau halaman lainnya
-            if (!isLoggedIn) {
-                window.location.href = 'login.html'; // Ubah sesuai halaman yang sesuai
-            };
-        });
-    </script>
+    
+   
   </body>
 </html>

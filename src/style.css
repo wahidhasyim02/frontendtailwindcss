@@ -629,10 +629,6 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
-input[type="file"] {
-  display: none;
-}
-
 .invisible {
   visibility: hidden !important;
 }
@@ -1047,6 +1043,11 @@ input[type="file"] {
   border-color: rgb(161 161 170 / var(--tw-border-opacity)) !important;
 }
 
+.border-red-600 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity)) !important;
+}
+
 .border-opacity-50 {
   --tw-border-opacity: 0.5 !important;
 }
@@ -1372,6 +1373,18 @@ input[type="file"] {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color) !important;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.group:hover .group-hover\:outline {
+  outline-style: solid !important;
+}
+
+.group:hover .group-hover\:outline-4 {
+  outline-width: 4px !important;
+}
+
+.group:hover .group-hover\:outline-violet-800\/50 {
+  outline-color: rgb(91 33 182 / 0.5) !important;
 }
 
 .peer:invalid ~ .peer-invalid\:visible {

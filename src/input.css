@@ -38,9 +38,3 @@
     transform: scale(1);
   }
 }
-
-@layer components {
-  input[type="file"] {
-    display: none;
-  }
-}
