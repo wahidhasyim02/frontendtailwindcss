@@ -364,9 +364,17 @@ document.getElementById("logout").addEventListener("click", function () {
   document.getElementById("profile-img-header").src = defaultAvatar;
   document.getElementById("profile-img-change").src = defaultAvatar;
   document.getElementById("profile-img-setting").src = defaultAvatar;
+  window.location.href = "login.html";
+  // Setelah logout
+  localStorage.removeItem("isLoggedIn");
 });
 
 // Redirect to login page
 document.getElementById("login").addEventListener("click", function () {
   window.location.href = "login.html";
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Cek apakah ada data login di local storage
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
 });

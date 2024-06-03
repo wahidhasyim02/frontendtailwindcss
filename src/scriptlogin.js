@@ -21,6 +21,8 @@ document.getElementById("btn-login").addEventListener("click", function () {
 
   if (isValid) {
     window.location.href = "index.html";
+    // Setelah login berhasil
+    localStorage.setItem("isLoggedIn", true);
   } else {
     if (loginUsername !== storedUsername && loginPassword !== storedPassword) {
       const popupWrong = document.getElementById("popup-wrong");

@@ -2321,5 +2321,17 @@
     </section>
 
     <script src="./src/script.js"></script>
+    dy>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Cek apakah ada data login di local storage
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+            // Jika pengguna sudah login, arahkan ke halaman dashboard atau halaman lainnya
+            if (!isLoggedIn) {
+                window.location.href = 'login.html'; // Ubah sesuai halaman yang sesuai
+            };
+        });
+    </script>
   </body>
 </html>
