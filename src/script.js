@@ -71,6 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var popupChangepassword = document.getElementById("popup-change-password");
   var changePassword = document.getElementById("change-password");
   var closeChangepassword = document.getElementById("close-change-password");
+  var cancelChangeprofile = document.getElementById("btn-cancel-profile");
+  var cancelChangepassword = document.getElementById("btn-cancel-password");
 
   // Event listener untuk menampilkan/menyembunyikan popup change profile saat tombol menu diklik
   changeProfile.addEventListener("click", function (event) {
@@ -85,6 +87,13 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     popupChangeprofile.classList.toggle("hidden");
   });
+
+  // Event listener untuk menambahkan kelas hidden ke popup change profile saat klik di tombol cancel
+  cancelChangeprofile.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupChangeprofile.classList.toggle("hidden");
+  });
+
   // Event listener untuk menampilkan/menyembunyikan popup change password saat tombol menu diklik
   changePassword.addEventListener("click", function (event) {
     event.preventDefault();
@@ -98,51 +107,54 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     popupChangepassword.classList.toggle("hidden");
   });
+
+  // Event listener untuk menambahkan kelas hidden ke popup change password saat klik di tombol cabcel
+  cancelChangepassword.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupChangepassword.classList.toggle("hidden");
+  });
 });
 
-// Script untuk pengaturan darkmode
+// Dark Mode
 document.addEventListener("DOMContentLoaded", function () {
   var toggleDarkMode = document.getElementById("toggle-darkmode");
   var textDarkMode = document.getElementById("text-darkmode");
   var iconDarkMode = document.getElementById("icon-darkmode");
   var body = document.querySelector("body"); // Menyimpan referensi ke elemen <body>
 
-  // Memeriksa apakah tema gelap disimpan di local storage
-  var isDarkMode = localStorage.getItem("darkMode") === "true";
-
-  // Mengatur tema sesuai dengan yang tersimpan di local storage
-  if (isDarkMode) {
-    document.documentElement.classList.add("dark");
-    textDarkMode.textContent = "Light Mode";
-    iconDarkMode.textContent = "light_mode";
-    body.style.backgroundImage = "url('./public/img/bg_dark.jpg')";
-  } else {
-    document.documentElement.classList.remove("dark");
-    textDarkMode.textContent = "Dark Mode";
-    iconDarkMode.textContent = "dark_mode";
-    body.style.backgroundImage = "url('./public/img/bg_light.jpg')";
-  }
-
-  toggleDarkMode.addEventListener("click", function () {
-    // Toggle class 'dark' pada elemen <html>
-    document.documentElement.classList.toggle("dark");
-
-    // Toggle teks pada elemen dengan id 'text-darkmode'
-    if (document.documentElement.classList.contains("dark")) {
+  // Fungsi untuk mengatur tema
+  function setTheme(isDarkMode) {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
       textDarkMode.textContent = "Light Mode";
       iconDarkMode.textContent = "light_mode";
-      // Memperbarui background-image untuk mode gelap
-      body.style.backgroundImage = "url('./public/img/bg_dark.jpg')";
-      // Menyimpan tema yang dipilih di local storage
-      localStorage.setItem("darkMode", "true");
     } else {
+      document.documentElement.classList.remove("dark");
       textDarkMode.textContent = "Dark Mode";
       iconDarkMode.textContent = "dark_mode";
-      // Memperbarui background-image untuk mode terang
-      body.style.backgroundImage = "url('./public/img/bg_light.jpg')";
-      // Menyimpan tema yang dipilih di local storage
-      localStorage.setItem("darkMode", "false");
     }
+  }
+
+  // Mendapatkan nama halaman saat ini
+  var currentPage = window.location.pathname.split("/").pop();
+
+  // Memeriksa nama halaman dan mengatur tema sesuai kebutuhan
+  if (currentPage === "login.html" || currentPage === "signup.html") {
+    // Selalu menggunakan mode terang untuk halaman login dan signup
+    setTheme(false);
+    // Menyimpan preferensi mode terang di local storage untuk halaman login dan signup
+    localStorage.setItem("darkMode", "false");
+  } else if (currentPage === "index.html") {
+    // Mengatur tema sesuai dengan yang tersimpan di local storage untuk halaman index
+    var isDarkMode = localStorage.getItem("darkMode") === "true";
+    setTheme(isDarkMode);
+  }
+
+  // Menambahkan event listener untuk toggle button
+  toggleDarkMode.addEventListener("click", function () {
+    var isDark = document.documentElement.classList.toggle("dark");
+    setTheme(isDark);
+    localStorage.setItem("darkMode", isDark ? "true" : "false");
   });
 });
 
@@ -298,3 +310,63 @@ document.getElementById("btn_home").addEventListener("click", () => {
 window.onload = () => {
   applyState(loadState());
 };
+
+// Index Logic
+window.addEventListener("load", function () {
+  const accountNameElement = document.getElementById("account-name");
+  if (accountNameElement) {
+    const username = localStorage.getItem("username");
+    if (username) {
+      accountNameElement.innerText = username;
+    }
+  }
+
+  const avatar = localStorage.getItem("avatar");
+  if (avatar) {
+    document.getElementById("profile-img-header").src = avatar;
+    document.getElementById("profile-img-change").src = avatar;
+    document.getElementById("profile-img-setting").src = avatar;
+  }
+});
+
+// Save profile changes
+document
+  .getElementById("btn-save-profile")
+  .addEventListener("click", function () {
+    const newUsername = document.getElementById("change-username").value;
+    const fileInput = document.getElementById("choose-file");
+    const file = fileInput.files[0];
+
+    if (newUsername) {
+      localStorage.setItem("username", newUsername);
+      document.getElementById("account-name").innerText = newUsername;
+    }
+
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const dataURL = e.target.result;
+        localStorage.setItem("avatar", dataURL);
+        document.getElementById("profile-img-header").src = dataURL;
+        document.getElementById("profile-img-change").src = dataURL;
+        document.getElementById("profile-img-setting").src = dataURL;
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+
+// Logout functionality
+document.getElementById("logout").addEventListener("click", function () {
+  document.getElementById("greeting").classList.add("hidden");
+  document.getElementById("logout").classList.add("hidden");
+  document.getElementById("login").classList.remove("hidden");
+  const defaultAvatar = "./public/img/avatar.png";
+  document.getElementById("profile-img-header").src = defaultAvatar;
+  document.getElementById("profile-img-change").src = defaultAvatar;
+  document.getElementById("profile-img-setting").src = defaultAvatar;
+});
+
+// Redirect to login page
+document.getElementById("login").addEventListener("click", function () {
+  window.location.href = "login.html";
+});

@@ -1,14 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html"],
+  content: ["./src/**/*.{html,js}", "./index.html", "./login.html"],
+  important: true,
   theme: {
     extend: {
       fontFamily: {
         inter: "Inter",
       },
       backgroundImage: {
-        hero: "url('/public/img/bg_light.jpg')",
+        "hero-light": "url('/public/img/bg_light.jpg')",
+        "hero-dark": "url('/public/img/bg_dark.jpg')",
       },
+
       spacing: {
         "8%": "8%",
         22.5: "5.625rem",
