@@ -21,5 +21,7 @@ document.getElementById("btn-signup").addEventListener("click", function () {
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
     window.location.href = "index.html";
+    // Setelah signup berhasil
+    localStorage.setItem("isLoggedIn", true);
   }
 });
