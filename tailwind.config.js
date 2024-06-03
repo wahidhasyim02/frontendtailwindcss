@@ -8,8 +8,8 @@ module.exports = {
         inter: "Inter",
       },
       backgroundImage: {
-        "hero-light": "url('./public/img/bg_light.jpg')",
-        "hero-dark": "url('./public/img/bg_dark.jpg')",
+        "hero-light": "url('/public/img/bg_light.jpg')",
+        "hero-dark": "url('/public/img/bg_dark.jpg')",
       },
 
       spacing: {

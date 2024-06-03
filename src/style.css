@@ -1091,7 +1091,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .bg-hero-light {
-  background-image: url('./public/img/bg_light.jpg') !important;
+  background-image: url('/public/img/bg_light.jpg') !important;
 }
 
 .bg-cover {
@@ -1425,7 +1425,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .dark\:bg-hero-dark:where(.dark, .dark *) {
-  background-image: url('./public/img/bg_dark.jpg') !important;
+  background-image: url('/public/img/bg_dark.jpg') !important;
 }
 
 .dark\:text-zinc-100:where(.dark, .dark *) {
