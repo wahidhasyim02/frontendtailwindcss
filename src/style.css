@@ -1043,11 +1043,6 @@ input[type="checkbox"]:checked::before {
   border-color: rgb(161 161 170 / var(--tw-border-opacity)) !important;
 }
 
-.border-red-600 {
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity)) !important;
-}
-
 .border-opacity-50 {
   --tw-border-opacity: 0.5 !important;
 }
@@ -1096,7 +1091,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .bg-hero-light {
-  background-image: url('/public/img/bg_light.jpg') !important;
+  background-image: url('./public/img/bg_light.jpg') !important;
 }
 
 .bg-cover {
@@ -1319,18 +1314,6 @@ input[type="checkbox"]:checked::before {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.hover\:outline:hover {
-  outline-style: solid !important;
-}
-
-.hover\:outline-4:hover {
-  outline-width: 4px !important;
-}
-
-.hover\:outline-violet-800\/50:hover {
-  outline-color: rgb(91 33 182 / 0.5) !important;
-}
-
 .focus\:border:focus {
   border-width: 1px !important;
 }
@@ -1442,7 +1425,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .dark\:bg-hero-dark:where(.dark, .dark *) {
-  background-image: url('/public/img/bg_dark.jpg') !important;
+  background-image: url('./public/img/bg_dark.jpg') !important;
 }
 
 .dark\:text-zinc-100:where(.dark, .dark *) {
