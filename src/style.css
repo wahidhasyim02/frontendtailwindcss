@@ -1090,12 +1090,12 @@ input[type="checkbox"]:checked::before {
   --tw-bg-opacity: 0.9 !important;
 }
 
-.bg-hero-light {
-  background-image: url('/public/img/bg_light.jpg') !important;
-}
-
 .bg-hero-dark {
   background-image: url('/public/img/bg_dark.jpg') !important;
+}
+
+.bg-hero-light {
+  background-image: url('/public/img/bg_light.jpg') !important;
 }
 
 .bg-cover {
