@@ -138,12 +138,10 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.classList.add("dark");
       textDarkMode.textContent = "Light Mode";
       iconDarkMode.textContent = "light_mode";
-      body.classList.add("dark:bg-hero-dark");
     } else {
       document.documentElement.classList.remove("dark");
       textDarkMode.textContent = "Dark Mode";
       iconDarkMode.textContent = "dark_mode";
-      body.classList.add("bg-hero-light");
     }
   }
 
