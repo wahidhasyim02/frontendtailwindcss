@@ -138,14 +138,14 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.classList.add("dark");
       textDarkMode.textContent = "Light Mode";
       iconDarkMode.textContent = "light_mode";
-      body.classList.add("bg-hero-dark");
-      body.classList.remove("bg-hero-light");
+      body.style.add("background-image: url('/public/img/bg_dark.jpg')");
+      body.style.remove("background-image: url('/public/img/bg_light.jpg')");
     } else {
       document.documentElement.classList.remove("dark");
       textDarkMode.textContent = "Dark Mode";
       iconDarkMode.textContent = "dark_mode";
-      body.classList.remove("bg-hero-dark");
-      body.classList.add("bg-hero-light");
+     body.style.add("background-image: url('/public/img/bg_light.jpg')");
+      body.style.remove("background-image: url('/public/img/bg_dark.jpg')");
     }
   }
 
