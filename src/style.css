@@ -1090,7 +1090,7 @@ input[type="checkbox"]:checked::before {
   --tw-bg-opacity: 0.9 !important;
 }
 
-.bg-\[url\(\'https\:\/\/wahidhasyim02\.github\.io\/tailwindcss-uji-coba-website\/public\/img\/bg_light\.jpg\'\)\] {
+.bg-hero-light {
   background-image: url('https://wahidhasyim02.github.io/tailwindcss-uji-coba-website/public/img/bg_light.jpg') !important;
 }
 
@@ -1424,7 +1424,7 @@ input[type="checkbox"]:checked::before {
   --tw-bg-opacity: 0.95 !important;
 }
 
-.dark\:bg-\[url\(\'https\:\/\/wahidhasyim02\.github\.io\/tailwindcss-uji-coba-website\/public\/img\/bg_dark\.jpg\'\)\]:where(.dark, .dark *) {
+.dark\:bg-hero-dark:where(.dark, .dark *) {
   background-image: url('https://wahidhasyim02.github.io/tailwindcss-uji-coba-website/public/img/bg_dark.jpg') !important;
 }
 
