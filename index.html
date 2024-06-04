@@ -92,7 +92,7 @@
             <!--Ini adalah menu setting-->
             <div
               id="popup-setting"
-              class="flex-col gap-2 items-center hidden  absolute bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-semibold text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl right-16 top-10 p-4"
+              class="flex-col gap-2 items-center hidden  absolute bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-semibold text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl right-16 top-10 p-4"
             >
               <div class="flex flex-col items-center gap-2 bg-cover">
                 <div
@@ -490,7 +490,7 @@
       class="hidden left-1/2 -translate-x-1/2 w-auto top-6 py-10 fixed "
     >
       <div
-        class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col "
+        class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col "
       >
         <div
           id="close-change-profile"
@@ -506,7 +506,7 @@
             <label for="change-username" class="flex-auto">Username</label
             ><input id="change-username"
               type="text"
-              placeholder="Usernama"
+              placeholder="Username"
               class="flex-1 ml-16 px-3 py-1 rounded-md border border-zinc-400 bg-white dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30"
             />
           </div>
@@ -523,13 +523,13 @@
           <div class="flex gap-2 mt-8">
             <button
               id="btn-save-profile"
-              class="flex gap-2 text-sm items-center content-center text-white bg-violet-700 hover:bg-violet-800 hover:dark:bg-violet-600 rounded-full border-2 border-zinc-300/20 dark:border-zinc-300/20 px-6 py-2"
+              class="flex gap-2 text-base items-center content-center text-white bg-violet-700 hover:bg-violet-800 hover:dark:bg-violet-600 rounded-full border-2 border-zinc-300/20 dark:border-zinc-300/20 px-6 py-2"
             >
               <span class="material-symbols-outlined">save</span>Save Changes
             </button>
             <button
               id="btn-cancel-profile"
-              class="flex gap-2 text-sm items-center content-center text-zinc-700 dark:text-zinc-300 hover:text-violet-600 rounded-full px-6 py-2"
+              class="flex gap-2 text-base items-center content-center text-zinc-700 dark:text-zinc-300 hover:text-violet-600 rounded-full px-6 py-2"
             >
               Cancel
             </button>
@@ -545,7 +545,7 @@
       class="hidden left-1/2 -translate-x-1/2 w-auto top-6 py-10 fixed "
     >
       <div
-        class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-sm font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col "
+        class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col "
       >
         <div
           id="close-change-password"
@@ -590,7 +590,7 @@
           <div class="flex gap-2 mt-8 ">
             <button
               id="btn-save-password"
-              class="flex gap-2 text-sm items-center content-center text-white bg-violet-700 hover:bg-violet-800 hover:dark:bg-violet-600 rounded-full border-2 border-zinc-300/20 dark:border-zinc-300/20 px-6 py-2"
+              class="flex gap-2 text-base items-center content-center text-white bg-violet-700 hover:bg-violet-800 hover:dark:bg-violet-600 rounded-full border-2 border-zinc-300/20 dark:border-zinc-300/20 px-6 py-2"
             >
               <span class="material-symbols-outlined">save</span>Save Changes
             </button>
@@ -2318,6 +2318,37 @@
         </tbody>
       </table>
     </section>
+
+
+
+  <!--Ini adalah Popup Alert-->
+  <section
+  id="popup-alert"
+  class="hidden left-1/2 -translate-x-1/2 w-auto top-6 fixed border-l-4 border-green-600 rounded-3xl z-1200"
+>
+  <div
+    class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col"
+  >
+    <div
+      id="close-popup-alert"
+      class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-white dark:bg-zinc-700 hover:bg-zinc-100 hover:dark:bg-zinc-600 hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer"
+    >
+      <span class="material-symbols-outlined content-center text-l m-auto">
+        close
+      </span>
+    </div>
+    <div class="flex flex-row gap-2 text-green-600">
+      <span id="icon-alert" class="material-symbols-outlined">
+        new_releases
+      </span>
+      <div class="flex flex-col space-y-2">
+        <span id="name-alert" class="font-semibold">Success</span>
+        <p id="text-alert">Your data changes have been successfully saved.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <script src="./src/script.js"></script>
     

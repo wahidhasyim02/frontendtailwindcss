@@ -822,10 +822,6 @@ input[type="checkbox"]:checked::before {
   width: 6rem !important;
 }
 
-.w-30\% {
-  width: 30% !important;
-}
-
 .w-4 {
   width: 1rem !important;
 }
@@ -891,6 +887,10 @@ input[type="checkbox"]:checked::before {
   -webkit-appearance: none !important;
      -moz-appearance: none !important;
           appearance: none !important;
+}
+
+.flex-row {
+  flex-direction: row !important;
 }
 
 .flex-col {
@@ -1007,6 +1007,10 @@ input[type="checkbox"]:checked::before {
   border-bottom-width: 1px !important;
 }
 
+.border-l-4 {
+  border-left-width: 4px !important;
+}
+
 .border-r {
   border-right-width: 1px !important;
 }
@@ -1025,6 +1029,11 @@ input[type="checkbox"]:checked::before {
   border-color: rgb(139 92 246 / var(--tw-border-opacity)) !important;
 }
 
+.border-violet-700 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(109 40 217 / var(--tw-border-opacity)) !important;
+}
+
 .border-white {
   --tw-border-opacity: 1 !important;
   border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
@@ -1041,6 +1050,16 @@ input[type="checkbox"]:checked::before {
 .border-zinc-400 {
   --tw-border-opacity: 1 !important;
   border-color: rgb(161 161 170 / var(--tw-border-opacity)) !important;
+}
+
+.border-green-700 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(21 128 61 / var(--tw-border-opacity)) !important;
+}
+
+.border-green-600 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(22 163 74 / var(--tw-border-opacity)) !important;
 }
 
 .border-opacity-50 {
@@ -1171,11 +1190,6 @@ input[type="checkbox"]:checked::before {
   line-height: 1.5rem !important;
 }
 
-.text-sm {
-  font-size: 0.875rem !important;
-  line-height: 1.25rem !important;
-}
-
 .text-xl {
   font-size: 1.25rem !important;
   line-height: 1.75rem !important;
@@ -1221,6 +1235,16 @@ input[type="checkbox"]:checked::before {
 .text-zinc-700 {
   --tw-text-opacity: 1 !important;
   color: rgb(63 63 70 / var(--tw-text-opacity)) !important;
+}
+
+.text-violet-700 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(109 40 217 / var(--tw-text-opacity)) !important;
+}
+
+.text-green-700 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(21 128 61 / var(--tw-text-opacity)) !important;
 }
 
 .shadow {

@@ -240,12 +240,12 @@ const initialState = {
 };
 
 function loadState() {
-  const state = JSON.parse(localStorage.getItem("appState")) || initialState;
+  const state = JSON.parse(sessionStorage.getItem("appState")) || initialState;
   return state;
 }
 
 function saveState(state) {
-  localStorage.setItem("appState", JSON.stringify(state));
+  sessionStorage.setItem("appState", JSON.stringify(state));
 }
 
 function applyState(state) {
@@ -349,7 +349,12 @@ document
 
     if (newUsername) {
       localStorage.setItem("username", newUsername);
+      document.getElementById("popup-change-profile").classList.add("hidden");
       document.getElementById("account-name").innerText = newUsername;
+      document.getElementById("popup-alert").classList.remove("hidden");
+      setTimeout(() => {
+        document.getElementById("popup-alert").classList.add("hidden");
+      }, 5000);
     }
 
     if (file) {
@@ -357,12 +362,19 @@ document
       reader.onload = function (e) {
         const dataURL = e.target.result;
         localStorage.setItem("avatar", dataURL);
+        document.getElementById("popup-change-profile").classList.add("hidden");
         document.getElementById("profile-img-header").src = dataURL;
         document.getElementById("profile-img-change").src = dataURL;
         document.getElementById("profile-img-setting").src = dataURL;
       };
       reader.readAsDataURL(file);
     }
+  });
+
+document
+  .getElementById("close-popup-alert")
+  .addEventListener("click", function () {
+    document.getElementById("popup-alert").classList.add("hidden");
   });
 
 // Logout functionality
@@ -377,6 +389,7 @@ document.getElementById("logout").addEventListener("click", function () {
   window.location.href = "login.html";
   // Setelah logout
   localStorage.removeItem("isLoggedIn");
+  sessionStorage.removeItem("appState");
 });
 
 // Redirect to login page

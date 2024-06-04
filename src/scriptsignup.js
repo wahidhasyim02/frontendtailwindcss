@@ -31,11 +31,22 @@ document.getElementById("btn-signup").addEventListener("click", function () {
     document.getElementById("not-fill-password").classList.add("invisible");
   }
 
-  // Jika valid, simpan data ke local storage dan arahkan ke index.html
+  // Jika valid, simpan data ke local storage dan arahkan ke login.html
   if (isValid) {
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
-    localStorage.setItem("isLoggedIn", true);
-    window.location.href = "index.html";
+    document.getElementById("popup-alert").classList.remove("hidden");
+    setTimeout(() => {
+      document.getElementById("popup-alert").classList.add("hidden");
+    }, 5000);
+    setTimeout(() => {
+      window.location.href = "login.html";
+    }, 1000);
   }
 });
+
+document
+  .getElementById("close-popup-alert")
+  .addEventListener("click", function () {
+    document.getElementById("popup-alert").classList.add("hidden");
+  });
