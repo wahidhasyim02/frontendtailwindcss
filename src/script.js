@@ -1,3 +1,29 @@
+// script.js
+document.addEventListener("DOMContentLoaded", function () {
+  // Periksa apakah ini adalah kunjungan pertama setelah browser dibuka
+  if (!localStorage.getItem("visited")) {
+    // Jika belum pernah dikunjungi, tambahkan class "hidden" pada "header"
+    // dan remove class "hidden" pada "header-skeleton"
+    document.getElementById("header").classList.add("hidden");
+    document.getElementById("header-skeleton").classList.remove("hidden");
+
+    // Set timer untuk 5 detik
+    setTimeout(() => {
+      // Setelah 5 detik, hapus class "hidden" dari "header"
+      // dan tambahkan class "hidden" ke "header-skeleton"
+      document.getElementById("header").classList.remove("hidden");
+      document.getElementById("header-skeleton").classList.add("hidden");
+    }, 5000);
+
+    // Tandai bahwa situs telah dikunjungi
+    localStorage.setItem("visited", "true");
+  } else {
+    // Jika sudah pernah dikunjungi, pastikan header tampil dan skeleton disembunyikan
+    document.getElementById("header").classList.remove("hidden");
+    document.getElementById("header-skeleton").classList.add("hidden");
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   // Cek apakah ada data login di local storage
   const isLoggedIn = localStorage.getItem("isLoggedIn");
@@ -347,13 +373,26 @@ document
     const fileInput = document.getElementById("choose-file");
     const file = fileInput.files[0];
 
+    document.getElementById("icon-save").classList.add("hidden");
+    document.getElementById("icon-spin").classList.remove("hidden");
+    setTimeout(() => {
+      document.getElementById("icon-spin").classList.add("hidden");
+      document.getElementById("icon-save").classList.remove("hidden");
+    }, 5000);
+    setTimeout(() => {
+      document.getElementById("popup-change-profile").classList.add("hidden");
+    }, 5000);
+    setTimeout(() => {
+      document.getElementById("popup-alert").classList.remove("hidden");
+    }, 5000);
+    setTimeout(() => {
+      document.getElementById("popup-alert").classList.add("hidden");
+    }, 10000);
+
     if (newUsername) {
       localStorage.setItem("username", newUsername);
-      document.getElementById("popup-change-profile").classList.add("hidden");
-      document.getElementById("account-name").innerText = newUsername;
-      document.getElementById("popup-alert").classList.remove("hidden");
       setTimeout(() => {
-        document.getElementById("popup-alert").classList.add("hidden");
+        document.getElementById("account-name").innerText = newUsername;
       }, 5000);
     }
 
@@ -362,10 +401,11 @@ document
       reader.onload = function (e) {
         const dataURL = e.target.result;
         localStorage.setItem("avatar", dataURL);
-        document.getElementById("popup-change-profile").classList.add("hidden");
-        document.getElementById("profile-img-header").src = dataURL;
-        document.getElementById("profile-img-change").src = dataURL;
-        document.getElementById("profile-img-setting").src = dataURL;
+        setTimeout(() => {
+          document.getElementById("profile-img-header").src = dataURL;
+          document.getElementById("profile-img-change").src = dataURL;
+          document.getElementById("profile-img-setting").src = dataURL;
+        }, 5000);
       };
       reader.readAsDataURL(file);
     }
@@ -400,4 +440,22 @@ document.getElementById("login").addEventListener("click", function () {
 document.addEventListener("DOMContentLoaded", function () {
   // Cek apakah ada data login di local storage
   const isLoggedIn = localStorage.getItem("isLoggedIn");
+});
+
+// Script Search
+document.addEventListener("DOMContentLoaded", (event) => {
+  const searchInput = document.getElementById("search-menu");
+  const listItems = document.querySelectorAll("#list-menu a");
+
+  searchInput.addEventListener("input", function () {
+    const filter = searchInput.value.toLowerCase();
+
+    listItems.forEach(function (item) {
+      if (item.textContent.toLowerCase().includes(filter)) {
+        item.classList.remove("hidden");
+      } else {
+        item.classList.add("hidden");
+      }
+    });
+  });
 });

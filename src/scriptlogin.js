@@ -1,3 +1,30 @@
+/*
+document.addEventListener("DOMContentLoaded", function () {
+  // Periksa apakah ini adalah kunjungan pertama setelah browser dibuka
+  if (!localStorage.getItem("visited")) {
+    // Jika belum pernah dikunjungi, tambahkan class "hidden" pada "header"
+    // dan remove class "hidden" pada "header-skeleton"
+    document.getElementById("header").classList.add("hidden");
+    document.getElementById("header-skeleton").classList.remove("hidden");
+
+    // Set timer untuk 5 detik
+    setTimeout(() => {
+      // Setelah 5 detik, hapus class "hidden" dari "header"
+      // dan tambahkan class "hidden" ke "header-skeleton"
+      document.getElementById("header").classList.remove("hidden");
+      document.getElementById("header-skeleton").classList.add("hidden");
+    }, 5000);
+
+    // Tandai bahwa situs telah dikunjungi
+    localStorage.setItem("visited", "true");
+  } else {
+    // Jika sudah pernah dikunjungi, pastikan header tampil dan skeleton disembunyikan
+    document.getElementById("header").classList.remove("hidden");
+    document.getElementById("header-skeleton").classList.add("hidden");
+  }
+});
+*/
+
 document.getElementById("btn-login").addEventListener("click", function () {
   const loginUsername = document.getElementById("login-username").value;
   const loginPassword = document.getElementById("login-password").value;
