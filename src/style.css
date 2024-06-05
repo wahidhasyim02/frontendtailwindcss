@@ -657,6 +657,10 @@ input[type="checkbox"]:checked::before {
   right: 3.5rem !important;
 }
 
+.right-15 {
+  right: 60px !important;
+}
+
 .right-2 {
   right: 0.5rem !important;
 }
@@ -1119,14 +1123,14 @@ input[type="checkbox"]:checked::before {
   --tw-border-opacity: 0.5 !important;
 }
 
-.bg-sky-400 {
+.bg-blue-400 {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-sky-500 {
+.bg-blue-600 {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-violet-100 {
@@ -1505,6 +1509,10 @@ input[type="checkbox"]:checked::before {
 .dark\:bg-zinc-700:where(.dark, .dark *) {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity)) !important;
+}
+
+.dark\:bg-zinc-700\/70:where(.dark, .dark *) {
+  background-color: rgb(63 63 70 / 0.7) !important;
 }
 
 .dark\:bg-zinc-800:where(.dark, .dark *) {

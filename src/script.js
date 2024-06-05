@@ -430,6 +430,8 @@ document.getElementById("logout").addEventListener("click", function () {
   // Setelah logout
   localStorage.removeItem("isLoggedIn");
   sessionStorage.removeItem("appState");
+  // Menghapus visited
+  localStorage.removeItem("visited");
 });
 
 // Redirect to login page
