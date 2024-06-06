@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
     popupChangepassword.classList.toggle("hidden");
   });
 });
-
+/*
 // Dark Mode
 document.addEventListener("DOMContentLoaded", function () {
   var toggleDarkMode = document.getElementById("toggle-darkmode");
@@ -191,6 +191,17 @@ document.addEventListener("DOMContentLoaded", function () {
     setTheme(isDark);
     localStorage.setItem("darkMode", isDark ? "true" : "false");
   });
+});*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  var toggleDarkMode = document.getElementById("toggle-darkmode");
+  var textDarkMode = document.getElementById("text-darkmode");
+  var iconDarkMode = document.getElementById("icon-darkmode");
+// Menambahkan event listener untuk toggle button
+toggleDarkMode.addEventListener("click", function () {
+  var isDark = document.documentElement.classList.toggle("dark");
+  setTheme(isDark);
+  localStorage.setItem("darkMode", isDark ? "true" : "false");
 });
 
 // Script untuk update waktu
