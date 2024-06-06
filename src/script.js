@@ -156,7 +156,6 @@ document.addEventListener("DOMContentLoaded", function () {
   var toggleDarkMode = document.getElementById("toggle-darkmode");
   var textDarkMode = document.getElementById("text-darkmode");
   var iconDarkMode = document.getElementById("icon-darkmode");
-  var body = document.querySelector("body"); // Menyimpan referensi ke elemen <body>
 
   // Fungsi untuk mengatur tema
   function setTheme(isDarkMode) {
@@ -192,8 +191,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setTheme(isDark);
     localStorage.setItem("darkMode", isDark ? "true" : "false");
   });
-  console.log("Current page:", currentPage);
-  console.log("Dark mode in localStorage:", localStorage.getItem("darkMode"));
 });
 
 // Script untuk update waktu
