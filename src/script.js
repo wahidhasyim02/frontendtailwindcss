@@ -192,6 +192,8 @@ document.addEventListener("DOMContentLoaded", function () {
     setTheme(isDark);
     localStorage.setItem("darkMode", isDark ? "true" : "false");
   });
+  console.log("Current page:", currentPage);
+  console.log("Dark mode in localStorage:", localStorage.getItem("darkMode"));
 });
 
 // Script untuk update waktu
