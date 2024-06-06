@@ -8,7 +8,6 @@
   <link rel="icon" href="./public/img/favicon.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +18,7 @@
 </head>
 
 <body
-  class="w-full h-full min-w-full m-0  bg-no-repeat font-inter font-base bg-cover bg-zinc-100 dark:bg-zinc-900 text-zinc-500 bg-hero-light dark:bg-hero-dark">
+  class="w-full h-full min-w-full m-0  bg-no-repeat font-inter font-base bg-cover bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 bg-hero-light dark:bg-hero-dark">
 
   <header id="header" class="w-full fixed top-0">
     <div
@@ -27,18 +26,18 @@
       <div class="flex gap-3">
         <div onclick="window.location.href='#home'" id="tombol-menu"
           class="flex items-center hover:text-violet-800 hover:dark:text-violet-600 gap-3 cursor-pointer">
-          <span class="material-symbols-outlined content-center text-xl">
+          <span class="material-symbols-outlined content-center text-3xl">
             apps
           </span>
           <span id="text-menu">Menu</span>
         </div>
         <div id="icon-apps" class="items-center hidden">
           <div id="app-billing-cash" class="flex items-center gap-2">
-            <img src="./public/img/billing_cash.png" alt="" class="inline w-6 h-6" />
+            <img src="./public/img/billing_cash.png" alt="" class="inline w-8 h-8" />
             <span id="apps-name">Billing Cash</span>
           </div>
           <div id="app-billing-charge" class="flex items-center gap-2">
-            <img src="./public/img/billing_charge.png" alt="" class="inline w-6 h-6" />
+            <img src="./public/img/billing_charge.png" alt="" class="inline w-8 h-8" />
             <span id="apps-name">Billing Charge</span>
           </div>
         </div>
@@ -49,21 +48,21 @@
           <span class="w-22.5 text-center font-semibold" id="clock"></span>
           <span id="timezone"></span>
         </div>
-        <div class="flex  gap-2">
-          <div class="flex items-center">
+        <div class="flex  gap-2  justify-center items-center">
+          <div class="flex items-center " >
             <div id="account-setting"
-              class="flex group  font-semibold  bg-zinc-200 dark:bg-zinc-700/70 rounded-full justify-center items-center hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer">
+              class="flex group px-1 py-1 gap-1  font-semibold  bg-zinc-200 dark:bg-zinc-700/70 rounded-full justify-center items-center content-center hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer">
               <div
-                class="flex bg-cover  bg-zinc-200 h-6 w-6 cursor-pointer group-hover:outline group-hover:outline-4 group-hover:outline-violet-800/50 dark:hover:outline-violet-600/50 rounded-full">
-                <img id="profile-img-header" src="./public/img/avatar.png" class="rounded-full w-6" alt="" />
+                class="flex bg-cover   bg-zinc-200 h-8 w-8 cursor-pointer group-hover:outline group-hover:outline-4 group-hover:outline-violet-800/50 dark:hover:outline-violet-600/50 rounded-full">
+                <img id="profile-img-header" src="./public/img/avatar.png" class="rounded-full w-8 h-8 items-center justify-center" alt="" />
               </div>
-              <span class="material-symbols-outlined content-center text-l ">
+              <span class="material-symbols-outlined content-center text-3xl ">
                 expand_more
               </span>
             </div>
             <!--Ini adalah menu setting-->
             <div id="popup-setting"
-              class="flex-col gap-2 items-center hidden  absolute bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-semibold text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl right-20 top-10 p-4">
+              class="flex-col gap-2 items-center hidden  absolute bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-semibold text-zinc-600 dark:text-zinc-400 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl right-24 top-14 p-4">
               <div class="flex flex-col items-center gap-2 bg-cover">
                 <div for="edit-profile-img" class="flex bg-cover bg-zinc-200 h-16 w-16 rounded-full">
                   <img id="profile-img-setting" src="./public/img/avatar.png" class="rounded-full w-16 h-16" alt="" />
@@ -77,32 +76,31 @@
                   <span id="account-name" class="font-semibold"></span>
                 </div>
               </div>
-              <ul class="mt-2 p-2 border-t dark:border-zinc-700">
+              <ul class="mt-2 p-2 space-y-1 border-t dark:border-zinc-700">
                 <li id="change-profile"
                   class="cursor-pointer items-center  hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
-                  <span class="material-symbols-outlined w-7 h-7 text-center items-center text-xl">
+                  <span class=" material-symbols-outlined w-8 h-8 text-center items-center text-2xl">
                     person_edit
                   </span>
                   <span>Change Profile</span>
                 </li>
                 <li id="change-password"
                   class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
-                  <span class="material-symbols-outlined w-7 h-7 text-center items-center text-xl">
+                  <span class="material-symbols-outlined w-8 h-8 text-center items-center text-2xl">
                     lock
                   </span>
                   <span>Change Password</span>
                 </li>
                 <li id="toggle-darkmode"
                   class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
-                  <span id="icon-darkmode" class="material-symbols-outlined w-7 h-7 text-center items-center text-xl">
+                  <span id="icon-darkmode" class="material-symbols-outlined w-8 h-8 text-center items-center text-2xl">
                     dark_mode
                   </span>
                   <span id="text-darkmode">Dark Mode</span>
                 </li>
-               
                 <li id="logout"
                   class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
-                  <span class="material-symbols-outlined w-7 h-7 text-center items-center text-xl">
+                  <span class="material-symbols-outlined w-8 h-8 text-center items-center text-2xl">
                     logout
                   </span>
                   <span>Logout</span>
@@ -113,35 +111,35 @@
 
                 <li id="tz-utc"
                   class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
-                  <span class="material-symbols-outlined w-7 h-7 text-center items-center text-xl">
+                  <span class="material-symbols-outlined w-8 h-8 text-center items-center text-2xl">
                     schedule
                   </span>
                   <span>UTC</span>
                 </li>
                 <li id="tz-gmt7"
                   class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
-                  <span class="material-symbols-outlined w-7 h-7 text-center items-center text-xl">
+                  <span class="material-symbols-outlined w-8 h-8 text-center items-center text-2xl">
                     schedule
                   </span>
                   <span>WIB / Jakarta</span>
                 </li>
                 <li id="tz-gmt8"
                   class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
-                  <span class="material-symbols-outlined w-7 h-7 text-center items-center text-xl">
+                  <span class="material-symbols-outlined w-8 h-8 text-center items-center text-2xl">
                     schedule
                   </span>
                   <span>WITA / Makassar</span>
                 </li>
                 <li id="tz-gmt9"
                   class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
-                  <span class="material-symbols-outlined w-7 h-7 text-center items-center text-xl">
+                  <span class="material-symbols-outlined w-8 h-8 text-center items-center text-2xl">
                     schedule
                   </span>
                   <span>WIT / Jayapura</span>
                 </li>
                 <li
                   class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
-                  <span class="material-symbols-outlined w-7 h-7 text-center items-center text-xl">
+                  <span class="material-symbols-outlined w-8 h-8 text-center items-center text-2xl">
                     license
                   </span>
                   <span>Licences</span>
@@ -150,89 +148,78 @@
             </div>
           </div>
           <!--Menu notification-->
-          <div class="flex h-6 w-6  bg-zinc-200 dark:bg-zinc-700/70 rounded-lg justify-center items-center">
+          <div class="flex h-8 w-8  bg-zinc-200 dark:bg-zinc-700/70 rounded-lg justify-center items-center">
             <span
-              class="material-symbols-outlined  hover:text-violet-800 hover:Dark:text-violet-600  cursor-pointer text-xl">notifications
-             
+              class="material-symbols-outlined  hover:text-violet-800 hover:Dark:text-violet-600  cursor-pointer text-3xl">notifications
             </span>
-            <span class="absolute flex h-1 w-1 top-3 right-15">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-1 w-1 bg-blue-600"></span>
+            <span class="absolute flex justify-center items-center h-2 w-2 top-4 right-17">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-500 dark:bg-teal-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-600"></span>
             </span>
           </div>
           <!--Menu help-->
-          <div class="flex h-6 w-6  bg-zinc-200 dark:bg-zinc-700/70 rounded-lg justify-center items-center">
+          <div class="flex h-8 w-8  bg-zinc-200 dark:bg-zinc-700/70 rounded-lg justify-center items-center">
             <span
-              class="material-symbols-outlined hover:text-violet-800 hover:Dark:text-violet-600 content-center cursor-pointer text-xl">help
+              class="material-symbols-outlined hover:text-violet-800 hover:Dark:text-violet-600 content-center cursor-pointer text-3xl">help
             </span>
           </div>
         </div>
-
       </div>
     </div>
   </header>
-  <header id="header-skeleton" class=" w-full fixed top-0">
+  <header id="header-skeleton" class="w-full fixed top-0">
     <div
       class="flex justify-between items-center px-6 py-1 bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 border-b border-zinc-300/15 dark:border-zinc-300/5 shadow-sm">
       <div class="flex gap-3 animate-pulse bg-zinc-300 text-zinc-300 dark:bg-zinc-700 dark:text-zinc-700 rounded-md">
         <div 
-          class="flex items-center  gap-3 ">
-          <span class="material-symbols-outlined content-center text-xl">
+          class="flex items-center gap-3 cursor-pointer">
+          <span class="material-symbols-outlined content-center text-3xl">
             apps
           </span>
           <span id="text-menu">Menu</span>
         </div>
        
       </div>
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-3 ">
         <div class="flex animate-pulse bg-zinc-300 text-zinc-300 dark:bg-zinc-700 dark:text-zinc-700 rounded-md px-3">
-          <span >03-03-2024</span>
-          <span class="w-22.5 text-center font-semibold" id="clock">12:54</span>
+          <span>22-02-2024</span>
+          <span class="w-22.5 text-center font-semibold" id="clock">14:00 </span>
           <span >UTC</span>
         </div>
-        <div class="flex  gap-2">
-          <div class="flex items-center">
-            <div id="account-setting"
-              class="flex group items-center font-semibold animate-pulse bg-zinc-300 text-zinc-300 dark:bg-zinc-700 dark:text-zinc-700 rounded-md">
+        <div class="flex  gap-2  justify-center items-center">
+          <div class="flex items-center " >
+            <div 
+              class="flex group px-1 py-1 gap-1  font-semibold  animate-pulse bg-zinc-300 text-zinc-300 dark:bg-zinc-700 dark:text-zinc-700 rounded-md justify-center items-center content-center  cursor-pointer">
               <div
-                class="flex bg-cover animate-pulse bg-zinc-300 text-zinc-300 dark:bg-zinc-700 dark:text-zinc-700  rounded-full">
-                <img class="rounded-full w-6" alt="" />
+                class="flex bg-cover  animate-pulse bg-zinc-300 text-zinc-300 dark:bg-zinc-700 dark:text-zinc-700 rounded-md h-8 w-8 cursor-pointer group-hover:outline group-hover:outline-4">
+                
               </div>
-              <span class="material-symbols-outlined content-center text-l ">
+              <span class="material-symbols-outlined content-center text-3xl  ">
                 expand_more
               </span>
             </div>
-          
+            <!--Ini adalah menu setting-->
+           
           </div>
           <!--Menu notification-->
-          <div class="flex h-6 items-center animate-pulse bg-zinc-300 text-zinc-300 dark:bg-zinc-700 dark:text-zinc-700 rounded-md">
+          <div class="flex h-8 w-8 animate-pulse bg-zinc-300 text-zinc-300 dark:bg-zinc-700 dark:text-zinc-700 rounded-md justify-center items-center">
             <span
-              class="material-symbols-outlined content-center cursor-pointer text-xl">notifications
-             
+              class="material-symbols-outlined  cursor-pointer text-3xl">notifications
             </span>
-            <span class="absolute flex h-1 w-1 top-3 right-14">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-1 w-1 "></span>
-            </span>
+           
           </div>
           <!--Menu help-->
-          <div class="flex h-6 items-center animate-pulse bg-zinc-300 text-zinc-300 dark:bg-zinc-700 dark:text-zinc-700 rounded-md">
+          <div class="flex h-8 w-8 animate-pulse bg-zinc-300 text-zinc-300 dark:bg-zinc-700 dark:text-zinc-700 rounded-md justify-center items-center">
             <span
-              class="material-symbols-outlined  content-center cursor-pointer text-xl">help
+              class="material-symbols-outlined  content-center cursor-pointer text-3xl">help
             </span>
           </div>
         </div>
-
       </div>
     </div>
   </header>
+ 
   
-  
-  
-  
-  
-  
-
   <!--Ini adalah container menu-->
   <section id="menu" class="w-10/12 h-5/6 left-1/2 -translate-x-1/2 top-16  hidden fixed ">
     <div
@@ -386,7 +373,7 @@
   <!--Ini adalah Popup Change Profile-->
   <section id="popup-change-profile" class="hidden left-1/2 -translate-x-1/2 w-auto top-16 fixed">
     <div
-      class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col ">
+      class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-600 dark:text-zinc-400 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col ">
       <div id="close-change-profile"
         class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-white dark:bg-zinc-700 hover:bg-zinc-100 hover:dark:bg-zinc-600 hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer">
         <span class="material-symbols-outlined content-center text-l m-auto">
@@ -419,7 +406,7 @@
           </span>Save Changes
         </button>
         <button id="btn-cancel-profile"
-          class="flex gap-2 text-base items-center content-center text-zinc-700 dark:text-zinc-300 hover:text-violet-600 rounded-full px-6 py-2">
+          class="flex gap-2 text-base items-center content-center text-zinc-600 dark:text-zinc-400 hover:text-violet-600 rounded-full px-6 py-2">
           Cancel
         </button>
       </div>
@@ -431,7 +418,7 @@
   <!--Ini adalah Popup Change Password-->
   <section id="popup-change-password" class="hidden left-1/2 -translate-x-1/2 w-auto top-16 fixed">
     <div
-      class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col ">
+      class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-600 dark:text-zinc-400 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col ">
       <div id="close-change-password"
         class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-white dark:bg-zinc-700 hover:bg-zinc-100 hover:dark:bg-zinc-600 hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer">
         <span class="material-symbols-outlined content-center text-l m-auto">
@@ -439,7 +426,7 @@
         </span>
       </div>
       <div> <span class="font-semibold">Change Password</span>
-        <div class="text-xs text-zinc-500 dark:text-zinc-400 w-96 mt-2">Please enter your old password, for security’s
+        <div class="text-xs text-zinc-600  dark:text-zinc-400 w-96 mt-2">Please enter your old password, for security’s
           sake, and then enter your new password twice so we can verify you typed it in correctly.</div>
       </div>
       <div class="flex-col space-y-4 mt-6  ">
@@ -467,7 +454,7 @@
           <span class="material-symbols-outlined">save</span>Save Changes
         </button>
         <button id="btn-cancel-password"
-          class="flex gap-2 items-center content-center text-zinc-700 dark:text-zinc-300 hover:text-violet-600 rounded-full px-6 py-2">
+          class="flex gap-2 items-center content-center text-zinc-600 dark:text-zinc-400 hover:text-violet-600 rounded-full px-6 py-2">
           Cancel
         </button>
       </div>
@@ -478,7 +465,7 @@
   <!--Ini adalah Table Billing Cash-->
   <section id="table_billing_cash" class="top-6 hidden">
     <table
-      class="w-95% h-85% table-fixed dark:text-zinc-300 text-base mt-10 mx-auto bg-violet-100 dark:bg-zinc-900 rounded-lg">
+      class="w-95% h-85% table-fixed dark:text-zinc-400 text-base mt-16 mx-auto bg-violet-100 dark:bg-zinc-900 rounded-lg">
       <thead class="w-full text-white sticky top-0">
         <tr>
           <th
@@ -572,7 +559,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -625,7 +612,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -678,7 +665,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -731,7 +718,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -784,7 +771,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -837,7 +824,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -890,7 +877,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -943,7 +930,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -996,7 +983,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1049,7 +1036,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1065,7 +1052,7 @@
   <!--Ini adalah Table Billing Charge-->
   <section id="table_billing_charge" class="top-6 hidden">
     <table
-      class="w-95% h-85% table-fixed dark:text-zinc-300 text-base mt-10 mx-auto bg-violet-100 dark:bg-zinc-900 rounded-lg">
+      class="w-95% h-85% table-fixed dark:text-zinc-400 text-base mt-16 mx-auto bg-violet-100 dark:bg-zinc-900 rounded-lg">
       <thead class="w-full text-white sticky top-0">
         <tr>
           <th
@@ -1161,7 +1148,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1215,7 +1202,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1269,7 +1256,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1323,7 +1310,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1377,7 +1364,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1431,7 +1418,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1485,7 +1472,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1539,7 +1526,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1593,7 +1580,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1647,7 +1634,7 @@
               </span>
             </div>
             <div id="no-checked">
-              <span class="material-symbols-outlined text-base text-zinc-500">
+              <span class="material-symbols-outlined text-base text-zinc-600 dark:text-zinc-400">
                 cancel
               </span>
             </div>
@@ -1667,7 +1654,7 @@
   <section id="popup-alert"
     class="hidden left-1/2 -translate-x-1/2 w-auto top-6 fixed border-l-4 border-green-600 rounded-3xl z-1200">
     <div
-      class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-700 dark:text-zinc-300 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col">
+      class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-600 dark:text-zinc-400 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col">
       <div id="close-popup-alert"
         class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-white dark:bg-zinc-700 hover:bg-zinc-100 hover:dark:bg-zinc-600 hover:text-violet-800 hover:dark:text-violet-600 cursor-pointer">
         <span class="material-symbols-outlined content-center text-l m-auto">

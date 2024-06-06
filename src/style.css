@@ -653,12 +653,8 @@ input[type="checkbox"]:checked::before {
   left: 50% !important;
 }
 
-.right-14 {
-  right: 3.5rem !important;
-}
-
-.right-15 {
-  right: 60px !important;
+.right-17 {
+  right: 68px !important;
 }
 
 .right-2 {
@@ -669,12 +665,16 @@ input[type="checkbox"]:checked::before {
   right: 5rem !important;
 }
 
+.right-24 {
+  right: 6rem !important;
+}
+
 .top-0 {
   top: 0px !important;
 }
 
-.top-10 {
-  top: 2.5rem !important;
+.top-14 {
+  top: 3.5rem !important;
 }
 
 .top-16 {
@@ -685,8 +685,8 @@ input[type="checkbox"]:checked::before {
   top: 0.5rem !important;
 }
 
-.top-3 {
-  top: 0.75rem !important;
+.top-4 {
+  top: 1rem !important;
 }
 
 .top-6 {
@@ -734,6 +734,10 @@ input[type="checkbox"]:checked::before {
   margin-top: 2.5rem !important;
 }
 
+.mt-16 {
+  margin-top: 4rem !important;
+}
+
 .mt-2 {
   margin-top: 0.5rem !important;
 }
@@ -770,10 +774,6 @@ input[type="checkbox"]:checked::before {
   display: none !important;
 }
 
-.h-1 {
-  height: 0.25rem !important;
-}
-
 .h-10 {
   height: 2.5rem !important;
 }
@@ -788,6 +788,10 @@ input[type="checkbox"]:checked::before {
 
 .h-175 {
   height: 43.75rem !important;
+}
+
+.h-2 {
+  height: 0.5rem !important;
 }
 
 .h-24 {
@@ -810,8 +814,8 @@ input[type="checkbox"]:checked::before {
   height: 65% !important;
 }
 
-.h-7 {
-  height: 1.75rem !important;
+.h-8 {
+  height: 2rem !important;
 }
 
 .h-85\% {
@@ -834,10 +838,6 @@ input[type="checkbox"]:checked::before {
   min-height: 14rem !important;
 }
 
-.w-1 {
-  width: 0.25rem !important;
-}
-
 .w-10 {
   width: 2.5rem !important;
 }
@@ -848,6 +848,10 @@ input[type="checkbox"]:checked::before {
 
 .w-16 {
   width: 4rem !important;
+}
+
+.w-2 {
+  width: 0.5rem !important;
 }
 
 .w-22\.5 {
@@ -866,12 +870,12 @@ input[type="checkbox"]:checked::before {
   width: 1.5rem !important;
 }
 
-.w-7 {
-  width: 1.75rem !important;
-}
-
 .w-75\% {
   width: 75% !important;
+}
+
+.w-8 {
+  width: 2rem !important;
 }
 
 .w-95\% {
@@ -992,6 +996,10 @@ input[type="checkbox"]:checked::before {
   justify-content: space-between !important;
 }
 
+.gap-1 {
+  gap: 0.25rem !important;
+}
+
 .gap-12 {
   gap: 3rem !important;
 }
@@ -1002,6 +1010,12 @@ input[type="checkbox"]:checked::before {
 
 .gap-3 {
   gap: 0.75rem !important;
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0 !important;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse))) !important;
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse)) !important;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1128,14 +1142,14 @@ input[type="checkbox"]:checked::before {
   --tw-border-opacity: 0.5 !important;
 }
 
-.bg-blue-400 {
+.bg-teal-500 {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(20 184 166 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-blue-600 {
+.bg-teal-600 {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-violet-100 {
@@ -1210,6 +1224,11 @@ input[type="checkbox"]:checked::before {
   padding: 1rem !important;
 }
 
+.px-1 {
+  padding-left: 0.25rem !important;
+  padding-right: 0.25rem !important;
+}
+
 .px-2 {
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
@@ -1262,6 +1281,16 @@ input[type="checkbox"]:checked::before {
   font-family: Inter !important;
 }
 
+.text-2xl {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+
+.text-3xl {
+  font-size: 1.875rem !important;
+  line-height: 2.25rem !important;
+}
+
 .text-base {
   font-size: 1rem !important;
   line-height: 1.5rem !important;
@@ -1308,6 +1337,11 @@ input[type="checkbox"]:checked::before {
 .text-zinc-500 {
   --tw-text-opacity: 1 !important;
   color: rgb(113 113 122 / var(--tw-text-opacity)) !important;
+}
+
+.text-zinc-600 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(82 82 91 / var(--tw-text-opacity)) !important;
 }
 
 .text-zinc-700 {
@@ -1509,6 +1543,11 @@ input[type="checkbox"]:checked::before {
 
 .dark\:border-opacity-30:where(.dark, .dark *) {
   --tw-border-opacity: 0.3 !important;
+}
+
+.dark\:bg-teal-400:where(.dark, .dark *) {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(45 212 191 / var(--tw-bg-opacity)) !important;
 }
 
 .dark\:bg-zinc-700:where(.dark, .dark *) {
