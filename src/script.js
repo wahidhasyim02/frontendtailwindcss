@@ -151,7 +151,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Dark Mode
 document.addEventListener("DOMContentLoaded", function () {
   var toggleDarkMode = document.getElementById("toggle-darkmode");
   var textDarkMode = document.getElementById("text-darkmode");
@@ -172,6 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Mendapatkan nama halaman saat ini
   var currentPage = window.location.pathname.split("/").pop();
+  console.log("Current page:", currentPage);
 
   // Memeriksa nama halaman dan mengatur tema sesuai kebutuhan
   if (currentPage === "login.html" || currentPage === "signup.html") {
@@ -179,9 +179,10 @@ document.addEventListener("DOMContentLoaded", function () {
     setTheme(false);
     // Menyimpan preferensi mode terang di local storage untuk halaman login dan signup
     localStorage.setItem("darkMode", "false");
-  } else if (currentPage === "index.html") {
-    // Mengatur tema sesuai dengan yang tersimpan di local storage untuk halaman index
+  } else {
+    // Mengatur tema sesuai dengan yang tersimpan di local storage untuk halaman lainnya
     var isDarkMode = localStorage.getItem("darkMode") === "true";
+    console.log("Dark mode in localStorage:", isDarkMode);
     setTheme(isDarkMode);
   }
 
@@ -190,6 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var isDark = document.documentElement.classList.toggle("dark");
     setTheme(isDark);
     localStorage.setItem("darkMode", isDark ? "true" : "false");
+    console.log("Dark mode set to:", isDark);
   });
 });
 
