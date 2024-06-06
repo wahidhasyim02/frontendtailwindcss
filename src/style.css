@@ -1106,6 +1106,11 @@ input[type="checkbox"]:checked::before {
   border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
 }
 
+.border-zinc-300 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(212 212 216 / var(--tw-border-opacity)) !important;
+}
+
 .border-zinc-300\/15 {
   border-color: rgb(212 212 216 / 0.15) !important;
 }

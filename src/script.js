@@ -433,11 +433,6 @@ document.getElementById("logout").addEventListener("click", function () {
   localStorage.removeItem("visited");
 });
 
-// Redirect to login page
-document.getElementById("login").addEventListener("click", function () {
-  window.location.href = "login.html";
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   // Cek apakah ada data login di local storage
   const isLoggedIn = localStorage.getItem("isLoggedIn");
