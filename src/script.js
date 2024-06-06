@@ -164,10 +164,12 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.classList.add("dark");
       textDarkMode.textContent = "Light Mode";
       iconDarkMode.textContent = "light_mode";
+      localStorage.setItem("darkMode", "true");
     } else {
       document.documentElement.classList.remove("dark");
       textDarkMode.textContent = "Dark Mode";
       iconDarkMode.textContent = "dark_mode";
+      localStorage.setItem("darkMode", "false");
     }
   }
 
