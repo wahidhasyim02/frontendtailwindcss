@@ -33,6 +33,14 @@ document.getElementById("btn-login").addEventListener("click", function () {
   if (loginUsername !== storedUsername) {
     document.getElementById("username-wrong").innerText =
       "The username you entered is incorrect.";
+    document
+      .getElementById("login-username")
+      .classList.add(
+        "border-pink-600",
+        "focus:ring-pink-400",
+        "focus:border-pink-400",
+        "placeholder:text-pink-300"
+      );
     isValid = false;
   } else {
     document.getElementById("username-wrong").classList.add("invisible");
@@ -48,6 +56,14 @@ document.getElementById("btn-login").addEventListener("click", function () {
   if (loginPassword !== storedPassword) {
     document.getElementById("password-wrong").innerText =
       "The password you entered is incorrect.";
+    document
+      .getElementById("login-password")
+      .classList.add(
+        "border-pink-600",
+        "focus:ring-pink-400",
+        "focus:border-pink-400",
+        "placeholder:text-pink-300"
+      );
     isValid = false;
   } else {
     document.getElementById("password-wrong").classList.add("invisible");

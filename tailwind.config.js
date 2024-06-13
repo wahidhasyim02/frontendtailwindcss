@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html", "./login.html"],
+  content: ["./**/*.{html,js}"],
   important: true,
   theme: {
     extend: {
@@ -18,6 +18,7 @@ module.exports = {
         15: "60px",
         17: "68px",
         17.5: "72px",
+        "2%": "2%",
         "8%": "8%",
         22.5: "5.625rem",
         175: "43.75rem",
@@ -27,6 +28,8 @@ module.exports = {
         "75%": "75%",
         "85%": "85%",
         "95%": "95%",
+        "96%": "96%",
+        "98%": "98%",
       },
       zIndex: {
         1000: "1000",
