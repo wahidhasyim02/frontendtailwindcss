@@ -2480,6 +2480,11 @@ input[type="checkbox"]:checked::before {
   padding-right: 0.25rem !important;
 }
 
+.px-1\.5 {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+
 .px-2 {
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
