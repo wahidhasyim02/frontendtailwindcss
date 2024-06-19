@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Script memunculkan Change Profile dan change password
 document.addEventListener("DOMContentLoaded", function () {
   var popupChangeprofile = document.getElementById("popup-change-profile");
+  var editProfile = document.getElementById("edit-profile-img");
   var changeProfile = document.getElementById("change-profile");
   var closeChangeprofile = document.getElementById("close-change-profile");
   var popupChangepassword = document.getElementById("popup-change-password");
@@ -112,6 +113,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Event listener untuk menampilkan/menyembunyikan popup change profile saat tombol menu diklik
   changeProfile.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupChangeprofile.classList.add("z-1000"); // Set zIndex lebih besar
+    popupChangepassword.classList.add("hidden");
+    popupChangeprofile.classList.toggle("hidden");
+  });
+
+  // Event listener untuk menampilkan/menyembunyikan popup change profile saat tombol menu diklik
+  editProfile.addEventListener("click", function (event) {
     event.preventDefault();
     popupChangeprofile.classList.add("z-1000"); // Set zIndex lebih besar
     popupChangepassword.classList.add("hidden");
