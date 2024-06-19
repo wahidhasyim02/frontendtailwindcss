@@ -36,10 +36,17 @@ document.getElementById("btn-login").addEventListener("click", function () {
     document
       .getElementById("login-username")
       .classList.add(
-        "border-pink-600",
+        "border-pink-400",
         "focus:ring-pink-400",
         "focus:border-pink-400",
         "placeholder:text-pink-300"
+      );
+    document
+      .getElementById("login-username")
+      .classList.remove(
+        "border-zinc-400",
+        "focus:ring-violet-400",
+        "focus:border-violet-400"
       );
     isValid = false;
   } else {
@@ -59,10 +66,17 @@ document.getElementById("btn-login").addEventListener("click", function () {
     document
       .getElementById("login-password")
       .classList.add(
-        "border-pink-600",
+        "border-pink-400",
         "focus:ring-pink-400",
         "focus:border-pink-400",
         "placeholder:text-pink-300"
+      );
+    document
+      .getElementById("login-password")
+      .classList.remove(
+        "border-zinc-400",
+        "focus:ring-violet-400",
+        "focus:border-violet-400"
       );
     isValid = false;
   } else {
@@ -71,6 +85,7 @@ document.getElementById("btn-login").addEventListener("click", function () {
   if (!loginPassword) {
     document.getElementById("password-wrong").innerText =
       "Please fill in the password";
+
     isValid = false;
   } else {
     document.getElementById("password-wrong").classList.remove("invisible");

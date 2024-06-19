@@ -14,24 +14,23 @@ document.getElementById("btn-signup").addEventListener("click", function () {
     document
       .getElementById("signup-username")
       .classList.add(
-        "border-pink-600",
+        "border-pink-400",
         "focus:ring-pink-400",
         "focus:border-pink-400",
         "placeholder:text-pink-300"
+      );
+    document
+      .getElementById("signup-username")
+      .classList.remove(
+        "border-zinc-400",
+        "focus:ring-violet-400",
+        "focus:border-violet-400"
       );
     isValid = false;
   } else if (username === existingUsername) {
     document.getElementById("not-fill-username").innerText =
       "The username you entered is already in use";
     document.getElementById("not-fill-username").classList.remove("invisible");
-    document
-      .getElementById("signup-username")
-      .classList.add(
-        "border-pink-600",
-        "focus:ring-pink-400",
-        "focus:border-pink-400",
-        "placeholder:text-pink-300"
-      );
     isValid = false;
   } else {
     document.getElementById("not-fill-username").classList.add("invisible");
@@ -45,10 +44,17 @@ document.getElementById("btn-signup").addEventListener("click", function () {
     document
       .getElementById("signup-password")
       .classList.add(
-        "border-pink-600",
+        "border-pink-400",
         "focus:ring-pink-400",
         "focus:border-pink-400",
         "placeholder:text-pink-300"
+      );
+    document
+      .getElementById("signup-password")
+      .classList.remove(
+        "border-zinc-400",
+        "focus:ring-violet-400",
+        "focus:border-violet-400"
       );
     isValid = false;
   } else {

@@ -52,7 +52,7 @@
         <div class="flex  gap-2  justify-center items-center">
           <div class="flex items-center grup ">
             <div id="account-setting"
-              class="flex group px-2 py-1 gap-1 font-semibold  bg-zinc-200 dark:bg-zinc-700/70 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white rounded-full justify-center items-center content-center  cursor-pointer">
+              class="flex group px-2 py-1 gap-1 font-semibold  bg-zinc-200 dark:bg-zinc-700/40 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white rounded-full justify-center items-center content-center  cursor-pointer">
               <div
                 class="flex bg-cover   bg-zinc-200 h-8 w-8 cursor-pointer group-hover:outline group-hover:outline-4 group-hover:outline-violet-800/50 dark:hover:outline-violet-600/50 rounded-full">
                 <img id="profile-img-header" src="./public/img/avatar.png"
@@ -66,12 +66,13 @@
             <div id="popup-setting"
               class="flex-col gap-2 items-center hidden  absolute bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-semibold text-zinc-600 dark:text-zinc-400 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl right-24 top-14 p-4">
               <div class="flex flex-col items-center gap-2 bg-cover">
-                <div for="edit-profile-img" class="flex bg-cover bg-zinc-200 h-16 w-16 rounded-full">
-                  <img id="profile-img-setting" src="./public/img/avatar.png" class="rounded-full w-16 h-16" alt="" />
+                <div for="edit-profile-img" class="relative inline-block bg-cover bg-zinc-200 h-16 w-16 rounded-full">
+                  <img id="profile-img-setting" src="./public/img/avatar.png" class=" rounded-full w-16 h-16" alt="avatar"/>
                   <span id="edit-profile-img"
-                    class="absolute material-symbols-rounded rounded-full mt-10 right-20 text-center items-center content-center cursor-pointer  bg-zinc-200 dark:bg-zinc-700/70 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white shadow-md text-base w-6 h-6">
+                    class="absolute right-0 top-11 material-symbols-rounded rounded-full  text-center items-center content-center cursor-pointer  bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white shadow-md text-base w-6 h-6">
                     edit
                   </span>
+                
                 </div>
                 <div id="greeting">
                   <span class="font-normal">Halo,</span>
@@ -150,7 +151,7 @@
             </div>
           </div>
           <!--Menu notification-->
-          <div class="relative inline-block h-8 w-8   bg-zinc-200 dark:bg-zinc-700/70 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white rounded-lg justify-center items-center">
+          <div class="relative inline-block h-8 w-8   bg-zinc-200 dark:bg-zinc-700/40 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white rounded-lg justify-center items-center">
             <span
               class="material-symbols-rounded  cursor-pointer text-3xl">notifications
             </span>
@@ -161,7 +162,7 @@
             </span>
           </div>
           <!--Menu help-->
-          <div class="flex h-8 w-8  bg-zinc-200 dark:bg-zinc-700/70 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white rounded-lg justify-center items-center">
+          <div class="flex h-8 w-8  bg-zinc-200 dark:bg-zinc-700/40 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white rounded-lg justify-center items-center">
             <span
               class="material-symbols-rounded  content-center cursor-pointer text-3xl">help
             </span>
@@ -227,7 +228,7 @@
       <div
         class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 border-white dark:border-zinc-700 border-opacity-50 dark:border-opacity-30 rounded-3xl text-base text-zinc-700 dark:text-zinc-100 p-12 mx-auto h-175 flex flex-col">
         <div id="close-menu"
-          class="absolute  flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700/70 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white cursor-pointer">
+          class="absolute  flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700/40 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white cursor-pointer">
           <span class="material-symbols-rounded content-center text-l m-auto">
             close
           </span>
@@ -377,7 +378,7 @@
       <div
         class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-600 dark:text-zinc-400 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col ">
         <div id="close-change-profile"
-          class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700/70 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white cursor-pointer">
+          class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700/40 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white cursor-pointer">
           <span class="material-symbols-rounded content-center text-l m-auto">
             close
           </span>
@@ -421,7 +422,7 @@
       <div
         class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-600 dark:text-zinc-400 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col ">
         <div id="close-change-password"
-          class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700/70 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white cursor-pointer">
+          class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700/40 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white cursor-pointer">
           <span class="material-symbols-rounded content-center text-l m-auto">
             close
           </span>
@@ -1660,7 +1661,7 @@
       <div
         class="bg-white dark:bg-zinc-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-zinc-600 dark:text-zinc-400 border border-zinc-300/15 dark:border-zinc-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col">
         <div id="close-popup-alert"
-          class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700/70 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white cursor-pointer">
+          class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700/40 hover:bg-zinc-300 dark:hover:bg-zinc-600 hover:text-zinc-800 hover:dark:text-white cursor-pointer">
           <span class="material-symbols-rounded content-center text-l m-auto">
             close
           </span>
