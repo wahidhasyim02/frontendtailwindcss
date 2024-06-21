@@ -2354,7 +2354,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .bg-hero-light {
-  background-image: url('https://wahidhasyim02.github.io/tailwindcss-uji-coba-website/public/img/bg_light.jpg') !important;
+  background-image: url('https://wahidhasyim02.github.io/public/img/bg_light.jpg') !important;
 }
 
 .decoration-slice {
@@ -3429,7 +3429,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .dark\:bg-hero-dark:where(.dark, .dark *) {
-  background-image: url('https://wahidhasyim02.github.io/tailwindcss-uji-coba-website/public/img/bg_dark.jpg') !important;
+  background-image: url('https://wahidhasyim02.github.io/public/img/bg_dark.jpg') !important;
 }
 
 .dark\:text-zinc-100:where(.dark, .dark *) {
