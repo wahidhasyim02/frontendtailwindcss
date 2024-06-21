@@ -9,9 +9,9 @@ module.exports = {
       },
       backgroundImage: {
         "hero-light":
-          "url('https://wahidhasyim02.github.io/tailwindcss-uji-coba-website/public/img/bg_light.jpg')",
+          "url('https://wahidhasyim02.github.io/public/img/bg_light.jpg')",
         "hero-dark":
-          "url('https://wahidhasyim02.github.io/tailwindcss-uji-coba-website/public/img/bg_dark.jpg')",
+          "url('https://wahidhasyim02.github.io/public/img/bg_dark.jpg')",
       },
 
       spacing: {
