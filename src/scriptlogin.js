@@ -92,7 +92,7 @@ document.getElementById("btn-login").addEventListener("click", function () {
   }
 
   if (isValid) {
-    window.location.href = "index.html";
+    window.location.href = "/";
     // Setelah login berhasil
     localStorage.setItem("isLoggedIn", true);
   }
