@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -601,16 +601,7 @@ input[type="checkbox"]::before {
   content: "";
   width: 9px;
   height: 8px;
-  -webkit-clip-path: polygon(
-      22% 33%,
-      3% 57%,
-      36% 89%,
-      70% 50%,
-      100% 20%,
-      80% 0%,
-      36% 50%
-    );
-          clip-path: polygon(
+  clip-path: polygon(
       22% 33%,
       3% 57%,
       36% 89%,
