@@ -207,9 +207,9 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const timeZoneMappings = {
     "tz-utc": { offset: 0, label: "UTC" },
-    "tz-gmt7": { offset: 7, label: "ETC/GMT-7" },
-    "tz-gmt8": { offset: 8, label: "ETC/GMT-8" },
-    "tz-gmt9": { offset: 9, label: "ETC/GMT-9" },
+    "tz-gmt7": { offset: 7, label: "Etc/GMT-7" },
+    "tz-gmt8": { offset: 8, label: "Etc/GMT-8" },
+    "tz-gmt9": { offset: 9, label: "Etc/GMT-9" },
   };
 
   let currentInterval;
@@ -249,18 +249,31 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
     updateTime();
-    currentInterval = setInterval(updateTime, 1000); // Update everi second
+    currentInterval = setInterval(updateTime, 1000); // Update every second
   }
 
   const savedTimeZone = JSON.parse(localStorage.getItem("selectedTimeZone"));
   if (savedTimeZone) {
     updateTimeZone(savedTimeZone.offset, savedTimeZone.label);
   } else {
-    // Set default timezone to UTC if none is saved
-    updateTimeZone(
-      timeZoneMappings["tz-utc"].offset,
-      timeZoneMappings["tz-utc"].label
+    // Set default timezone to user's local timezone if none is saved
+    const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const localOffset = -new Date().getTimezoneOffset() / 60;
+
+    // Find the nearest matching offset in timeZoneMappings
+    const matchedTimeZone = Object.values(timeZoneMappings).find(
+      (tz) => tz.offset === localOffset
     );
+
+    if (matchedTimeZone) {
+      updateTimeZone(matchedTimeZone.offset, matchedTimeZone.label);
+    } else {
+      // Use the offset and a generic label if not in mappings
+      updateTimeZone(
+        localOffset,
+        `GMT${localOffset >= 0 ? `+${localOffset}` : localOffset}`
+      );
+    }
   }
 });
 
