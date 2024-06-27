@@ -2336,6 +2336,11 @@ input[type="checkbox"]:checked::before {
   background-color: rgb(212 212 216 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5 !important;
 }
