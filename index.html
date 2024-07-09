@@ -20,9 +20,9 @@
 </head>
 
 <body
-  class="w-full h-full min-w-full m-0  bg-no-repeat font-inter text-base bg-cover bg-purdark-100 dark:bg-purdark-950 text-purdark-600 dark:text-purdark-400 bg-hero-ligh dark:bg-hero-dar">
+  class="w-full h-screen min-w-full m-0  bg-no-repeat font-inter text-base bg-cover bg-purdark-100 dark:bg-purdark-950 text-purdark-600 dark:text-purdark-400 bg-hero-ligh dark:bg-hero-dar">
 
-  <header id="header" class="w-full fixed top-0">
+  <header id="header" class=" w-full fixed top-0 z-1000">
     <div
       class="flex justify-between items-center px-6 py-1 bg-white dark:bg-purdark-800  backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 border-b border-purdark-300/15 dark:border-purdark-300/5 shadow-sm">
       <div class="flex gap-3">
@@ -55,7 +55,7 @@
             <div id="account-setting"
               class="flex group px-2 py-1 gap-1 font-semibold  bg-purdark-200 dark:bg-purdark-700/40 hover:bg-purdark-300 dark:hover:bg-purdark-600 hover:text-purdark-800 hover:dark:text-white rounded-full justify-center items-center content-center  cursor-pointer">
               <div
-                class="flex bg-cover   bg-purdark-200 dark:bg-purdark-800 h-8 w-8 cursor-pointer group-hover:outline group-hover:outline-4 group-hover:outline-violet-800/50 dark:hover:outline-violet-600/50 rounded-full">
+                class="flex bg-cover   bg-purdark-200 dark:bg-purdark-800 h-8 w-8 cursor-pointer group-hover:outline group-hover:outline-4 group-hover:outline-purple-800/50 dark:hover:outline-purple-600/50 rounded-full">
                 <img id="profile-img-header" src="./public/img/avatar.png"
                   class="rounded-full w-8 h-8 items-center justify-center" alt="" />
               </div>
@@ -82,28 +82,28 @@
               </div>
               <ul class="mt-2 p-2 space-y-1 border-t dark:border-purdark-700">
                 <li id="change-profile"
-                  class="cursor-pointer items-center  hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
+                  class="cursor-pointer items-center  hover:bg-purple-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
                   <span class=" material-symbols-rounded w-8 h-8 text-center items-center text-2xl">
                     person_edit
                   </span>
                   <span>Change Profile</span>
                 </li>
                 <li id="change-password"
-                  class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
+                  class="cursor-pointer items-center hover:bg-purple-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
                   <span class="material-symbols-rounded w-8 h-8 text-center items-center text-2xl">
                     lock
                   </span>
                   <span>Change Password</span>
                 </li>
                 <li id="toggle-darkmode"
-                  class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
+                  class="cursor-pointer items-center hover:bg-purple-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
                   <span id="icon-darkmode" class="material-symbols-rounded w-8 h-8 text-center items-center text-2xl">
                     dark_mode
                   </span>
                   <span id="text-darkmode">Dark Mode</span>
                 </li>
                 <li id="logout"
-                  class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
+                  class="cursor-pointer items-center hover:bg-purple-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
                   <span class="material-symbols-rounded w-8 h-8 text-center items-center text-2xl">
                     logout
                   </span>
@@ -114,35 +114,35 @@
                 </li>
 
                 <li id="tz-utc"
-                  class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
+                  class="cursor-pointer items-center hover:bg-purple-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
                   <span class="material-symbols-rounded w-8 h-8 text-center items-center text-2xl">
                     schedule
                   </span>
                   <span>UTC</span>
                 </li>
                 <li id="tz-gmt7"
-                  class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
+                  class="cursor-pointer items-center hover:bg-purple-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
                   <span class="material-symbols-rounded w-8 h-8 text-center items-center text-2xl">
                     schedule
                   </span>
                   <span>WIB / Jakarta</span>
                 </li>
                 <li id="tz-gmt8"
-                  class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
+                  class="cursor-pointer items-center hover:bg-purple-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
                   <span class="material-symbols-rounded w-8 h-8 text-center items-center text-2xl">
                     schedule
                   </span>
                   <span>WITA / Makassar</span>
                 </li>
                 <li id="tz-gmt9"
-                  class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
+                  class="cursor-pointer items-center hover:bg-purple-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
                   <span class="material-symbols-rounded w-8 h-8 text-center items-center text-2xl">
                     schedule
                   </span>
                   <span>WIT / Jayapura</span>
                 </li>
                 <li
-                  class="cursor-pointer items-center hover:bg-violet-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
+                  class="cursor-pointer items-center hover:bg-purple-700 hover:text-white flex px-2 py-1 gap-2 rounded-md">
                   <span class="material-symbols-rounded w-8 h-8 text-center items-center text-2xl">
                     license
                   </span>
@@ -172,7 +172,7 @@
       </div>
     </div>
   </header>
-  <header id="header-skeleton" class="w-full fixed top-0">
+  <header id="header-skeleton" class="w-full fixed top-0 z-1000">
     <div
       class="flex justify-between items-center px-6 py-1 bg-white dark:bg-purdark-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 border-b border-purdark-300/15 dark:border-purdark-300/5 shadow-sm">
       <div class="flex gap-3 animate-pulse bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700 rounded-md">
@@ -225,9 +225,9 @@
 
   <section>
     <!--Ini adalah container menu-->
-    <div id="menu" class="w-10/12 h-5/6 left-1/2 -translate-x-1/2 top-16  hidden fixed ">
+    <div id="menu" class="w-10/12 max-h-fit left-1/2 -translate-x-1/2 top-16  hidden fixed ">
       <div
-        class="bg-white dark:bg-purdark-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 border-white dark:border-purdark-700 border-opacity-50 dark:border-opacity-30 rounded-3xl text-base text-purdark-700 dark:text-purdark-100 p-12 mx-auto h-175 flex flex-col">
+        class="bg-white dark:bg-purdark-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 border-white dark:border-purdark-700 border-opacity-50 dark:border-opacity-30 rounded-3xl text-base text-purdark-700 dark:text-purdark-100 p-8 mx-auto  h-[80%] flex flex-col">
         <div id="close-menu"
           class="absolute  flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-purdark-200 dark:bg-purdark-700/40 hover:bg-purdark-300 dark:hover:bg-purdark-600 hover:text-purdark-800 hover:dark:text-white cursor-pointer">
           <span class="material-symbols-rounded content-center text-l m-auto">
@@ -240,9 +240,9 @@
             search
           </label>
           <input type="text" id="search-menu" placeholder="Search..."
-            class="w-full px-3 rounded-r-xl bg-white dark:bg-purdark-700 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30" />
+            class="w-full px-3 rounded-r-xl bg-white dark:bg-purdark-700 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
           <button id="btn-search" for="search"
-            class="hidden material-symbols-rounded content-center text-xl text-white bg-violet-700 hover:bg-violet-800 hover:dark:bg-violet-600 rounded-r-xl dark:border-purdark-700 px-3 py-2">
+            class="hidden material-symbols-rounded content-center text-xl text-white bg-purple-700 hover:bg-purple-800 hover:dark:bg-purple-600 rounded-r-xl dark:border-purdark-700 px-3 py-2">
             search
           </button>
         </div>
@@ -259,8 +259,8 @@
         <hr class="dark:border-purdark-700 mb-4" />
         <!--Ini adalah list menu-menu-->
         <div id="list-menu"
-          class="items-start max-w-full max-h-56 min-h-56 justify-start flex flex-wrap gap-12 overflow-y-scroll mb-4 p-2">
-          <a id="btn_home" href="/" class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+          class="items-start max-w-full max-h-56  justify-start flex flex-wrap gap-12 overflow-y-scroll mb-4 p-1">
+          <a id="btn_home" href="/" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12 group-hover:animate-pulse" src="./public/img/home.png" alt="" />
@@ -268,7 +268,7 @@
             <div class="mt-4 w-24">Home</div>
           </a>
           <a id="btn_billing_cash" href=""
-            class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+            class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/billing_cash.png" alt="" />
@@ -276,7 +276,7 @@
             <div class="mt-4 w-24">Billing Cash</div>
           </a>
           <a id="btn_billing_charge" href=""
-            class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+            class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/billing_charge.png" alt="" />
@@ -285,42 +285,42 @@
           </a>
 
           <a id="btn_announce_manual" href=""
-            class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+            class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/announce_manual.png" alt="" />
             </div>
             <div class="mt-4 w-24">Announce Manual</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+          <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/adv.png" alt="" />
             </div>
             <div class="mt-4 w-24">ADV</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+          <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/announcer_queue.png" alt="" />
             </div>
             <div class="mt-4 w-24">Announce Queue</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+          <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/atv.png" alt="" />
             </div>
             <div class="mt-4 w-24">ATV</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+          <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/baggage_handling.png" alt="" />
             </div>
             <div class="mt-4 w-24">Baggage Handling</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+          <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/barix_monitor.png" alt="" />
@@ -329,14 +329,14 @@
           </a>
 
 
-          <a href="" class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+          <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/cucs.png" alt="" />
             </div>
             <div class="mt-4 w-24">CUCS</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+          <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/daily_rotation.png" alt="" />
@@ -349,21 +349,21 @@
           <span class="font-semibold">Favorites</span>
         </div>
         <hr class="dark:border-purdark-700 mb-4" />
-        <div id="favorites-menu" class="items-start max-w-full max-h-96 flex gap-12 mb-4">
-          <a href="" class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+        <div id="favorites-menu" class="overflow-y-auto items-start max-w-full max-h-[100px] flex gap-12 mb-2">
+          <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/cucs.png" alt="" />
             </div>
             <div class="mt-4 w-24">CUCS</div>
-          </a><a href="" class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+          </a><a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/billing_charge.png" alt="" />
             </div>
             <div class="mt-4 w-24">Billing Charge</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-violet-800 hover:dark:text-violet-600">
+          <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
               class="h-24 w-24 bg-white bg-opacity-50 group-hover:bg-purdark-300  group-hover:bg-opacity-30  group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10  group-hover:dark:bg-purdark-700  group-hover:dark:bg-opacity-30  rounded-3xl flex items-center justify-center">
               <img class="h-12" src="./public/img/daily_rotation.png" alt="" />
@@ -389,7 +389,7 @@
           <div class="flex">
             <label for="change-username" class="flex-auto">Username</label><input id="change-username" type="text"
               placeholder="Username"
-              class="flex-1 ml-16 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30" />
+              class="flex-1 ml-16 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
           </div>
 
           <div class="flex-col space-y-4">
@@ -402,14 +402,14 @@
         </div>
         <div class="flex gap-2 mt-8">
           <button id="btn-save-profile"
-            class="flex gap-2 text-base items-center content-center text-white bg-violet-700 hover:bg-violet-800 hover:dark:bg-violet-600 rounded-full border-2 border-purdark-300/20 dark:border-purdark-300/20 px-6 py-2">
+            class="flex gap-2 text-base items-center content-center text-white bg-purple-700 hover:bg-purple-800 hover:dark:bg-purple-600 rounded-full border-2 border-purdark-300/20 dark:border-purdark-300/20 px-6 py-2">
             <span id="icon-save" class="material-symbols-rounded">save</span><span id="icon-spin"
               class="hidden animate-spin material-symbols-rounded">
               progress_activity
             </span>Save Changes
           </button>
           <button id="btn-cancel-profile"
-            class="flex gap-2 text-base items-center content-center text-purdark-600 dark:text-purdark-400 hover:text-violet-600 rounded-full px-6 py-2">
+            class="flex gap-2 text-base items-center content-center text-purdark-600 dark:text-purdark-400 hover:text-purple-600 rounded-full px-6 py-2">
             Cancel
           </button>
         </div>
@@ -437,28 +437,28 @@
           <div class="flex">
             <label for="old-password" class="flex-auto">Old Password</label><input id="old-password" s type="password"
               placeholder="********"
-              class=" flex-1 ml-16 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30" />
+              class=" flex-1 ml-16 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
 
           </div>
           <div class=" flex  ">
             <label for="new-password" class="flex-auto">New password</label><input id="new-password" type="password"
               placeholder="********"
-              class=" flex-1 ml-16 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30" />
+              class=" flex-1 ml-16 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
             </input>
           </div>
           <div class="flex">
             <label for="confirm-password" class="flex-auto">New password confirmation</label><input
               id="confirm-password" type="password" placeholder="********"
-              class="flex-1 ml-16 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-violet-400 focus:border focus:border-violet-400 dark:ring-opacity-30" />
+              class="flex-1 ml-16 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
           </div>
         </div>
         <div class="flex gap-2 mt-8 ">
           <button id="btn-save-password"
-            class="flex gap-2 text-base items-center content-center text-white bg-violet-700 hover:bg-violet-800 hover:dark:bg-violet-600 rounded-full border-2 border-purdark-300/20 dark:border-purdark-300/20 px-6 py-2">
+            class="flex gap-2 text-base items-center content-center text-white bg-purple-700 hover:bg-purple-800 hover:dark:bg-purple-600 rounded-full border-2 border-purdark-300/20 dark:border-purdark-300/20 px-6 py-2">
             <span class="material-symbols-rounded">save</span>Save Changes
           </button>
           <button id="btn-cancel-password"
-            class="flex gap-2 items-center content-center text-purdark-600 dark:text-purdark-400 hover:text-violet-600 rounded-full px-6 py-2">
+            class="flex gap-2 items-center content-center text-purdark-600 dark:text-purdark-400 hover:text-purple-600 rounded-full px-6 py-2">
             Cancel
           </button>
         </div>
@@ -467,1192 +467,2355 @@
     
 
     <!--Ini adalah Table Billing Cash-->
-    <div id="table_billing_cash" class="relative top-0 hidden">
+    <div id="table_billing_cash" class="mt-16  max-w-full max-h-fit mx-[2%] ">
+     <div class="h-[80%] max-h-fit overflow-y-scroll fixed w-96% ">
       <table
-        class="w-95% h-85% fixed  dark:text-purdark-400 text-base mt-16 left-50% -translate-x-50% bg-violet-600  dark:bg-purdark-900 rounded-lg">
-        <thead class="w-full text-white sticky top-6">
-          <tr>
-            <th
-              class="w-16 rounded-tl-lg border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              No.
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Callsign
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Registration
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Scope
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Airport
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Schedule
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Estimate
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Block
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Actual
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Avio
-            </th>
-            <th
-              class="rounded-tr-lg bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Fstate
-            </th>
-          </tr>
-        </thead>
+      class="dark:text-purdark-400  min-w-full w-96% text-base   dark:bg-purdark-900 rounded-lg">
+      <thead class="min-w-full text-white   w-96% ">
+        <tr class="">
+          <th
+            class="sticky top-0 w-16 rounded-tl-lg   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+            No.
+          </th>
+          <th
+            class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+            Callsign
+          </th>
+          <th
+            class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+            Registration
+          </th>
+          <th
+            class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+            Scope
+          </th>
+          <th
+            class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+            Airport
+          </th>
+          <th
+            class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+            Schedule
+          </th>
+          <th
+            class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+            Estimate
+          </th>
+          <th
+            class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+            Block
+          </th>
+          <th
+            class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+            Actual
+          </th>
+          <th
+            class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+            Avio
+          </th>
+          <th
+            class="sticky top-0 rounded-tr-lg bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+            Fstate
+          </th>
+        </tr>
+      </thead>
+      <tbody class=" font-normal">
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            1.
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
 
-        <tbody class="h-[760px] overflow-y-scroll font-normal">
-          <tr class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              1.
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            2.
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            3.
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            4.
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            5.
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            6.
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            7.
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            8.
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            9.
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            10.
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+      </tbody>
+     
+    </table>
+    <div
+    id="pagination"
+    class="font-semibold z-50  bg-purple-600 text-white top-[90%] fixed  w-96%  py-1   flex items-center text-center justify-center gap-2 rounded-b-lg"
+  >
+    <button class="w-10 h-10 flex justify-center items-center rounded-full hover:bg-purple-700 active:bg-purple-80">
+      <span class="material-symbols-rounded"> chevron_left </span>
+    </button>
+    <button
+      class="w-10 h-10  hover:bg-purple-700 active:bg-purple-800 focus:bg-purple-900  flex justify-center items-center rounded-full"
+    >
+      1
+  </button>
+    <button class="w-10 h-10  hover:bg-purple-700 active:bg-purple-800 focus:bg-purple-900  flex justify-center items-center rounded-full">
+      2
+    </button>
+    <button class="w-10 h-10  hover:bg-purple-700 active:bg-purple-800 focus:bg-purple-900  flex justify-center items-center rounded-full">
+      3
+    </button>
+    <button class="w-10 h-10  hover:bg-purple-700 active:bg-purple-800 focus:bg-purple-900 flex justify-center items-center rounded-full">
+      ...
+    </button>
+    <button class="w-10 h-10  hover:bg-purple-700 active:bg-purple-800 flex justify-center items-center rounded-full">
+      <span class="material-symbols-rounded"> chevron_right </span>
+    </button>
+  </div>
 
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-100 hover:bg-violet-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              2.
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              3.
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-100 hover:bg-violet-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              4.
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              5.
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-100 hover:bg-violet-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              6.
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              7.
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-100 hover:bg-violet-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              8.
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              9.
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-100 hover:bg-violet-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              10.
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-        </tbody>
-      </table>
+
+
+      
+     </div>
+   
     </div>
-    <!--Ini adalah Table Billing Charge-->
-    <div id="table_billing_charge" class="hidden">
-      <table
-        class="w-95% h-85% table-fixed dark:text-purdark-400 text-base  mx-auto bg-violet-600  dark:bg-purdark-900 rounded-lg">
-        <thead class="w-full text-white sticky top-6">
-          <tr>
-            <th
-              class="w-16 rounded-tl-lg border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              <input type="checkbox" aria-label="checkbox"
-                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-violet-500 rounded" />
 
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Callsign
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Registration
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Scope
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Airport
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Schedule
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Estimate
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Block
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Actual
-            </th>
-            <th
-              class="border-r border-violet-500 bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Avio
-            </th>
-            <th
-              class="rounded-tr-lg bg-violet-600 hover:bg-violet-700 text-center items-center justify-center px-2 py-4">
-              Fstate
-            </th>
-          </tr>
-        </thead>
+     <!--Ini adalah Table Billing Charge-->
+     <div id="table_billing_charge" class="mt-16  max-w-full max-h-fit mx-[2%] ">
+      <div class="h-[80%] max-h-fit overflow-y-scroll fixed w-96% ">
+       <table
+       class="dark:text-purdark-400  min-w-full w-96% text-base dark:bg-purdark-900 rounded-lg">
+       <thead class="min-w-full text-white w-96%">
+         <tr class="">
+           <th
+             class="sticky top-0 w-16 rounded-tl-lg   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+           </th>
+           <th
+             class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+             Callsign
+           </th>
+           <th
+             class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+             Registration
+           </th>
+           <th
+             class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+             Scope
+           </th>
+           <th
+             class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+             Airport
+           </th>
+           <th
+             class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+             Schedule
+           </th>
+           <th
+             class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+             Estimate
+           </th>
+           <th
+             class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+             Block
+           </th>
+           <th
+             class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+             Actual
+           </th>
+           <th
+             class="sticky top-0   bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+             Avio
+           </th>
+           <th
+             class="sticky top-0 rounded-tr-lg bg-purple-600 hover:bg-purple-700 text-center items-center justify-center px-2 py-4">
+             Fstate
+           </th>
+         </tr>
+       </thead>
+       <tbody class="font-normal">
+         <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>JT-235</div>
+             <div>JT-235</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>PKLHP</div>
+             <div>B320</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>D</div>
+             <div>D</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>WAAA</div>
+             <div>WRRR</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>03/08:00</div>
+             <div>03/11:00</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>03/08:00</div>
+             <div>03/09:00</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>03/08:00</div>
+             <div>03/10:00</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>03/08:00</div>
+             <div>03/08:00</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+ 
+             <div id="checked">
+               <span class="material-symbols-rounded text-base text-green-600">
+                 check_circle
+               </span>
+             </div>
+             <div id="no-checked">
+               <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                 cancel
+               </span>
+             </div>
+           </th>
+           <th class="font-normal py-3">
+             <div>NML</div>
+             <div>NML</div>
+           </th>
+         </tr>
+         <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>JT-235</div>
+             <div>JT-235</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>PKLHP</div>
+             <div>B320</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>D</div>
+             <div>D</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>WAAA</div>
+             <div>WRRR</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>03/08:00</div>
+             <div>03/11:00</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>03/08:00</div>
+             <div>03/09:00</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>03/08:00</div>
+             <div>03/10:00</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div>03/08:00</div>
+             <div>03/08:00</div>
+           </th>
+           <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <div id="checked">
+               <span class="material-symbols-rounded text-base text-green-600">
+                 check_circle
+               </span>
+             </div>
+             <div id="no-checked">
+               <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                 cancel
+               </span>
+             </div>
+           </th>
+           <th class="font-normal py-3">
+             <div>NML</div>
+             <div>NML</div>
+           </th>
+         </tr>
+         <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
 
-        <tbody class="h-65% overflow-y-scroll font-normal">
-          <tr class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <input type="checkbox" aria-label="checkbox"
-                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-violet-500 rounded" />
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-100 hover:bg-violet-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <input type="checkbox" aria-label="checkbox"
-                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-violet-500 rounded" />
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <input type="checkbox" aria-label="checkbox"
-                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-violet-500 rounded" />
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-100 hover:bg-violet-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <input type="checkbox" aria-label="checkbox"
-                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-violet-500 rounded" />
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <input type="checkbox" aria-label="checkbox"
-                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-violet-500 rounded" />
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-100 hover:bg-violet-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <input type="checkbox" aria-label="checkbox"
-                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-violet-500 rounded" />
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <input type="checkbox" aria-label="checkbox"
-                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-violet-500 rounded" />
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-100 hover:bg-violet-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <input type="checkbox" aria-label="checkbox"
-                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-violet-500 rounded" />
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-50 hover:bg-violet-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <input type="checkbox" aria-label="checkbox"
-                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-violet-500 rounded" />
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-          <tr class="font-normal bg-violet-100 hover:bg-violet-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <input type="checkbox" aria-label="checkbox"
-                class="appearance-none h-4 w-4 bg-white  checked:bg-violet-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-violet-500 rounded" />
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>JT-235</div>
-              <div>JT-235</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>PKLHP</div>
-              <div>B320</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>D</div>
-              <div>D</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>WAAA</div>
-              <div>WRRR</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/11:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/09:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/10:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div>03/08:00</div>
-              <div>03/08:00</div>
-            </th>
-            <th class="font-normal py-3 border-r border-violet-200 dark:border-purdark-700">
-              <div id="checked">
-                <span class="material-symbols-rounded text-base text-green-600">
-                  check_circle
-                </span>
-              </div>
-              <div id="no-checked">
-                <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
-                  cancel
-                </span>
-              </div>
-            </th>
-            <th class="font-normal py-3">
-              <div>NML</div>
-              <div>NML</div>
-            </th>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-50 hover:bg-purple-200 dark:bg-purdark-800 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+             <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+        <tr class="font-normal bg-purple-100 hover:bg-purple-200 dark:bg-purdark-900 dark:hover:bg-purdark-700">
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <input type="checkbox" aria-label="checkbox"
+                class="mx-auto appearance-none h-4 w-4 bg-white  checked:bg-purple-600 checked:text-white border-2 border-white ring-2 ring-purdark-300 checked:ring-purple-500 rounded" />
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>JT-235</div>
+            <div>JT-235</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>PKLHP</div>
+            <div>B320</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>D</div>
+            <div>D</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>WAAA</div>
+            <div>WRRR</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/11:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/09:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/10:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div>03/08:00</div>
+            <div>03/08:00</div>
+          </th>
+          <th class="font-normal py-3 border-r border-purple-200 dark:border-purdark-700">
+            <div id="checked">
+              <span class="material-symbols-rounded text-base text-green-600">
+                check_circle
+              </span>
+            </div>
+            <div id="no-checked">
+              <span class="material-symbols-rounded text-base text-purdark-600 dark:text-purdark-400">
+                cancel
+              </span>
+            </div>
+          </th>
+          <th class="font-normal py-3">
+            <div>NML</div>
+            <div>NML</div>
+          </th>
+        </tr>
+         
+
+       </tbody>
+      
+     </table>
+     <div
+     id="pagination"
+     class="font-semibold z-50  bg-purple-600 text-white top-[90%] fixed  w-96%  py-1   flex items-center text-center justify-center gap-2 rounded-b-lg"
+   >
+     <button class="w-10 h-10 flex justify-center items-center rounded-full hover:bg-purple-700 active:bg-purple-80">
+       <span class="material-symbols-rounded"> chevron_left </span>
+     </button>
+     <button
+       class="w-10 h-10  hover:bg-purple-700 active:bg-purple-800 focus:bg-purple-900  flex justify-center items-center rounded-full"
+     >
+       1
+   </button>
+     <button class="w-10 h-10  hover:bg-purple-700 active:bg-purple-800 focus:bg-purple-900  flex justify-center items-center rounded-full">
+       2
+     </button>
+     <button class="w-10 h-10  hover:bg-purple-700 active:bg-purple-800 focus:bg-purple-900  flex justify-center items-center rounded-full">
+       3
+     </button>
+     <button class="w-10 h-10  hover:bg-purple-700 active:bg-purple-800 focus:bg-purple-900 flex justify-center items-center rounded-full">
+       ...
+     </button>
+     <button class="w-10 h-10  hover:bg-purple-700 active:bg-purple-800 flex justify-center items-center rounded-full">
+       <span class="material-symbols-rounded"> chevron_right </span>
+     </button>
+   </div>
+ 
+ 
+ 
+       
+      </div>
+    
+     </div>
+
+ 
 
 
 

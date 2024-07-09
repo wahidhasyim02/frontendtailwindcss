@@ -6,10 +6,7 @@
   input[type="checkbox"] {
     accent-color: theme("colors.white");
     margin-left: 50%;
-    translate: -50%;
-  }
-
-  input[type="checkbox"] {
+    margin-right: -50%;
     display: flex;
     justify-content: center;
     align-items: center;
