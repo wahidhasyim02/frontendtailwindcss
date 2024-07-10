@@ -516,6 +516,12 @@ document
     document.getElementById("icon-spin-download").classList.remove("hidden");
     setTimeout(() => {
       document.getElementById("icon-spin-download").classList.add("hidden");
+    }, 3000);
+    setTimeout(() => {
+      document.getElementById("icon-done").classList.remove("hidden");
+    }, 3000);
+    setTimeout(() => {
+      document.getElementById("icon-done").classList.add("hidden");
       document.getElementById("icon-download").classList.remove("hidden");
-    }, 5000);
+    }, 6000);
   });
