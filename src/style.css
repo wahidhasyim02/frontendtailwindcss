@@ -847,10 +847,6 @@ input[type="checkbox"]:checked::before {
   margin-right: auto !important;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem !important;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem !important;
 }
@@ -2497,11 +2493,6 @@ input[type="checkbox"]:checked::before {
 .px-3 {
   padding-left: 0.75rem !important;
   padding-right: 0.75rem !important;
-}
-
-.px-4 {
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
 }
 
 .px-6 {
