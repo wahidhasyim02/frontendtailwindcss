@@ -281,6 +281,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const initialState = {
   textMenuVisible: true,
   tableBillingCashVisible: false,
+  filterBillingcashVisible: false,
   tableBillingChargeVisible: false,
   iconAppsVisible: false,
   appBillingCashVisible: false,
@@ -304,6 +305,9 @@ function applyState(state) {
     .getElementById("table_billing_cash")
     .classList.toggle("hidden", !state.tableBillingCashVisible);
   document
+    .getElementById("filter-billing-cash")
+    .classList.toggle("hidden", !state.filterBillingcashVisible);
+  document
     .getElementById("table_billing_charge")
     .classList.toggle("hidden", !state.tableBillingChargeVisible);
 
@@ -319,6 +323,10 @@ function applyState(state) {
   document
     .getElementById("app-billing-cash")
     .classList.toggle("hidden", !state.appBillingCashVisible);
+  document
+    .getElementById("filter-billing-cash")
+    .classList.toggle("hidden", !state.filterBillingcashVisible);
+
   document
     .getElementById("app-billing-charge")
     .classList.toggle("hidden", !state.appBillingChargeVisible);
@@ -339,6 +347,7 @@ document
     updateState({
       textMenuVisible: false,
       tableBillingCashVisible: true,
+      filterBillingcashVisible: true,
       tableBillingChargeVisible: false,
       iconAppsVisible: true,
       appBillingCashVisible: true,
@@ -354,6 +363,7 @@ document
       textMenuVisible: false,
       tableBillingCashVisible: false,
       tableBillingChargeVisible: true,
+      filterBillingcashVisible: true,
       iconAppsVisible: true,
       appBillingCashVisible: false,
       appBillingChargeVisible: true,
@@ -478,3 +488,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
+
+function toggleVisibility(buttonId, listId) {
+  const button = document.getElementById(buttonId);
+  const list = document.getElementById(listId);
+
+  button.addEventListener("click", function () {
+    list.classList.toggle("hidden");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!list.contains(event.target) && !button.contains(event.target)) {
+      list.classList.add("hidden");
+    }
+  });
+}
+
+toggleVisibility("btn-years", "list-years");
+toggleVisibility("btn-months", "list-months");
+toggleVisibility("btn-days", "list-days");
+
+// Save profile changes
+document
+  .getElementById("btn-download-filter")
+  .addEventListener("click", function () {
+    document.getElementById("icon-download").classList.add("hidden");
+    document.getElementById("icon-spin-download").classList.remove("hidden");
+    setTimeout(() => {
+      document.getElementById("icon-spin-download").classList.add("hidden");
+      document.getElementById("icon-download").classList.remove("hidden");
+    }, 5000);
+  });
