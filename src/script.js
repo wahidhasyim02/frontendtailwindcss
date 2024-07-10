@@ -489,24 +489,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-// Script Search Billing Cash
-document.addEventListener("DOMContentLoaded", (event) => {
-  const searchBillingCash = document.getElementById("search-billing-cash");
-  const listBillingCash = document.querySelectorAll("#body-billing-cash tr td");
-
-  searchBillingCash.addEventListener("input", function () {
-    const filterBillingCash = searchBillingCash.value.toLowerCase();
-
-    listBillingCash.forEach(function (itemValue) {
-      if (itemValue.textContent.toLowerCase().includes(filterBillingCash)) {
-        itemValue.classList.add("bg-yellow-50  dark:bg-yellow-50");
-      } else {
-        itemValue.classList.remove("bg-purple-50  dark:bg-purdark-800");
-      }
-    });
-  });
-});
-
 // Save profile changes
 document
   .getElementById("btn-download-filter")
