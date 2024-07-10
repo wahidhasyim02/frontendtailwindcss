@@ -719,6 +719,10 @@ input[type="checkbox"]:checked::before {
   left: 50% !important;
 }
 
+.left-50\% {
+  left: 50% !important;
+}
+
 .right-0 {
   right: 0px !important;
 }
@@ -757,6 +761,10 @@ input[type="checkbox"]:checked::before {
 
 .top-6 {
   top: 1.5rem !important;
+}
+
+.top-\[40\%\] {
+  top: 40% !important;
 }
 
 .top-\[90\%\] {
@@ -1065,6 +1073,10 @@ input[type="checkbox"]:checked::before {
   width: 4rem !important;
 }
 
+.w-18 {
+  width: 74px !important;
+}
+
 .w-2 {
   width: 0.5rem !important;
 }
@@ -1077,8 +1089,16 @@ input[type="checkbox"]:checked::before {
   width: 6rem !important;
 }
 
+.w-36 {
+  width: 9rem !important;
+}
+
 .w-4 {
   width: 1rem !important;
+}
+
+.w-44 {
+  width: 11rem !important;
 }
 
 .w-6 {
@@ -1127,6 +1147,11 @@ input[type="checkbox"]:checked::before {
 
 .min-w-full {
   min-width: 100% !important;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
 }
 
 .max-w-full {
@@ -1182,6 +1207,11 @@ input[type="checkbox"]:checked::before {
 }
 
 .-translate-x-1\/2 {
+  --tw-translate-x: -50% !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.-translate-x-50\% {
   --tw-translate-x: -50% !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
@@ -2336,6 +2366,16 @@ input[type="checkbox"]:checked::before {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-yellow-500 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-yellow-50 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(254 252 232 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5 !important;
 }
@@ -2529,6 +2569,18 @@ input[type="checkbox"]:checked::before {
 
 .pl-2 {
   padding-left: 0.5rem !important;
+}
+
+.pl-5 {
+  padding-left: 1.25rem !important;
+}
+
+.pr-3 {
+  padding-right: 0.75rem !important;
+}
+
+.pr-6 {
+  padding-right: 1.5rem !important;
 }
 
 .text-left {
@@ -3145,6 +3197,21 @@ input[type="checkbox"]:checked::before {
   forced-color-adjust: none !important;
 }
 
+.highlight {
+  animation: highlight-animation 1s infinite;
+}
+
+@keyframes highlight-animation {
+  0%,
+  100% {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3244,6 +3311,11 @@ input[type="checkbox"]:checked::before {
 .hover\:bg-purple-800:hover {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(107 33 168 / var(--tw-bg-opacity)) !important;
+}
+
+.hover\:bg-yellow-600:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(202 138 4 / var(--tw-bg-opacity)) !important;
 }
 
 .hover\:font-bold:hover {
@@ -3454,6 +3526,21 @@ input[type="checkbox"]:checked::before {
   background-color: rgb(56 189 248 / var(--tw-bg-opacity)) !important;
 }
 
+.dark\:bg-yellow-600:where(.dark, .dark *) {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(202 138 4 / var(--tw-bg-opacity)) !important;
+}
+
+.dark\:bg-yellow-800:where(.dark, .dark *) {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(133 77 14 / var(--tw-bg-opacity)) !important;
+}
+
+.dark\:bg-yellow-50:where(.dark, .dark *) {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(254 252 232 / var(--tw-bg-opacity)) !important;
+}
+
 .dark\:bg-opacity-10:where(.dark, .dark *) {
   --tw-bg-opacity: 0.1 !important;
 }
@@ -3519,6 +3606,11 @@ input[type="checkbox"]:checked::before {
 .hover\:dark\:bg-purple-600:where(.dark, .dark *):hover {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(147 51 234 / var(--tw-bg-opacity)) !important;
+}
+
+.hover\:dark\:bg-yellow-500:where(.dark, .dark *):hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity)) !important;
 }
 
 .hover\:dark\:text-purple-600:where(.dark, .dark *):hover {

@@ -51,3 +51,17 @@
     background-color: white;
   }
 }
+
+.highlight {
+  animation: highlight-animation 1s infinite;
+}
+
+@keyframes highlight-animation {
+  0%,
+  100% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: transparent;
+  }
+}
