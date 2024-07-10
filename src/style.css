@@ -590,18 +590,16 @@ video {
 
 input[type="checkbox"] {
   accent-color: #fff;
-  margin-left: 50%;
-  margin-right: -50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-input[type="checkbox"]::before {
-  content: "";
-  width: 9px;
-  height: 8px;
-  clip-path: polygon(
+/* input[type="checkbox"]::before {
+    content: "";
+    width: 9px;
+    height: 8px;
+    clip-path: polygon(
       22% 33%,
       3% 57%,
       36% 89%,
@@ -610,14 +608,18 @@ input[type="checkbox"]::before {
       80% 0%,
       36% 50%
     );
-  transform: scale(0);
-  background-color: #faf5ff;
-  align-items: center;
-  display: flex;
-}
+    transform: scale(0);
+    background-color: theme("colors.[purple][50]");
+    align-items: center;
+    display: flex;
+  }*/
 
 input[type="checkbox"]:checked::before {
   transform: scale(1);
+}
+
+.checkbox {
+  z-index: -100;
 }
 
 .overflow-y-auto {

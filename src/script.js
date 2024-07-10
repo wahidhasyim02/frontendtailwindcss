@@ -525,3 +525,15 @@ document
       document.getElementById("icon-download").classList.remove("hidden");
     }, 6000);
   });
+
+//Fungsi checked all billing charge
+document.getElementById("checkbox-head").addEventListener("click", function () {
+  const checkboxes = document.querySelectorAll(
+    "#body_billing_charge .checkbox"
+  );
+  const isChecked = this.checked;
+
+  checkboxes.forEach(function (checkbox) {
+    checkbox.checked = isChecked;
+  });
+});
