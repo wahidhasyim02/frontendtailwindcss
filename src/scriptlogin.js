@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // dan tambahkan class "hidden" ke "popup-login-skeleton"
       document.getElementById("popup-login").classList.remove("hidden");
       document.getElementById("popup-login-skeleton").classList.add("hidden");
-    }, 5000);
+    }, 3000);
 
     // Tandai bahwa situs telah dikunjungi
     localStorage.setItem("login-visited", "true");

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // dan tambahkan class "hidden" ke "header-skeleton"
       document.getElementById("header").classList.remove("hidden");
       document.getElementById("header-skeleton").classList.add("hidden");
-    }, 5000);
+    }, 3000);
 
     // Tandai bahwa situs telah dikunjungi
     localStorage.setItem("visited", "true");
@@ -410,22 +410,22 @@ document
     setTimeout(() => {
       document.getElementById("icon-spin").classList.add("hidden");
       document.getElementById("icon-save").classList.remove("hidden");
-    }, 5000);
+    }, 3000);
     setTimeout(() => {
       document.getElementById("popup-change-profile").classList.add("hidden");
-    }, 5000);
+    }, 3000);
     setTimeout(() => {
       document.getElementById("popup-alert").classList.remove("hidden");
-    }, 5000);
+    }, 3000);
     setTimeout(() => {
       document.getElementById("popup-alert").classList.add("hidden");
-    }, 10000);
+    }, 6000);
 
     if (newUsername) {
       localStorage.setItem("username", newUsername);
       setTimeout(() => {
         document.getElementById("account-name").innerText = newUsername;
-      }, 5000);
+      }, 3000);
     }
 
     if (file) {
@@ -437,7 +437,7 @@ document
           document.getElementById("profile-img-header").src = dataURL;
           document.getElementById("profile-img-change").src = dataURL;
           document.getElementById("profile-img-setting").src = dataURL;
-        }, 5000);
+        }, 3000);
       };
       reader.readAsDataURL(file);
     }

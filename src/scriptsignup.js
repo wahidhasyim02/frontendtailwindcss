@@ -68,10 +68,10 @@ document.getElementById("btn-signup").addEventListener("click", function () {
     document.getElementById("popup-alert").classList.remove("hidden");
     setTimeout(() => {
       document.getElementById("popup-alert").classList.add("hidden");
-    }, 5000);
+    }, 3000);
     setTimeout(() => {
       window.location.href = "login.html";
-    }, 1000);
+    }, 6000);
   }
 });
 
