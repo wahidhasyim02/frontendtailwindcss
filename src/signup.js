@@ -65,7 +65,9 @@ document.getElementById("btn-signup").addEventListener("click", function () {
   if (isValid) {
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
-    document.getElementById("popup-alert").classList.remove("hidden");
+    setTimeout(() => {
+      document.getElementById("popup-alert").classList.remove("hidden");
+    }, 1000);
     setTimeout(() => {
       document.getElementById("popup-alert").classList.add("hidden");
     }, 3000);
