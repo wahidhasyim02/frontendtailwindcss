@@ -865,10 +865,6 @@ input[type="checkbox"]:checked::before {
   margin-top: 0.25rem !important;
 }
 
-.mt-10 {
-  margin-top: 2.5rem !important;
-}
-
 .mt-2 {
   margin-top: 0.5rem !important;
 }
@@ -1152,10 +1148,6 @@ input[type="checkbox"]:checked::before {
 
 .max-w-full {
   max-width: 100% !important;
-}
-
-.max-w-sm {
-  max-width: 24rem !important;
 }
 
 .flex-1 {
