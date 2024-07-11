@@ -117,3 +117,37 @@ toggleVisibility("btn-years", "list-years", "text-years");
 toggleVisibility("btn-months", "list-months", "text-months");
 toggleVisibility("btn-days", "list-days", "text-days");
 toggleVisibility("btn-list-action", "list-actions", "text-action");
+
+// Script untuk senentukan secara default date sekarang
+document.addEventListener("DOMContentLoaded", (event) => {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = date.toLocaleString("default", { month: "long" });
+  const day = date.getDate();
+
+  document.getElementById("text-years").innerText = year;
+  document.getElementById("text-months").innerText = month;
+  document.getElementById("text-days").innerText = day;
+});
+
+document
+  .getElementById("search-billing-cash")
+  .addEventListener("input", function () {
+    const searchValue = this.value.toLowerCase();
+    const rows = document.querySelectorAll("#body_billing_charge tr");
+
+    rows.forEach((row) => {
+      const th = row.querySelector("th").innerText.toLowerCase();
+      const td = row.querySelector("td").innerText.toLowerCase();
+
+      if (th.includes(searchValue) || td.includes(searchValue)) {
+        row.classList.remove("bg-purple-50", "dark:bg-purdark-800");
+        row.classList.add("bg-yellow-50");
+        row.classList.remove("hidden");
+      } else {
+        row.classList.add("hidden");
+        row.classList.remove("bg-yellow-50");
+        row.classList.add("bg-purple-50", "dark:bg-purdark-800");
+      }
+    });
+  });

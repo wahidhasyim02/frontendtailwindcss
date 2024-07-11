@@ -64,7 +64,7 @@ function updateState(changes) {
 document
   .getElementById("btn_billing_cash")
   .addEventListener("click", (event) => {
-    event.preventDefault();
+    menu.classList.add("hidden"), event.preventDefault();
     updateState({
       textMenuVisible: false,
       tableBillingCashVisible: true,
@@ -79,7 +79,7 @@ document
 document
   .getElementById("btn_billing_charge")
   .addEventListener("click", (event) => {
-    event.preventDefault();
+    menu.classList.add("hidden"), event.preventDefault();
     updateState({
       textMenuVisible: false,
       tableBillingCashVisible: false,
