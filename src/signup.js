@@ -1,3 +1,28 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Periksa apakah ini adalah kunjungan pertama setelah browser dibuka
+  if (!localStorage.getItem("signup-visited")) {
+    // Jika belum pernah dikunjungi, tambahkan class "hidden" pada "popup-login"
+    // dan remove class "hidden" pada "popup-login-skeleton"
+    document.getElementById("popup-signup").classList.add("hidden");
+    document.getElementById("popup-signup-skeleton").classList.remove("hidden");
+
+    // Set timer untuk 1 detik
+    setTimeout(() => {
+      // Setelah 1 detik, hapus class "hidden" dari "popup-login"
+      // dan tambahkan class "hidden" ke "popup-login-skeleton"
+      document.getElementById("popup-signup").classList.remove("hidden");
+      document.getElementById("popup-signup-skeleton").classList.add("hidden");
+    }, 1000);
+
+    // Tandai bahwa situs telah dikunjungi
+    localStorage.setItem("signup-visited", "true");
+  } else {
+    // Jika sudah pernah dikunjungi, pastikan popup-login tampil dan skeleton disembunyikan
+    document.getElementById("popup-signup").classList.remove("hidden");
+    document.getElementById("popup-signup-skeleton").classList.add("hidden");
+  }
+});
+
 document.getElementById("btn-signup").addEventListener("click", function () {
   const username = document.getElementById("signup-username").value;
   const password = document.getElementById("signup-password").value;
@@ -73,7 +98,7 @@ document.getElementById("btn-signup").addEventListener("click", function () {
     }, 3000);
     setTimeout(() => {
       window.location.href = "login.html";
-    }, 6000);
+    }, 3000);
   }
 });
 

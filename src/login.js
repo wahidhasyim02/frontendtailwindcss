@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("popup-login").classList.add("hidden");
     document.getElementById("popup-login-skeleton").classList.remove("hidden");
 
-    // Set timer untuk 5 detik
+    // Set timer untuk 1 detik
     setTimeout(() => {
-      // Setelah 5 detik, hapus class "hidden" dari "popup-login"
+      // Setelah 1 detik, hapus class "hidden" dari "popup-login"
       // dan tambahkan class "hidden" ke "popup-login-skeleton"
       document.getElementById("popup-login").classList.remove("hidden");
       document.getElementById("popup-login-skeleton").classList.add("hidden");
-    }, 3000);
+    }, 1000);
 
     // Tandai bahwa situs telah dikunjungi
     localStorage.setItem("login-visited", "true");

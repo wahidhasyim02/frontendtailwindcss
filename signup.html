@@ -1,128 +1,137 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up - Frontend - Tailwindcs</title>
-    <link rel="icon" href="./public/img/favicon.ico" />
-    <link rel="shortcut icon" href="./public/img/favicon.ico" />
-    <link rel="msapplication-square64x64logo" href="./public/img/favicon.ico" />
-    <link rel="apple-touch-icon" href="./public/img/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./src/style.css" />
-  </head>
 
-  <body
-    class="w-full h-screen min-w-full m-0 bg-hero-light bg-no-repeat font-inter text-base bg-cover bg-purdark-100 dark:bg-purdark-900 text-purdark-500 dark:text-purdark-400"
-  >
-    <!--Ini adalah Popup signup-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up - Frontend - Tailwindcs</title>
+  <link rel="icon" href="./public/img/favicon.ico" />
+  <link rel="shortcut icon" href="./public/img/favicon.ico" />
+  <link rel="msapplication-square64x64logo" href="./public/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="./public/img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body
+  class="w-full h-screen min-w-full m-0 bg-hero-light bg-no-repeat font-inter text-base bg-cover bg-purdark-100 dark:bg-purdark-900 text-purdark-500 dark:text-purdark-400">
+  <!--Ini adalah Popup signup-->
+  <div id="popup-signup" class="hidden left-1/2 -translate-x-1/2 w-auto top-18 py-10 fixed">
     <div
-      id="popup-login"
-      class="left-1/2 -translate-x-1/2 w-auto top-18 py-10 fixed"
-    >
-      <div
-        class="bg-white dark:bg-purdark-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-purdark-700 dark:text-purdark-300 border border-purdark-300/15 dark:border-purdark-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col"
-      >
-        <div class="flex content-center justify-center items-center">
-          <img
-            src="./public/img/favicon.jpg"
-            class="inline w-16 h-16 rounded-full"
-            alt=""
-          />
+      class="bg-white dark:bg-purdark-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-purdark-700 dark:text-purdark-300 border border-purdark-300/15 dark:border-purdark-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col">
+      <div class="flex content-center justify-center items-center">
+        <img src="./public/img/logo_app.png" class="inline w-24 h-24 rounded-full" alt="" />
+      </div>
+      <div class="flex-col space-y-2 mt-6">
+        <div class="flex-col space-y-2">
+          <label for="signup-username" class="">Username</label>
+          <div>
+            <input id="signup-username" type="text" placeholder="Username"
+              class="w-full px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
+          </div>
+          <p id="not-fill-username" class="text-xs invisible peer-invalid:visible text-pink-600"></p>
         </div>
-        <div class="flex-col space-y-2 mt-6">
-          <div class="flex-col space-y-2">
-            <label for="signup-username" class="">Username</label>
+        <div class="flex-col space-y-2">
+          <label for="signup-password" class="">Create Password</label>
+          <div>
+            <input id="signup-password" type="password" placeholder="******"
+              class="w-full px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
+          </div>
+          <p id="not-fill-password" class="text-xs invisible peer-invalid:visible text-pink-600"></p>
+        </div>
+        <div class="flex-col space-y-2">
+          <button id="btn-signup"
+            class="w-full text-base flex gap-2 items-center content-center justify-center text-white bg-purple-700 hover:bg-purple-800 hover:dark:bg-purple-600 rounded-full border-2 border-purdark-300/20 dark:border-purdark-300/20 px-6 py-2">
+            Sign up
+          </button>
+          <a href="login.html">
+            <button id="btn-to-login"
+              class="w-full text-base flex gap-2 items-center content-center justify-center text-purdark-700 dark:text-purdark-300 hover:text-purple-600 rounded-full px-6 py-2">
+              Login
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Ini adalah Popup signup-->
+  <div id="popup-signup-skeleton" class="hidden left-1/2 -translate-x-1/2 w-auto top-18 py-10 fixed">
+    <div
+      class="bg-white dark:bg-purdark-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-purdark-700 dark:text-purdark-300 border border-purdark-300/15 dark:border-purdark-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col">
+      <div class="flex content-center justify-center items-center">
+        <img
+          class="animate-pulse bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700 rounded-md inline w-24 h-24"
+          alt="" />
+      </div>
+      <div class="flex-col space-y-2 mt-6">
+        <div class="flex-col space-y-2">
+          <label
+            class="animate-pulse bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700 rounded-md">Username
+            <div>
+              <input type="text"
+                class="peer w-full px-3 py-1 animate-pulse bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700 rounded-md" />
+            </div>
+          </label>
+          <p class="text-xs peer-invalid:visible text-pink-600"></p>
+        </div>
+        <div class="flex-col space-y-2">
+          <label for="login-username"
+            class="animate-pulse bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700 rounded-md">Password
             <div>
               <input
-                id="signup-username"
-                type="text"
-                placeholder="Username"
-                class="w-full px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30"
-              />
+                class="peer w-full px-3 py-1 animate-pulse bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700 rounded-md" />
             </div>
-            <p
-              id="not-fill-username"
-              class="text-xs invisible peer-invalid:visible text-pink-600"
-            ></p>
-          </div>
-          <div class="flex-col space-y-2">
-            <label for="signup-password" class="">Create Password</label>
-            <div>
-              <input
-                id="signup-password"
-                type="password"
-                placeholder="******"
-                class="w-full px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30"
-              />
-            </div>
-            <p
-              id="not-fill-password"
-              class="text-xs invisible peer-invalid:visible text-pink-600"
-            ></p>
-          </div>
-          <div class="flex-col space-y-2">
+          </label>
+          <p class="text-xs peer-invalid:visible text-pink-600"></p>
+        </div>
+        <div class="flex-col space-y-2">
+          <button
+            class="w-full text-base flex gap-2 items-center content-center justify-center animate-pulse bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700 rounded-md px-6 py-2">
+            Sign up
+          </button>
+          <a href="login.html">
             <button
-              id="btn-signup"
-              class="w-full text-base flex gap-2 items-center content-center justify-center text-white bg-purple-700 hover:bg-purple-800 hover:dark:bg-purple-600 rounded-full border-2 border-purdark-300/20 dark:border-purdark-300/20 px-6 py-2"
-            >
-              Sign up
-            </button>
-            <a href="login.html">
-              <button
-                id="btn-to-login"
-                class="w-full text-base flex gap-2 items-center content-center justify-center text-purdark-700 dark:text-purdark-300 hover:text-purple-600 rounded-full px-6 py-2"
-              >
-                Login
-              </button></a
-            >
-          </div>
+              class="w-full text-base flex gap-2 items-center content-center justify-center animate-pulse bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700 rounded-md px-6 py-2">
+              Login
+            </button></a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Ini adalah Popup Alert-->
+
+
+  <!--Ini adalah Popup Alert-->
+  <div id="popup-alert-signup"
+    class="hidden left-1/2 -translate-x-1/2 w-auto top-6 fixed border-l-4 border-green-600 rounded-3xl z-1200">
     <div
-      id="popup-alert-signup"
-      class="hidden left-1/2 -translate-x-1/2 w-auto top-6 fixed border-l-4 border-green-600 rounded-3xl z-1200"
-    >
-      <div
-        class="bg-white dark:bg-purdark-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-purdark-700 dark:text-purdark-300 border border-purdark-300/15 dark:border-purdark-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col"
-      >
-        <div
-          id="close-popup-alert"
-          class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-purdark-200 dark:bg-purdark-700/70 hover:bg-purdark-300 dark:hover:bg-purdark-600 hover:text-purdark-800 hover:dark:text-white cursor-pointer"
-        >
-          <span class="material-symbols-rounded content-center text-l m-auto">
-            close
-          </span>
-        </div>
-        <div class="flex flex-row gap-2 text-green-600">
-          <span id="icon-alert" class="material-symbols-rounded">
-            new_releases
-          </span>
-          <div class="flex flex-col space-y-2">
-            <span id="name-alert" class="font-semibold">Success</span>
-            <p id="text-alert">Your account has been successfully created.</p>
-          </div>
+      class="bg-white dark:bg-purdark-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-purdark-700 dark:text-purdark-300 border border-purdark-300/15 dark:border-purdark-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col">
+      <div id="close-popup-alert"
+        class="absolute flex items-center justify-center font-semibold top-2 right-2 shadow-md w-10 h-10 rounded-full bg-purdark-200 dark:bg-purdark-700/70 hover:bg-purdark-300 dark:hover:bg-purdark-600 hover:text-purdark-800 hover:dark:text-white cursor-pointer">
+        <span class="material-symbols-rounded content-center text-l m-auto">
+          close
+        </span>
+      </div>
+      <div class="flex flex-row gap-2 text-green-600">
+        <span id="icon-alert" class="material-symbols-rounded">
+          new_releases
+        </span>
+        <div class="flex flex-col space-y-2">
+          <span id="name-alert" class="font-semibold">Success</span>
+          <p id="text-alert">Your account has been successfully created.</p>
         </div>
       </div>
     </div>
-    <script src="./src/signup.js"></script>
-  </body>
+  </div>
+  <script src="./src/signup.js"></script>
+</body>
+
 </html>
