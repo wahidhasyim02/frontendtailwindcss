@@ -121,6 +121,18 @@ document
     }, 3000);
     setTimeout(() => {
       document.getElementById("popup-alert").classList.remove("hidden");
+      document.getElementById("icon-alert").innerText = "new_releases";
+      document.getElementById("name-alert").innerText = "Success";
+      document.getElementById("text-alert").innerText =
+        "Your data changes have been successfully saved.";
+      document.getElementById("content-alert").classList.add("text-green-600");
+      document.getElementById("popup-alert").classList.add("border-green-600");
+      document
+        .getElementById("content-alert")
+        .classList.remove("text-pink-600");
+      document
+        .getElementById("popup-alert")
+        .classList.remove("border-pink-600");
     }, 3000);
     setTimeout(() => {
       document.getElementById("popup-alert").classList.add("hidden");

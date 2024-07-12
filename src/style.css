@@ -751,6 +751,10 @@ input[type="checkbox"]:checked::before {
   top: 0.5rem !important;
 }
 
+.top-32 {
+  top: 8rem !important;
+}
+
 .top-6 {
   top: 1.5rem !important;
 }
@@ -761,6 +765,10 @@ input[type="checkbox"]:checked::before {
 
 .top-\[90\%\] {
   top: 90% !important;
+}
+
+.top-20 {
+  top: 5rem !important;
 }
 
 .isolate {
