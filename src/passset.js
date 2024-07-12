@@ -27,8 +27,7 @@ document
     } else {
       // Check if old password is correct
       if (oldPasswordInput !== storedPassword) {
-        errorMessage =
-          "The old password you entered is incorrect. Please try again.";
+        errorMessage = "The old password you entered is incorrect.";
         showAlert = true;
       }
 
@@ -51,7 +50,7 @@ document
             "<br>The confirm password does not match the new password. Please try again.";
         } else {
           errorMessage =
-            "The confirm password does not match the new password. Please re-enter the passwords.";
+            "The confirm password does not match the new password. <br>Please re-enter the passwords.";
         }
         showAlert = true;
       }
@@ -69,10 +68,10 @@ document
       document.getElementById("popup-alert").classList.add("border-pink-600");
       document.getElementById("popup-alert").classList.remove("hidden");
 
-      // Hide alert popup after 3 seconds
+      // Hide alert popup after 7 seconds
       setTimeout(() => {
         document.getElementById("popup-alert").classList.add("hidden");
-      }, 4000);
+      }, 7000);
     } else {
       // Save new password to local storage
       localStorage.setItem("password", newPassword);
@@ -89,12 +88,12 @@ document
           .classList.remove("hidden");
       }, 3000);
 
-      // Hide change password popup after 3 seconds
+      // Hide change password popup after 5 seconds
       setTimeout(() => {
         document
           .getElementById("popup-change-password")
           .classList.add("hidden");
-      }, 3000);
+      }, 5000);
 
       // Show success alert popup after 5 seconds
       setTimeout(() => {
@@ -118,9 +117,9 @@ document
           .classList.add("border-green-600");
       }, 5000);
 
-      // Hide success alert popup after 7 seconds
+      // Hide success alert popup after 8 seconds
       setTimeout(() => {
         document.getElementById("popup-alert").classList.add("hidden");
-      }, 7000);
+      }, 8000);
     }
   });
