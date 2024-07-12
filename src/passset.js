@@ -115,11 +115,11 @@ document
         document
           .getElementById("popup-alert")
           .classList.add("border-green-600");
-      }, 5000);
+      }, 3000);
 
       // Hide success alert popup after 8 seconds
       setTimeout(() => {
         document.getElementById("popup-alert").classList.add("hidden");
-      }, 8000);
+      }, 5000);
     }
   });

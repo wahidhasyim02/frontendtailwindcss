@@ -136,7 +136,7 @@ document
     }, 3000);
     setTimeout(() => {
       document.getElementById("popup-alert").classList.add("hidden");
-    }, 6000);
+    }, 5000);
 
     if (newUsername) {
       localStorage.setItem("username", newUsername);
