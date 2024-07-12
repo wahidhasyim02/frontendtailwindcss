@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Jika pengguna sudah login, arahkan ke halaman dashboard atau halaman lainnya
   if (!isLoggedIn) {
-    window.location.href = "/"; // Ubah sesuai halaman yang sesuai
+    window.location.href = "/login.html"; // Ubah sesuai halaman yang sesuai
   }
 });
 

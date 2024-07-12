@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!localStorage.getItem("login-visited")) {
     // Jika belum pernah dikunjungi, tambahkan class "hidden" pada "popup-login"
     // dan remove class "hidden" pada "popup-login-skeleton"
-
+    document.getElementById("popup-login").classList.add("hidden");
     document.getElementById("popup-login-skeleton").classList.remove("hidden");
 
     // Set timer untuk 1 detik
@@ -21,13 +21,35 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("popup-login").classList.remove("hidden");
     document.getElementById("popup-login-skeleton").classList.add("hidden");
   }
-
   // Periksa apakah ada item 'isLoggedIn' di local storage
   if (localStorage.getItem("isLoggedIn") === "true") {
     // Alihkan ke halaman index.html jika 'visited' bernilai true
     document.getElementById("popup-login-skeleton").classList.add("hidden");
-
-    window.location.href = "/";
+    setTimeout(() => {
+      document.getElementById("popup-alert-login").classList.remove("hidden");
+      document.getElementById("icon-alert-login").innerText = "mail";
+      document.getElementById("name-alert-login").innerText = "Message";
+      document.getElementById("text-alert-login").innerText =
+        "You are already logged in. You will be redirected to the main page.";
+      document
+        .getElementById("content-alert-login")
+        .classList.add("text-green-600");
+      document
+        .getElementById("popup-alert-login")
+        .classList.add("border-green-600");
+      document
+        .getElementById("content-alert-login")
+        .classList.remove("text-pink-600");
+      document
+        .getElementById("popup-alert-login")
+        .classList.remove("border-pink-600");
+    }, 1000);
+    setTimeout(() => {
+      document.getElementById("popup-alert-login").classList.add("hidden");
+    }, 3000);
+    setTimeout(() => {
+      window.location.href = "/";
+    }, 3000);
   }
 });
 
@@ -100,7 +122,9 @@ document.getElementById("btn-login").addEventListener("click", function () {
   }
 
   if (isValid) {
-    window.location.href = "/";
+    setTimeout(() => {
+      window.location.href = "/";
+    }, 3000);
     // Setelah login berhasil
     localStorage.setItem("isLoggedIn", true);
   }
