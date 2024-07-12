@@ -95,7 +95,7 @@ document
           .classList.add("hidden");
       }, 5000);
 
-      // Show success alert popup after 5 seconds
+      // Show success alert popup after 3 seconds
       setTimeout(() => {
         document.getElementById("popup-alert").classList.remove("hidden");
         document.getElementById("icon-alert").innerText = "check_circle";

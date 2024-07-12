@@ -47,7 +47,7 @@ document.getElementById("btn-signup").addEventListener("click", function () {
     document
       .getElementById("signup-username")
       .classList.remove(
-        "border-zinc-400",
+        "border-purdark-400",
         "focus:ring-violet-400",
         "focus:border-violet-400"
       );
@@ -77,7 +77,7 @@ document.getElementById("btn-signup").addEventListener("click", function () {
     document
       .getElementById("signup-password")
       .classList.remove(
-        "border-zinc-400",
+        "border-purdark-400",
         "focus:ring-violet-400",
         "focus:border-violet-400"
       );

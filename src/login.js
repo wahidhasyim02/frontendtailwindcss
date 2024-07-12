@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!localStorage.getItem("login-visited")) {
     // Jika belum pernah dikunjungi, tambahkan class "hidden" pada "popup-login"
     // dan remove class "hidden" pada "popup-login-skeleton"
-    document.getElementById("popup-login").classList.add("hidden");
+
     document.getElementById("popup-login-skeleton").classList.remove("hidden");
 
     // Set timer untuk 1 detik
@@ -20,6 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Jika sudah pernah dikunjungi, pastikan popup-login tampil dan skeleton disembunyikan
     document.getElementById("popup-login").classList.remove("hidden");
     document.getElementById("popup-login-skeleton").classList.add("hidden");
+  }
+
+  // Periksa apakah ada item 'isLoggedIn' di local storage
+  if (localStorage.getItem("isLoggedIn") === "true") {
+    // Alihkan ke halaman index.html jika 'visited' bernilai true
+    document.getElementById("popup-login-skeleton").classList.add("hidden");
+
+    window.location.href = "/";
   }
 });
 
@@ -44,7 +52,7 @@ document.getElementById("btn-login").addEventListener("click", function () {
     document
       .getElementById("login-username")
       .classList.remove(
-        "border-zinc-400",
+        "border-purdark-400",
         "focus:ring-violet-400",
         "focus:border-violet-400"
       );
@@ -74,7 +82,7 @@ document.getElementById("btn-login").addEventListener("click", function () {
     document
       .getElementById("login-password")
       .classList.remove(
-        "border-zinc-400",
+        "border-purdark-400",
         "focus:ring-violet-400",
         "focus:border-violet-400"
       );

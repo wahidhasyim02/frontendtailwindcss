@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frontend - Tailwindcs</title>
+  <script src="./src/darkmode.js"></script>
   <link rel="icon" href="./public/img/favicon.ico" />
   <link rel="shortcut icon" href="./public/img/favicon.ico">
   <link rel="msapplication-square64x64logo" href="./public/img/favicon.ico">
@@ -24,7 +25,7 @@
 <body
   class="w-full h-screen min-w-full m-0  bg-no-repeat font-inter text-base bg-cover bg-purdark-100 dark:bg-purdark-950 text-purdark-600 dark:text-purdark-400 bg-hero-light dark:bg-hero-dark">
 
-  <header id="header" class=" w-full fixed top-0 z-1000">
+  <header id="header" class="hidden w-full fixed top-0 z-1000">
     <div
       class="flex justify-between items-center px-6 py-1 bg-white dark:bg-purdark-800  backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 border-b border-purdark-300/15 dark:border-purdark-300/5 shadow-sm">
       <div class="flex gap-3">
@@ -3178,7 +3179,6 @@
 
 
   <script src="./src/script.js"></script>
-  <script src="./src/darkmode.js"></script>
   <script src="./src/accountset.js"></script>
   <script src="./src/passset.js"></script>
   <script src="./src/callapps.js"></script>

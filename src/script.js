@@ -1,10 +1,9 @@
-// script.js
+// Memeriksa apakah sudah pernah dikunjungi halaman utamanya
 document.addEventListener("DOMContentLoaded", function () {
   // Periksa apakah ini adalah kunjungan pertama setelah browser dibuka
   if (!localStorage.getItem("visited")) {
     // Jika belum pernah dikunjungi, tambahkan class "hidden" pada "header"
     // dan remove class "hidden" pada "header-skeleton"
-    document.getElementById("header").classList.add("hidden");
     document.getElementById("header-skeleton").classList.remove("hidden");
 
     // Set timer untuk 5 detik
@@ -13,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // dan tambahkan class "hidden" ke "header-skeleton"
       document.getElementById("header").classList.remove("hidden");
       document.getElementById("header-skeleton").classList.add("hidden");
-    }, 3000);
+    }, 2000);
 
     // Tandai bahwa situs telah dikunjungi
     localStorage.setItem("visited", "true");
@@ -30,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Jika pengguna sudah login, arahkan ke halaman dashboard atau halaman lainnya
   if (!isLoggedIn) {
-    window.location.href = "login.html"; // Ubah sesuai halaman yang sesuai
+    window.location.href = "/"; // Ubah sesuai halaman yang sesuai
   }
 });
 
