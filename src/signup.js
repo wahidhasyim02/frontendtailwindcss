@@ -66,10 +66,10 @@ document.getElementById("btn-signup").addEventListener("click", function () {
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
     setTimeout(() => {
-      document.getElementById("popup-alert").classList.remove("hidden");
+      document.getElementById("popup-alert-signup").classList.remove("hidden");
     }, 1000);
     setTimeout(() => {
-      document.getElementById("popup-alert").classList.add("hidden");
+      document.getElementById("popup-alert-signup").classList.add("hidden");
     }, 3000);
     setTimeout(() => {
       window.location.href = "login.html";
@@ -80,5 +80,5 @@ document.getElementById("btn-signup").addEventListener("click", function () {
 document
   .getElementById("close-popup-alert")
   .addEventListener("click", function () {
-    document.getElementById("popup-alert").classList.add("hidden");
+    document.getElementById("popup-alert-signup").classList.add("hidden");
   });

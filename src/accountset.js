@@ -148,6 +148,38 @@ document
     }
   });
 
+// Script Change Password
+/*
+document
+  .getElementById("btn-save-password")
+  .addEventListener("click", function () {
+    const oldPassword = document.getElementById("old-password").value;
+    const newPassword = document.getElementById("new-password").value;
+    const confirmPassword = document.getElementById("confirm-password").value;
+
+    document.getElementById("icon-save-password").classList.add("hidden");
+    document.getElementById("icon-spin-password").classList.remove("hidden");
+    setTimeout(() => {
+      document.getElementById("icon-spin-password").classList.add("hidden");
+      document.getElementById("icon-save-password").classList.remove("hidden");
+    }, 3000);
+    setTimeout(() => {
+      document.getElementById("popup-change-password").classList.add("hidden");
+    }, 3000);
+    setTimeout(() => {
+      document.getElementById("popup-alert").classList.remove("hidden");
+    }, 3000);
+    setTimeout(() => {
+      document.getElementById("popup-alert").classList.add("hidden");
+    }, 6000);
+
+    if (newPassword) {
+      localStorage.setItem("password", newPassword);
+    }
+  });
+  */
+
+// Script Popup Alert Change Profile/Password
 document
   .getElementById("close-popup-alert")
   .addEventListener("click", function () {

@@ -427,7 +427,7 @@
 
 
     <!--Ini adalah Popup Change Password-->
-    <div id="popup-change-password" class="hidden left-1/2 -translate-x-1/2 w-auto top-16 fixed">
+    <div id="popup-change-password" class="left-1/2 -translate-x-1/2 w-auto top-16 fixed">
       <div
         class="bg-white dark:bg-purdark-800 backdrop-blur-sm dark:backdrop-blur-sm bg-opacity-90 dark:bg-opacity-95 text-base font-normal text-purdark-600 dark:text-purdark-400 border border-purdark-300/15 dark:border-purdark-300/5 shadow-xl rounded-3xl p-12 mx-auto flex flex-col ">
         <div id="close-change-password"
@@ -437,34 +437,46 @@
           </span>
         </div>
         <div> <span class="font-semibold">Change Password</span>
-          <div class="text-xs text-purdark-600  dark:text-purdark-400 w-96 mt-2">Please enter your old password, for
+          <div class="text-xs text-purdark-600  dark:text-purdark-400 w-full mt-2">Please enter your old
+            password, for
             security’s
             sake, and then enter your new password twice so we can verify you typed it in correctly.</div>
         </div>
-        <div class="flex-col space-y-4 mt-6  ">
-          <div class="flex">
-            <label for="old-password" class="flex-auto">Old Password</label><input id="old-password" s type="password"
-              placeholder="********"
-              class=" flex-1 ml-16 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
+        <div class="flex flex-col space-y-4 mt-6  ">
+          <div class="flex w-full">
+            <label for="old-password" class="w-56">Old Password</label>
+            <input id="old-password" type="password" placeholder="********"
+              class="flex-1 ml-4 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
 
           </div>
-          <div class=" flex  ">
-            <label for="new-password" class="flex-auto">New password</label><input id="new-password" type="password"
+
+          <div class="flex w-full">
+            <label for="new-password" class="w-56">New password</label><input id="new-password" type="password"
               placeholder="********"
-              class=" flex-1 ml-16 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
-            </input>
+              class="flex-1 ml-4 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
           </div>
-          <div class="flex">
-            <label for="confirm-password" class="flex-auto">New password confirmation</label><input
+
+          <div class="flex w-full">
+            <label for="confirm-password" class="w-56">New password confirmation</label><input
               id="confirm-password" type="password" placeholder="********"
-              class="flex-1 ml-16 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
+              class="flex-1 ml-4 px-3 py-1 rounded-md border border-purdark-400 bg-white dark:bg-purdark-800 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-purple-400 focus:border focus:border-purple-400 dark:ring-opacity-30" />
           </div>
+
+
         </div>
+
+
+
         <div class="flex gap-2 mt-8 ">
+
           <button id="btn-save-password"
-            class="flex gap-2 text-base items-center content-center text-white bg-purple-700 hover:bg-purple-800 hover:dark:bg-purple-600 rounded-full border-2 border-purdark-300/20 dark:border-purdark-300/20 pr-6 pl-5  py-2">
-            <span class="material-symbols-rounded">save</span>Save Changes
+            class="flex gap-2 text-base items-center content-center text-white bg-purple-700 hover:bg-purple-800 hover:dark:bg-purple-600 rounded-full border-2 border-purdark-300/20 dark:border-purdark-300/20 pr-6 pl-5 py-2">
+            <span id="icon-save-password" class="material-symbols-rounded">save</span><span id="icon-spin-password"
+              class="hidden animate-spin material-symbols-rounded">
+              progress_activity
+            </span>Save Changes
           </button>
+
           <button id="btn-cancel-password"
             class="flex gap-2 items-center content-center text-purdark-600 dark:text-purdark-400 hover:text-purple-600 rounded-full px-6 py-2">
             Cancel
@@ -1210,8 +1222,7 @@
         <div>
           <button id="btn-months"
             class="w-36 px-3 py-1 flex justify-between items-center gap-1 rounded-md bg-white dark:bg-purdark-800 hover:bg-purdark-200 hover:dark:bg-purdark-700 border dark:border-purdark-700">
-            <div id="text-months" class="">July</div><span
-              class="material-symbols-rounded content-center text-base">
+            <div id="text-months" class="">July</div><span class="material-symbols-rounded content-center text-base">
               expand_more
             </span>
           </button>
@@ -1347,7 +1358,7 @@
           class="flex gap-2 items-center content-center text-white bg-purple-700 hover:bg-purple-800 hover:dark:bg-purple-600 rounded-md border-2 border-purdark-300/20 dark:border-purdark-300/20 pr-3 pl-2">
           <span id="icon-search" class="material-symbols-rounded  ease-in-out">search</span>
           </span>
-         Search
+          Search
         </button>
         <button id="btn-download-filter"
           class="flex gap-2 items-center content-center text-white bg-purdark-700 hover:bg-purple-800 hover:dark:bg-purple-600 rounded-md border-2 border-purdark-300/20 dark:border-purdark-300/20 pr-3 pl-2">
@@ -3150,7 +3161,7 @@
             close
           </span>
         </div>
-        <div class="flex flex-row gap-2 text-green-600">
+        <div id="content-alert" class="flex flex-row gap-2 text-green-600">
           <span id="icon-alert" class=" material-symbols-rounded">
             new_releases
           </span>
@@ -3159,6 +3170,7 @@
             <p id="text-alert">Your data changes have been successfully saved.</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -3168,6 +3180,7 @@
   <script src="./src/script.js"></script>
   <script src="./src/darkmode.js"></script>
   <script src="./src/accountset.js"></script>
+  <script src="./src/passset.js"></script>
   <script src="./src/callapps.js"></script>
   <script src="./src/action.js"></script>
   <script src="./src/logout.js"></script>
@@ -3175,6 +3188,7 @@
   <script src="./src/signup.js"></script>
   <script src="./src/tz.js"></script>
   
+
 </body>
 
 </html>
