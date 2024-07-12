@@ -35,10 +35,10 @@ document
       if (newPassword === storedPassword) {
         if (errorMessage) {
           errorMessage +=
-            "<br>The new password cannot be the same as the old password. Please choose a different password.";
+            "<br>The new password cannot be the same as the old password.";
         } else {
           errorMessage =
-            "The new password cannot be the same as the old password. Please choose a different password.";
+            "The new password cannot be the same as the old password.";
         }
         showAlert = true;
       }
@@ -47,10 +47,10 @@ document
       if (newPassword !== confirmPassword) {
         if (errorMessage) {
           errorMessage +=
-            "<br>The confirm password does not match the new password. Please try again.";
+            "<br>The confirm password does not match the new password.";
         } else {
           errorMessage =
-            "The confirm password does not match the new password. <br>Please re-enter the passwords.";
+            "The confirm password does not match the new password.";
         }
         showAlert = true;
       }
