@@ -22,7 +22,7 @@ function toggleActionVisibility() {
   const checkboxes = document.querySelectorAll(
     "#body_billing_charge .checkbox"
   );
-  const headCheckbox = document.getElementById("checkbox-head");
+  const headCheckbox = document.getElementById("head-checkbox");
 
   let anyChecked =
     headCheckbox.checked ||
@@ -37,7 +37,7 @@ function toggleActionVisibility() {
 
 // Fungsi untuk menghapus status checked dari semua checkbox
 function uncheckAllCheckboxes() {
-  document.getElementById("checkbox-head").checked = false;
+  document.getElementById("head-checkbox").checked = false;
   const checkboxes = document.querySelectorAll(
     "#body_billing_charge .checkbox"
   );
@@ -47,8 +47,8 @@ function uncheckAllCheckboxes() {
   toggleActionVisibility(); // Update visibility of action after unchecking
 }
 
-// Event listener untuk checkbox-head
-document.getElementById("checkbox-head").addEventListener("click", function () {
+// Event listener untuk head-checkbox
+document.getElementById("head-checkbox").addEventListener("click", function () {
   const checkboxes = document.querySelectorAll(
     "#body_billing_charge .checkbox"
   );

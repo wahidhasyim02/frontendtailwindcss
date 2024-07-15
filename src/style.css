@@ -588,14 +588,14 @@ video {
   }
 }
 
-input[type="checkbox"] {
-  accent-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* input[type="checkbox"] {
+    accent-color: theme("colors.white");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* input[type="checkbox"]::before {
+  /* input[type="checkbox"]::before {
     content: "";
     width: 9px;
     height: 8px;
@@ -614,9 +614,10 @@ input[type="checkbox"] {
     display: flex;
   }*/
 
-input[type="checkbox"]:checked::before {
-  transform: scale(1);
-}
+/*
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }*/
 
 .overflow-style::-webkit-scrollbar {
   width: 6px;
@@ -630,6 +631,39 @@ input[type="checkbox"]:checked::before {
 .overflow-style::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: white;
+}
+
+input[type="checkbox"] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"]:after {
+  font-family: "Material Symbols Rounded";
+  content: "\e5ca";
+  font-weight: 900;
+  font-size: 0.8rem;
+  color: white;
+  display: none;
+}
+
+input[type="checkbox"]:hover {
+  background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #9333ea;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
 }
 
 .sr-only {
@@ -1147,6 +1181,10 @@ input[type="checkbox"]:checked::before {
 
 .w-full {
   width: 100% !important;
+}
+
+.w-screen {
+  width: 100vw !important;
 }
 
 .min-w-full {
@@ -2338,6 +2376,11 @@ input[type="checkbox"]:checked::before {
 .bg-purdark-700 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(59 55 81 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-purdark-900 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(20 17 39 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-purple-100 {

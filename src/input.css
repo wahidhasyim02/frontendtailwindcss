@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  input[type="checkbox"] {
+  /* input[type="checkbox"] {
     accent-color: theme("colors.white");
     display: flex;
     justify-content: center;
@@ -28,10 +28,10 @@
     align-items: center;
     display: flex;
   }*/
-
+  /*
   input[type="checkbox"]:checked::before {
     transform: scale(1);
-  }
+  }*/
 
   .overflow-style::-webkit-scrollbar {
     width: 6px;
@@ -43,5 +43,33 @@
   .overflow-style::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: white;
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+  }
+  input[type="checkbox"]:after {
+    font-family: "Material Symbols Rounded";
+    content: "\e5ca";
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: white;
+    display: none;
+  }
+  input[type="checkbox"]:hover {
+    background-color: #a5a5a5;
+  }
+  input[type="checkbox"]:checked {
+    background-color: theme("colors.[purple][600]");
+  }
+  input[type="checkbox"]:checked:after {
+    display: block;
   }
 }
