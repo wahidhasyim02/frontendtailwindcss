@@ -1,16 +1,16 @@
 // Script untuk update waktu
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   const timeZoneMappings = {
-    "tz-utc": { offset: 0, label: "UTC" },
-    "tz-gmt7": { offset: 7, label: "Etc/GMT-7" },
-    "tz-gmt8": { offset: 8, label: "Etc/GMT-8" },
-    "tz-gmt9": { offset: 9, label: "Etc/GMT-9" },
+    'tz-utc': { offset: 0, label: 'UTC' },
+    'tz-gmt7': { offset: 7, label: 'Etc/GMT-7' },
+    'tz-gmt8': { offset: 8, label: 'Etc/GMT-8' },
+    'tz-gmt9': { offset: 9, label: 'Etc/GMT-9' },
   };
 
   let currentInterval;
 
   Object.keys(timeZoneMappings).forEach((id) => {
-    document.getElementById(id).addEventListener("click", function () {
+    document.getElementById(id).addEventListener('click', function () {
       const timeZone = timeZoneMappings[id];
       updateTimeZone(timeZone.offset, timeZone.label);
     });
@@ -27,27 +27,27 @@ document.addEventListener("DOMContentLoaded", function () {
       const utcTime = now.getTime() + now.getTimezoneOffset() * 60000;
       const localTime = new Date(utcTime + 3600000 * offset);
 
-      const date = localTime.toLocaleDateString("en-GB");
-      const time = localTime.toLocaleTimeString("en-GB", {
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
+      const date = localTime.toLocaleDateString('en-GB');
+      const time = localTime.toLocaleTimeString('en-GB', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
       });
 
-      document.getElementById("date").innerText = date;
-      document.getElementById("clock").innerText = time;
-      document.getElementById("timezone").innerText = label;
+      document.getElementById('date').innerText = date;
+      document.getElementById('clock').innerText = time;
+      document.getElementById('timezone').innerText = label;
 
       localStorage.setItem(
-        "selectedTimeZone",
-        JSON.stringify({ date, time, label, offset })
+        'selectedTimeZone',
+        JSON.stringify({ date, time, label, offset }),
       );
     }
     updateTime();
     currentInterval = setInterval(updateTime, 1000); // Update every second
   }
 
-  const savedTimeZone = JSON.parse(localStorage.getItem("selectedTimeZone"));
+  const savedTimeZone = JSON.parse(localStorage.getItem('selectedTimeZone'));
   if (savedTimeZone) {
     updateTimeZone(savedTimeZone.offset, savedTimeZone.label);
   } else {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Find the nearest matching offset in timeZoneMappings
     const matchedTimeZone = Object.values(timeZoneMappings).find(
-      (tz) => tz.offset === localOffset
+      (tz) => tz.offset === localOffset,
     );
 
     if (matchedTimeZone) {
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Use the offset and a generic label if not in mappings
       updateTimeZone(
         localOffset,
-        `GMT${localOffset >= 0 ? `+${localOffset}` : localOffset}`
+        `GMT${localOffset >= 0 ? `+${localOffset}` : localOffset}`,
       );
     }
   }

@@ -4,7 +4,7 @@
 
 @layer components {
   .btn-primary {
-    @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+    @apply rounded-full bg-violet-500 px-5 py-2 font-semibold text-white shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
   }
 
   .overflow-style::-webkit-scrollbar {
@@ -18,23 +18,23 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
 
-  input[type="checkbox"] {
-    @apply mx-auto w-4 h-4 bg-purdark-300 border-2 border-white ring-2 ring-purdark-300 cursor-pointer flex outline-none items-center justify-center appearance-none rounded;
+  input[type='checkbox'] {
+    @apply mx-auto flex h-4 w-4 cursor-pointer appearance-none items-center justify-center rounded border-2 border-white bg-purdark-300 outline-none ring-2 ring-purdark-300;
     -webkit-appearance: none;
   }
 
-  input[type="checkbox"]:after {
-    @apply font-black text-[0.8rem] text-white hidden;
-    font-family: "Material Symbols Rounded";
-    content: "\e5ca";
+  input[type='checkbox']:after {
+    @apply hidden text-[0.8rem] font-black text-white;
+    font-family: 'Material Symbols Rounded';
+    content: '\e5ca';
   }
-  input[type="checkbox"]:hover {
+  input[type='checkbox']:hover {
     @apply bg-purdark-400;
   }
-  input[type="checkbox"]:checked {
+  input[type='checkbox']:checked {
     @apply bg-purple-600 ring-purple-500;
   }
-  input[type="checkbox"]:checked:after {
+  input[type='checkbox']:checked:after {
     @apply block;
   }
 }

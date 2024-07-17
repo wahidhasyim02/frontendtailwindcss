@@ -10,47 +10,47 @@ const initialState = {
 };
 
 function loadState() {
-  const state = JSON.parse(sessionStorage.getItem("appState")) || initialState;
+  const state = JSON.parse(sessionStorage.getItem('appState')) || initialState;
   return state;
 }
 
 function saveState(state) {
-  sessionStorage.setItem("appState", JSON.stringify(state));
+  sessionStorage.setItem('appState', JSON.stringify(state));
 }
 
 function applyState(state) {
   document
-    .getElementById("text-menu")
-    .classList.toggle("hidden", !state.textMenuVisible);
+    .getElementById('text-menu')
+    .classList.toggle('hidden', !state.textMenuVisible);
   document
-    .getElementById("table_billing_cash")
-    .classList.toggle("hidden", !state.tableBillingCashVisible);
+    .getElementById('table_billing_cash')
+    .classList.toggle('hidden', !state.tableBillingCashVisible);
   document
-    .getElementById("filter-billing-cash")
-    .classList.toggle("hidden", !state.filterBillingcashVisible);
+    .getElementById('filter-billing-cash')
+    .classList.toggle('hidden', !state.filterBillingcashVisible);
   document
-    .getElementById("table_billing_charge")
-    .classList.toggle("hidden", !state.tableBillingChargeVisible);
+    .getElementById('table_billing_charge')
+    .classList.toggle('hidden', !state.tableBillingChargeVisible);
 
-  const iconAppsElement = document.getElementById("icon-apps");
+  const iconAppsElement = document.getElementById('icon-apps');
   if (state.iconAppsVisible) {
-    iconAppsElement.classList.remove("hidden");
-    iconAppsElement.classList.add("flex");
+    iconAppsElement.classList.remove('hidden');
+    iconAppsElement.classList.add('flex');
   } else {
-    iconAppsElement.classList.remove("flex");
-    iconAppsElement.classList.add("hidden");
+    iconAppsElement.classList.remove('flex');
+    iconAppsElement.classList.add('hidden');
   }
 
   document
-    .getElementById("app-billing-cash")
-    .classList.toggle("hidden", !state.appBillingCashVisible);
+    .getElementById('app-billing-cash')
+    .classList.toggle('hidden', !state.appBillingCashVisible);
   document
-    .getElementById("filter-billing-cash")
-    .classList.toggle("hidden", !state.filterBillingcashVisible);
+    .getElementById('filter-billing-cash')
+    .classList.toggle('hidden', !state.filterBillingcashVisible);
 
   document
-    .getElementById("app-billing-charge")
-    .classList.toggle("hidden", !state.appBillingChargeVisible);
+    .getElementById('app-billing-charge')
+    .classList.toggle('hidden', !state.appBillingChargeVisible);
 }
 
 // Update the state and apply changes
@@ -62,9 +62,9 @@ function updateState(changes) {
 }
 
 document
-  .getElementById("btn_billing_cash")
-  .addEventListener("click", (event) => {
-    menu.classList.add("hidden"), event.preventDefault();
+  .getElementById('btn_billing_cash')
+  .addEventListener('click', (event) => {
+    menu.classList.add('hidden'), event.preventDefault();
     updateState({
       textMenuVisible: false,
       tableBillingCashVisible: true,
@@ -77,9 +77,9 @@ document
   });
 
 document
-  .getElementById("btn_billing_charge")
-  .addEventListener("click", (event) => {
-    menu.classList.add("hidden"), event.preventDefault();
+  .getElementById('btn_billing_charge')
+  .addEventListener('click', (event) => {
+    menu.classList.add('hidden'), event.preventDefault();
     updateState({
       textMenuVisible: false,
       tableBillingCashVisible: false,
@@ -91,7 +91,7 @@ document
     });
   });
 
-document.getElementById("btn_home").addEventListener("click", () => {
+document.getElementById('btn_home').addEventListener('click', () => {
   updateState(initialState);
 });
 

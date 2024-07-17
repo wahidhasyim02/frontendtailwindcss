@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="h-full">
 
 <head>
@@ -7,9 +7,9 @@
   <title>Frontend - Tailwindcs</title>
   <script src="./src/darkmode.js"></script>
   <link rel="icon" href="./public/img/favicon.ico" />
-  <link rel="shortcut icon" href="./public/img/favicon.ico">
-  <link rel="msapplication-square64x64logo" href="./public/img/favicon.ico">
-  <link rel="apple-touch-icon" href="./public/img/favicon.ico">
+  <link rel="shortcut icon" href="./public/img/favicon.ico" />
+  <link rel="msapplication-square64x64logo" href="./public/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="./public/img/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
@@ -20,30 +20,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./src/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
     integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body
-  class="w-full h-screen min-w-full m-0  bg-no-repeat font-inter text-base bg-cover bg-purdark-100 dark:bg-purdark-950 text-purdark-600 dark:text-purdark-400 bg-hero-light dark:bg-hero-dark">
+  class="m-0 h-screen w-full min-w-full bg-purdark-100 bg-hero-light bg-cover bg-no-repeat font-inter text-base text-purdark-600 dark:bg-purdark-950 dark:bg-hero-dark dark:text-purdark-400">
   <div class="top-32 m-auto">
-
-    <i class="ri-home-line p-4 bg-purple-700 text-xl text-purdark-50"></i>
-
+    <i class="ri-home-line bg-purple-700 p-4 text-xl text-purdark-50"></i>
 
     <ul role="list">
       {#each people as person}
-      <li class="group/item hover:bg-slate-100 ...">
+      <li class="group/item ... hover:bg-slate-100">
         <img src="{person.imageUrl}" alt="" />
         <div>
           <a href="{person.url}">{person.name}</a>
           <p>{person.title}</p>
         </div>
-        <a class="group/edit invisible hover:bg-slate-200 group-hover/item:visible ..." href="tel:{person.phone}">
-          <span class="group-hover/edit:text-gray-700 ...">Call</span>
-          <svg class="group-hover/edit:translate-x-0.5 group-hover/edit:text-slate-500 ...">
+        <a class="group/edit ... invisible hover:bg-slate-200 group-hover/item:visible" href="tel:{person.phone}">
+          <span class="... group-hover/edit:text-gray-700">Call</span>
+          <svg class="... group-hover/edit:translate-x-0.5 group-hover/edit:text-slate-500">
             <!-- ... -->
           </svg>
         </a>
@@ -90,12 +88,11 @@
       </div>
     </div>
 
-
     <form>
       <label class="block">
         <span class="block text-sm font-medium text-slate-700">Email</span>
-        <input type="email" class="peer ..." />
-        <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+        <input type="email" class="... peer" />
+        <p class="invisible mt-2 text-sm text-pink-600 peer-invalid:visible">
           Please provide a valid email address.
         </p>
       </label>
@@ -103,62 +100,60 @@
 
     <form class="flex items-center space-x-6">
       <div class="shrink-0">
-        <img class="h-16 w-16 object-cover rounded-full"
+        <img class="h-16 w-16 rounded-full object-cover"
           src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80"
           alt="Current profile photo" />
       </div>
       <label class="block">
         <span class="sr-only">Choose profile photo</span>
-        <input type="file" class="block w-full text-sm text-slate-500
-          file:mr-4 file:py-2 file:px-4
-          file:rounded-full file:border-0
-          file:text-sm file:font-semibold
-          file:bg-violet-50 file:text-violet-700
-          hover:file:bg-violet-100
-        " />
+        <input type="file"
+          class="block w-full text-sm text-slate-500 file:mr-4 file:rounded-full file:border-0 file:bg-violet-50 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-violet-700 hover:file:bg-violet-100" />
       </label>
     </form>
 
-    <ul role="list" class="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-400">
+    <ul role="list" class="list-disc space-y-3 pl-5 text-slate-400 marker:text-sky-400">
       <li>5 cups chopped Porcini mushrooms</li>
       <li>1/2 cup of olive oil</li>
       <li>3lb of celery</li>
     </ul>
 
-
-    <div class="group flex items-center" dir="rtl">
-      <img class="shrink-0 h-12 w-12 rounded-full" src="/public/img/baggage_handling.png" alt="" />
+    <div class="border group flex items-center" dir="rtl">
+      <img class="h-12 w-12 shrink-0 rounded-full" src="/public/img/baggage_handling.png" alt="" />
       <div class="ltr:ml-3 rtl:mr-3">
-        <p class="text-sm font-medium text-slate-300 group-hover:text-white">Lorem ipsum dolor sit amet.</p>
-        <p class="text-sm font-medium text-slate-500 group-hover:text-slate-300">Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Iste nesciunt adipisci officiis!</p>
+        <p class="text-sm font-medium text-slate-300 group-hover:text-white">
+          Lorem ipsum dolor sit amet.
+        </p>
+        <p class="text-sm font-medium text-slate-500 group-hover:text-slate-300">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+          nesciunt adipisci officiis!
+        </p>
       </div>
     </div>
 
-
-    <div class="max-w-lg mx-auto p-8">
+    <div class="mx-auto max-w-lg p-8 border-r">
       <details
-        class="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg"
+        class="rounded-lg p-6 open:bg-white open:shadow-lg open:ring-1 open:ring-black/5 dark:open:bg-purdark-800 dark:open:ring-white/10"
         open>
-        <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
+        <summary class="select-none border text-sm font-semibold leading-6 text-slate-900 dark:text-white">
           Why do they call it Ovaltine?
         </summary>
         <div class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
-          <p>The mug is round. The jar is round. They should call it Roundtine.</p>
+          <p>
+            The mug is round. The jar is round. They should call it Roundtine.
+          </p>
         </div>
       </details>
     </div>
-
 
     <table>
       <thead>
         <tr>
           <th aria-sort="ascending"
-            class="w-10 h-10 aria-[sort=ascending]:bg-[url('/public/img/announce_manual.png')] aria-[sort=descending]:bg-[url('/public/img/announcer_queue.png')]">
+            class="h-10 w-10 aria-[sort=ascending]:bg-[url('/public/img/announce_manual.png')] aria-[sort=descending]:bg-[url('/public/img/announcer_queue.png')]">
             Invoice #
           </th>
           <th aria-sort="descending"
-            class="w-10 h-10 aria-[sort=ascending]:bg-[url('/public/img/announce_manual.png')] aria-[sort=descending]:bg-[url('/public/img/announcer_queue.png')]">
+            class="h-10 w-10 aria-[sort=ascending]:bg-[url('/public/img/announce_manual.png')] aria-[sort=descending]:bg-[url('/public/img/announcer_queue.png')]">
             Invoice #
           </th>
           <!-- ... -->
@@ -167,21 +162,31 @@
       <!-- ... -->
     </table>
 
-
     <div class="selection:bg-lime-600 selection:text-white aria-checked:border aria-checked:border-red-600"
       aria-checked="true">
-      <p class="print:hidden bg-lime-500">
+      <p class="bg-lime-500 print:hidden">
         So I started to walk into the water. I won't lie to you boys, I was
-        terrified. But I pressed on, and as I made my way past the breakers
-        a strange calm came over me. I don't know if it was divine intervention
-        or the kinship of all living things but I tell you Jerry at that moment,
-        I <em>was</em> a marine biologist.
+        terrified. But I pressed on, and as I made my way past the breakers a
+        strange calm came over me. I don't know if it was divine intervention
+        or the kinship of all living things but I tell you Jerry at that
+        moment, I <em>was</em> a marine biologist.
       </p>
-      <p class="hidden print:block  text-blue-600">Wow serius Lorem, ipsum dolor sit amet consectetur
-        adipisicing elit. Aut
-        recusandae, sunt similique esse, fugiat, nam tenetur temporibus voluptates quasi velit itaque error iste ullam
-        deserunt omnis accusantium? Consectetur, culpa nostrum!
+      <p class="hidden text-blue-600 print:block">
+        Wow serius Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Aut recusandae, sunt similique esse, fugiat, nam tenetur temporibus
+        voluptates quasi velit itaque error iste ullam deserunt omnis
+        accusantium? Consectetur, culpa nostrum!
       </p>
+    </div>
+
+    <div class="bg-fuchsia-500">
+      <h2>Categories</h2>
+      <ul
+        class="bg-red-600 p-3 *:w-fit *:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10">
+        <li>Sales</li>
+        <li>Marketing</li>
+        <li>SEO</li>
+      </ul>
     </div>
 
     <form>
@@ -189,17 +194,20 @@
         <span class="block text-sm font-medium text-slate-700">Social Security Number</span>
         <input
           class="border-slate-200 placeholder-slate-400 contrast-more:border-slate-700 contrast-more:placeholder-slate-500" />
-        <p class="mt-2 opacity-10 contrast-more:opacity-100 text-slate-600 text-sm">
+        <p class="mt-2 text-sm text-slate-600 opacity-10 contrast-more:opacity-100">
           We need this to steal your identity.
         </p>
       </label>
-      <button type="submit" class="bg-purple-700 disabled:bg-purdark-500 disabled:cursor-not-allowed">Send</button>
+      <button type="submit" class="bg-purple-700 disabled:cursor-not-allowed disabled:bg-purdark-500">
+        Send
+      </button>
     </form>
 
-
-    <dialog id="myDialog" class="m-20 backdrop:bg-white open:bg-purple-600 rounded-lg p-4" open>
+    <dialog id="myDialog" class="m-20 rounded-lg p-4 backdrop:bg-white open:bg-purple-600" open>
       <form method="dialog">
-        <p><label>Enter your name: <input type="text" name="name"></label></p>
+        <p>
+          <label>Enter your name: <input type="text" name="name" /></label>
+        </p>
         <menu>
           <button value="cancel">Cancel</button>
           <button value="confirm">Confirm</button>
@@ -216,46 +224,27 @@
       <input id="published" class="peer/published" type="radio" name="status" />
       <label for="published" class="peer-checked/published:text-sky-500">Published</label>
 
-      <div class="hidden peer-checked/draft:block">Drafts are only visible to administrators.</div>
-      <div class="hidden peer-checked/published:block">Your post will be publicly visible on your site.</div>
+      <div class="hidden peer-checked/draft:block">
+        Drafts are only visible to administrators.
+      </div>
+      <div class="hidden peer-checked/published:block">
+        Your post will be publicly visible on your site.
+      </div>
     </fieldset>
 
-
-
-    <div>
-      <h2>Categories<h2>
-          <ul
-            class="bg-red-600 p-3 *:w-fit *:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10">
-            <li>Sales</li>
-            <li>Marketing</li>
-            <li>SEO</li>
-            <!-- ... -->
-          </ul>
-    </div>
-
-
-
-    <div class="group ...">
+    <div class="... group">
       <img src="..." />
       <h4>Spencer Sharp</h4>
-      <svg class="hidden group-has-[a]:block ...">
+      <svg class="... hidden group-has-[a]:block">
         <!-- ... -->
       </svg>
       <p>Product Designer at <a href="...">planeteria.tech</a></p>
     </div>
 
-
-
-
-
-
-
-
-
     <form id="exampleForm">
-      <input type="text" class="border border-gray-300 p-2 rounded-md" placeholder="Your name" required>
+      <input type="text" class="rounded-md border border-gray-300 p-2" placeholder="Your name" required />
       <button type="submit"
-        class="bg-blue-500 text-white py-2 px-4 rounded-md disabled:bg-gray-400 disabled:cursor-not-allowed">
+        class="rounded-md bg-blue-500 px-4 py-2 text-white disabled:cursor-not-allowed disabled:bg-gray-400">
         Submit
       </button>
     </form>
@@ -278,44 +267,42 @@
       </div>
     </div>
 
-    <div class="left-[30%] p-8 bg-blue-500">
-      <ul class="p-1 bg-purple-600 text-white">
+    <div class="left-[30%] bg-blue-500 p-8">
+      <ul class="bg-purple-600 p-1 text-white">
         <li>Satu</li>
         <li class="bg-red-600">Dua</li>
         <li>Tiga</li>
       </ul>
     </div>
-
-
-
   </div>
 
+  <script>
+    document
+      .getElementById('exampleForm')
+      .addEventListener('submit', function (event) {
+        event.preventDefault(); // Mencegah pengiriman form secara default
 
-  <script>document.getElementById('exampleForm').addEventListener('submit', function (event) {
-      event.preventDefault(); // Mencegah pengiriman form secara default
+        const button = event.target.querySelector('button');
+        const message = document.getElementById('message');
 
-      const button = event.target.querySelector('button');
-      const message = document.getElementById('message');
+        // Menonaktifkan tombol
+        button.disabled = true;
+        button.textContent = 'Processing...';
 
-      // Menonaktifkan tombol
-      button.disabled = true;
-      button.textContent = 'Processing...';
-
-      // Simulasi operasi asinkron (misalnya, pengiriman formulir)
-      setTimeout(() => {
-        // Mengaktifkan kembali tombol setelah operasi selesai
-        button.disabled = false;
-        button.textContent = 'Submit';
-        message.classList.remove('hidden');
-      }, 2000); // Simulasi waktu tunggu 2 detik
-    });
+        // Simulasi operasi asinkron (misalnya, pengiriman formulir)
+        setTimeout(() => {
+          // Mengaktifkan kembali tombol setelah operasi selesai
+          button.disabled = false;
+          button.textContent = 'Submit';
+          message.classList.remove('hidden');
+        }, 2000); // Simulasi waktu tunggu 2 detik
+      });
 
     const contributors = [
       { avatarUrl: './public/img/avatar.png', handle: 'username1' },
       { avatarUrl: './public/img/favicon.png', handle: 'username2' },
       // tambahkan objek lain sesuai kebutuhan
     ];
-
   </script>
 
   <script src="./src/script.js"></script>
