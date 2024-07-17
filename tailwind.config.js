@@ -69,5 +69,5 @@ module.exports = {
     },
   },
   plugins: [],
-  darkMode: "selector",
+  darkMode: "selector", // Ini untuk mengatur agar pergantian mode secara manual, bukan mengikuti sistem OS atau Browser
 };
