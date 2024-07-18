@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.{html,js}'],
+  content: [
+    './src/**/*.{html,js}', // Menyertakan semua file HTML dan JS dalam folder src
+    './*.html', // Menyertakan semua file HTML di root
+    './*.js', // Menyertakan semua file JS di root jika ada
+  ],
   important: true,
   theme: {
     extend: {
@@ -68,6 +72,27 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/container-queries'),
+    function ({ addUtilities }) {
+      addUtilities(
+        {
+          '.content-auto': {
+            'content-visibility': 'auto',
+          },
+          '.content-hidden': {
+            'content-visibility': 'hidden',
+          },
+          '.content-visible': {
+            'content-visibility': 'visible',
+          },
+        },
+        ['responsive', 'hover'],
+      );
+    },
+  ],
   darkMode: 'selector', // Ini untuk mengatur agar pergantian mode secara manual, bukan mengikuti sistem OS atau Browser
 };
