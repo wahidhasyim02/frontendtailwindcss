@@ -3050,6 +3050,10 @@ input[type='checkbox']:checked:focus {
 }
 
 @supports ((-webkit-backdrop-filter: var(--tw)) or (backdrop-filter: var(--tw))) {
+  .supports-\[backdrop-filter\]\:bg-white\/50 {
+    background-color: rgb(255 255 255 / 0.5) !important;
+  }
+
   .supports-\[backdrop-filter\]\:backdrop-blur {
     --tw-backdrop-blur: blur(8px) !important;
     -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
@@ -3157,6 +3161,10 @@ input[type='checkbox']:checked:focus {
 
 .dark\:bg-opacity-95:is(.dark *) {
   --tw-bg-opacity: 0.95 !important;
+}
+
+.dark\:bg-opacity-70:is(.dark *) {
+  --tw-bg-opacity: 0.7 !important;
 }
 
 .dark\:bg-hero-dark:is(.dark *) {
