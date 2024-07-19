@@ -8,6 +8,11 @@ module.exports = {
   important: true,
   theme: {
     extend: {
+      backdropBlur: {
+        xs: '2px',
+        sm: '4px',
+        // tambahkan ukuran blur lainnya sesuai kebutuhan
+      },
       fontFamily: {
         inter: 'Inter',
       },
@@ -94,5 +99,5 @@ module.exports = {
       );
     },
   ],
-  darkMode: 'selector', // Ini untuk mengatur agar pergantian mode secara manual, bukan mengikuti sistem OS atau Browser
+  darkMode: 'class', // Ini untuk mengatur agar pergantian mode secara manual, bukan mengikuti sistem OS atau Browser
 };
