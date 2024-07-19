@@ -2138,6 +2138,14 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5) !important;
+}
+
+.bg-white\/85 {
+  background-color: rgb(255 255 255 / 0.85) !important;
+}
+
 .bg-yellow-50 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(254 252 232 / var(--tw-bg-opacity)) !important;
@@ -2148,28 +2156,8 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-white\/85 {
-  background-color: rgb(255 255 255 / 0.85) !important;
-}
-
-.bg-white\/50 {
-  background-color: rgb(255 255 255 / 0.5) !important;
-}
-
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5 !important;
-}
-
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8 !important;
-}
-
 .bg-opacity-90 {
   --tw-bg-opacity: 0.9 !important;
-}
-
-.bg-opacity-85 {
-  --tw-bg-opacity: 0.85 !important;
 }
 
 .bg-hero-light {
@@ -3084,6 +3072,10 @@ input[type='checkbox']:checked:focus {
   }
 }
 
+.dark\:border-0:is(.dark *) {
+  border-width: 0px !important;
+}
+
 .dark\:border-purdark-300\/20:is(.dark *) {
   border-color: rgb(211 209 219 / 0.2) !important;
 }
@@ -3111,6 +3103,23 @@ input[type='checkbox']:checked:focus {
   border-color: rgb(252 165 165 / 0.05) !important;
 }
 
+.dark\:border-purdark-300:is(.dark *) {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(211 209 219 / var(--tw-border-opacity)) !important;
+}
+
+.dark\:border-purdark-800\/0:is(.dark *) {
+  border-color: rgb(34 31 55 / 0) !important;
+}
+
+.dark\:border-purdark-800\/10:is(.dark *) {
+  border-color: rgb(34 31 55 / 0.1) !important;
+}
+
+.dark\:border-purdark-700\/0:is(.dark *) {
+  border-color: rgb(59 55 81 / 0) !important;
+}
+
 .dark\:border-opacity-30:is(.dark *) {
   --tw-border-opacity: 0.3 !important;
 }
@@ -3133,6 +3142,10 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(34 31 55 / var(--tw-bg-opacity)) !important;
 }
 
+.dark\:bg-purdark-800\/70:is(.dark *) {
+  background-color: rgb(34 31 55 / 0.7) !important;
+}
+
 .dark\:bg-purdark-900:is(.dark *) {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(20 17 39 / var(--tw-bg-opacity)) !important;
@@ -3153,16 +3166,12 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(202 138 4 / var(--tw-bg-opacity)) !important;
 }
 
-.dark\:bg-purdark-800\/70:is(.dark *) {
-  background-color: rgb(34 31 55 / 0.7) !important;
+.dark\:bg-purdark-800\/50:is(.dark *) {
+  background-color: rgb(34 31 55 / 0.5) !important;
 }
 
 .dark\:bg-opacity-10:is(.dark *) {
   --tw-bg-opacity: 0.1 !important;
-}
-
-.dark\:bg-opacity-70:is(.dark *) {
-  --tw-bg-opacity: 0.7 !important;
 }
 
 .dark\:bg-opacity-95:is(.dark *) {
