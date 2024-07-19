@@ -30,7 +30,7 @@
   class="m-0 h-screen w-full min-w-full bg-purdark-100 bg-hero-light bg-cover bg-no-repeat font-inter text-base text-purdark-600 selection:bg-fuchsia-900 selection:text-fuchsia-400 dark:bg-purdark-950 dark:bg-hero-dark dark:text-purdark-400 dark:selection:bg-fuchsia-400 dark:selection:text-fuchsia-900">
   <header id="header" class="fixed top-0 z-1000 hidden w-full">
     <div
-      class="flex items-center justify-between border-b border-purdark-300/15 bg-white bg-opacity-50 px-6 py-1 shadow-sm supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:supports-[backdrop-filter]:backdrop-blur">
+      class="flex items-center justify-between border-b border-purdark-300/15 bg-white/50 px-6 py-1 shadow-sm supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/70 dark:supports-[backdrop-filter]:backdrop-blur">
       <div class="flex gap-3">
         <div id="tombol-menu"
           class="flex cursor-pointer items-center gap-3 hover:text-purdark-800 hover:dark:text-white">
@@ -61,9 +61,9 @@
         <div class="flex items-center justify-center gap-2">
           <div class="grup flex items-center">
             <div id="account-setting"
-              class="group flex cursor-pointer content-center items-center justify-center gap-1 rounded-full bg-purdark-200 px-2 py-1 font-semibold hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white max-sm:px-1">
+              class="group flex cursor-pointer content-center items-center justify-center gap-1 rounded-full bg-white px-2 py-1 font-semibold hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white max-sm:px-1">
               <div
-                class="flex h-8 w-8 cursor-pointer rounded-full bg-purdark-200 bg-cover group-hover:outline group-hover:outline-4 group-hover:outline-purple-800/50 dark:bg-purdark-800 dark:hover:outline-purple-600/50">
+                class="flex h-8 w-8 cursor-pointer rounded-full bg-white bg-cover group-hover:outline group-hover:outline-4 group-hover:outline-purple-800/50 dark:bg-purdark-800 dark:hover:outline-purple-600/50">
                 <img id="profile-img-header" src="./public/img/avatar.png"
                   class="h-8 w-8 items-center justify-center rounded-full" alt="" />
               </div>
@@ -97,7 +97,7 @@
   </header>
   <header id="header-skeleton" class="fixed top-0 z-1000 hidden w-full">
     <div
-      class="flex items-center justify-between border-b border-purdark-300/15 bg-white bg-opacity-50 px-6 py-1 shadow-sm supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:supports-[backdrop-filter]:backdrop-blur">
+      class="flex items-center justify-between border-b border-purdark-300/15 bg-white/50 px-6 py-1 shadow-sm supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/70 dark:supports-[backdrop-filter]:backdrop-blur">
       <div
         class="flex animate-pulse gap-3 rounded-md bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700">
         <div class="flex cursor-pointer items-center gap-3">
@@ -147,13 +147,13 @@
 
   <!--Ini adalah menu setting-->
   <div id="popup-setting"
-    class="fixed right-24 top-14 hidden flex-col items-center gap-2 rounded-3xl border border-purdark-300/15   bg-white bg-opacity-50 p-4 text-base font-semibold text-purdark-600 shadow-xl   supports-[backdrop-filter]:backdrop-blur  dark:border-red-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+    class="fixed right-24 top-14 hidden flex-col items-center gap-2 rounded-3xl border border-purdark-300/15   bg-white/50 p-4 text-base font-semibold text-purdark-600 shadow-xl   supports-[backdrop-filter]:backdrop-blur  dark:border-red-300/5 dark:bg-purdark-800/70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
     <div class="flex flex-col items-center gap-2 bg-cover">
       <div for="edit-profile-img"
-        class="relative inline-block h-16 w-16 rounded-full bg-purdark-200 bg-cover dark:bg-purdark-800">
+        class="relative inline-block h-16 w-16 rounded-full bg-white bg-cover dark:bg-purdark-800">
         <img id="profile-img-setting" src="./public/img/avatar.png" class="h-16 w-16 rounded-full" alt="avatar" />
         <span id="edit-profile-img"
-          class="material-symbols-rounded absolute right-0 top-11 h-6 w-6 cursor-pointer content-center items-center rounded-full bg-purdark-200 text-center text-base shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700 dark:hover:bg-purdark-600 hover:dark:text-white">
+          class="material-symbols-rounded absolute right-0 top-11 h-6 w-6 cursor-pointer content-center items-center rounded-full bg-white text-center text-base shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700 dark:hover:bg-purdark-600 hover:dark:text-white">
           edit
         </span>
       </div>
@@ -236,9 +236,9 @@
     <!--Ini adalah container menu-->
     <div id="menu" class="fixed left-1/2 top-16 hidden max-h-fit w-10/12 -translate-x-1/2">
       <div
-        class="mx-auto flex h-[80%] flex-col rounded-3xl border-white border-opacity-50 bg-white bg-opacity-50 p-8 text-base text-purdark-700 supports-[backdrop-filter]:backdrop-blur dark:border-purdark-700 dark:border-opacity-30 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-100 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="mx-auto flex h-[80%] flex-col rounded-3xl border-white border-opacity-50 bg-white/50 p-8 text-base text-purdark-700 supports-[backdrop-filter]:backdrop-blur dark:border-purdark-700 dark:border-opacity-30 dark:bg-purdark-800/70 dark:text-purdark-100 dark:supports-[backdrop-filter]:backdrop-blur">
         <div id="close-menu"
-          class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-purdark-200 font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
+          class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
           <span class="material-symbols-rounded text-l m-auto content-center">
             close
           </span>
@@ -271,7 +271,7 @@
           class="overflow-style mb-4 flex max-h-56 max-w-full flex-wrap items-start justify-start gap-12 overflow-y-auto p-1">
           <a id="btn_home" href="/" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12 group-hover:animate-pulse" src="./public/img/home.png" alt="" />
             </div>
             <div class="mt-4 w-24">Home</div>
@@ -279,7 +279,7 @@
           <a id="btn_billing_cash" href="/"
             class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/billing_cash.png" alt="" />
             </div>
             <div class="mt-4 w-24">Billing Cash</div>
@@ -287,7 +287,7 @@
           <a id="btn_billing_charge" href="/"
             class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/billing_charge.png" alt="" />
             </div>
             <div class="mt-4 w-24">Billing Charge</div>
@@ -296,42 +296,42 @@
           <a id="btn_announce_manual" href=""
             class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/announce_manual.png" alt="" />
             </div>
             <div class="mt-4 w-24">Announce Manual</div>
           </a>
           <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/adv.png" alt="" />
             </div>
             <div class="mt-4 w-24">ADV</div>
           </a>
           <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/announcer_queue.png" alt="" />
             </div>
             <div class="mt-4 w-24">Announce Queue</div>
           </a>
           <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/atv.png" alt="" />
             </div>
             <div class="mt-4 w-24">ATV</div>
           </a>
           <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/baggage_handling.png" alt="" />
             </div>
             <div class="mt-4 w-24">Baggage Handling</div>
           </a>
           <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/barix_monitor.png" alt="" />
             </div>
             <div class="mt-4 w-24">Barix Monitor</div>
@@ -339,14 +339,14 @@
 
           <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/cucs.png" alt="" />
             </div>
             <div class="mt-4 w-24">CUCS</div>
           </a>
           <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/daily_rotation.png" alt="" />
             </div>
             <div class="mt-4 w-24">Daily Rotation</div>
@@ -361,20 +361,20 @@
           class="overflow-style mb-2 flex max-h-[100px] max-w-full items-start gap-12 overflow-y-auto">
           <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/cucs.png" alt="" />
             </div>
             <div class="mt-4 w-24">CUCS</div>
           </a><a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/billing_charge.png" alt="" />
             </div>
             <div class="mt-4 w-24">Billing Charge</div>
           </a>
           <a href="" class="group w-24 text-center hover:text-purple-800 hover:dark:text-purple-600">
             <div
-              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white bg-opacity-50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/50 group-hover:bg-purdark-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-purdark-700 dark:bg-opacity-10 group-hover:dark:bg-purdark-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/daily_rotation.png" alt="" />
             </div>
             <div class="mt-4 w-24">Daily Rotation</div>
@@ -386,9 +386,9 @@
     <!--Ini adalah Popup Change Profile-->
     <div id="popup-change-profile" class="fixed left-1/2 top-16 hidden w-auto -translate-x-1/2">
       <div
-        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white bg-opacity-50 p-12 text-base font-normal text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white/50 p-12 text-base font-normal text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
         <div id="close-change-profile"
-          class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-purdark-200 font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
+          class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
           <span class="material-symbols-rounded text-l m-auto content-center">
             close
           </span>
@@ -428,9 +428,9 @@
     <!--Ini adalah Popup Change Password-->
     <div id="popup-change-password" class="fixed left-1/2 top-16 hidden w-auto -translate-x-1/2">
       <div
-        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white bg-opacity-50 p-12 text-base font-normal text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white/50 p-12 text-base font-normal text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
         <div id="close-change-password"
-          class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-purdark-200 font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
+          class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
           <span class="material-symbols-rounded text-l m-auto content-center">
             close
           </span>
@@ -1146,7 +1146,7 @@
     <!--Ini adalah Filter Billing Cash-->
     <div id="filter-billing-cash" class="fixed top-16 z-50 mx-[2%] hidden max-h-fit w-96% max-w-full">
       <div
-        class="justify-left flex max-h-fit items-center gap-2 rounded-lg border border-purdark-300/15 bg-white bg-opacity-50 p-2 text-base font-semibold text-purdark-600 supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="justify-left flex max-h-fit items-center gap-2 rounded-lg border border-purdark-300/15 bg-white/50 p-2 text-base font-semibold text-purdark-600 supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
         <div class="">
           <div class="rounded-md bg-white dark:bg-purdark-800">
             <input type="text" id="search-billing-cash" placeholder="Search..."
@@ -1167,7 +1167,7 @@
             </span>
           </button>
           <div id="list-years"
-            class="absolute mt-1 hidden w-24 rounded-md border border-purdark-300/15 bg-white bg-opacity-50 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+            class="absolute mt-1 hidden w-24 rounded-md border border-purdark-300/15 bg-white/85 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
             <ul class="overflow-style h-40 flex-col items-center justify-center gap-3 overflow-y-auto text-center">
               <li
                 class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-purple-600 hover:text-white">
@@ -1225,7 +1225,7 @@
             </span>
           </button>
           <div id="list-months"
-            class="absolute mt-1 hidden w-36 rounded-md border border-purdark-300/15 bg-white bg-opacity-50 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+            class="absolute mt-1 hidden w-36 rounded-md border border-purdark-300/15 bg-white/85 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
             <ul class="overflow-style h-40 flex-col items-center justify-center gap-3 overflow-y-auto text-center">
               <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-purple-600 hover:text-white">
                 January
@@ -1275,7 +1275,7 @@
             </span>
           </button>
           <div id="list-days"
-            class="absolute mt-1 hidden w-18 rounded-md border border-purdark-300/15 bg-white bg-opacity-50 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+            class="absolute mt-1 hidden w-18 rounded-md border border-purdark-300/15 bg-white/85 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
             <ul class="overflow-style h-40 flex-col items-center justify-center gap-3 overflow-y-auto text-center">
               <li
                 class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-purple-600 hover:text-white">
@@ -1425,7 +1425,7 @@
     <!--Ini adalah Action-->
     <div id="action" class="fixed left-50% top-[40%] z-50 hidden max-h-fit max-w-fit -translate-x-50% shadow-md">
       <div
-        class="flex max-h-fit items-center justify-center gap-2 rounded-lg border border-purdark-300/15 bg-white bg-opacity-50 p-2 text-base font-semibold text-purdark-600 supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="flex max-h-fit items-center justify-center gap-2 rounded-lg border border-purdark-300/15 bg-white/50 p-2 text-base font-semibold text-purdark-600 supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
         <span>Action:</span>
         <div>
           <button id="btn-list-action"
@@ -1436,7 +1436,7 @@
             </span>
           </button>
           <div id="list-actions"
-            class="absolute mt-1 hidden w-44 rounded-md border border-purdark-300/15 bg-white bg-opacity-50 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+            class="absolute mt-1 hidden w-44 rounded-md border border-purdark-300/15 bg-white/50 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
             <ul class="style-1 cursor-pointer flex-col flex-wrap items-center justify-center gap-3">
               <li class="flex items-center justify-start rounded-md px-2 py-1 hover:bg-purple-600 hover:text-white">
                 ------------
@@ -3145,9 +3145,9 @@
     <div id="popup-alert"
       class="fixed left-1/2 top-20 z-1200 hidden w-auto -translate-x-1/2 rounded-3xl border-l-4 border-green-600">
       <div
-        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white bg-opacity-50 p-12 text-base font-normal text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white/50 p-12 text-base font-normal text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
         <div id="close-popup-alert"
-          class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-purdark-200 font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
+          class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
           <span class="material-symbols-rounded text-l m-auto content-center">
             close
           </span>
