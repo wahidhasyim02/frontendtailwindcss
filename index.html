@@ -71,95 +71,8 @@
                 expand_more
               </span>
             </div>
-            <!--Ini adalah menu setting-->
-            <div id="popup-setting"
-              class="absolute right-24 top-14 hidden flex-col items-center gap-2 rounded-3xl border border-purdark-300/15   bg-white bg-opacity-50 p-4 text-base font-semibold text-purdark-600 shadow-xl   supports-[backdrop-filter]:backdrop-blur  dark:border-red-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
-              <div class="flex flex-col items-center gap-2 bg-cover">
-                <div for="edit-profile-img"
-                  class="relative inline-block h-16 w-16 rounded-full bg-purdark-200 bg-cover dark:bg-purdark-800">
-                  <img id="profile-img-setting" src="./public/img/avatar.png" class="h-16 w-16 rounded-full"
-                    alt="avatar" />
-                  <span id="edit-profile-img"
-                    class="material-symbols-rounded absolute right-0 top-11 h-6 w-6 cursor-pointer content-center items-center rounded-full bg-purdark-200 text-center text-base shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700 dark:hover:bg-purdark-600 hover:dark:text-white">
-                    edit
-                  </span>
-                </div>
-                <div id="greeting">
-                  <span class="font-normal">Halo,</span>
-                  <span id="account-name" class="font-semibold"></span>
-                </div>
-              </div>
-              <ul
-                class="overflow-style mt-2 h-80 max-h-fit space-y-1 overflow-y-auto border-t p-2 dark:border-purdark-700">
-                <li id="change-profile"
-                  class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
-                  <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
-                    person_edit
-                  </span>
-                  <span>Change Profile</span>
-                </li>
-                <li id="change-password"
-                  class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
-                  <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
-                    lock
-                  </span>
-                  <span>Change Password</span>
-                </li>
-                <li id="toggle-darkmode"
-                  class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
-                  <span id="icon-darkmode" class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
-                    dark_mode
-                  </span>
-                  <span id="text-darkmode">Dark Mode</span>
-                </li>
-                <li id="logout"
-                  class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
-                  <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
-                    logout
-                  </span>
-                  <span>Logout</span>
-                </li>
-                <li class="flex items-center gap-2 rounded-md px-2 py-1">
-                  <span class="pl-2">Choose Timezone</span>
-                </li>
 
-                <li id="tz-utc"
-                  class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
-                  <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
-                    schedule
-                  </span>
-                  <span>UTC</span>
-                </li>
-                <li id="tz-gmt7"
-                  class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
-                  <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
-                    schedule
-                  </span>
-                  <span>WIB / Jakarta</span>
-                </li>
-                <li id="tz-gmt8"
-                  class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
-                  <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
-                    schedule
-                  </span>
-                  <span>WITA / Makassar</span>
-                </li>
-                <li id="tz-gmt9"
-                  class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
-                  <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
-                    schedule
-                  </span>
-                  <span>WIT / Jayapura</span>
-                </li>
-                <li
-                  class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
-                  <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
-                    license
-                  </span>
-                  <span>Licences</span>
-                </li>
-              </ul>
-            </div>
+
           </div>
           <!--Menu notification-->
           <div
@@ -231,6 +144,93 @@
       </div>
     </div>
   </header>
+
+  <!--Ini adalah menu setting-->
+  <div id="popup-setting"
+    class="fixed right-24 top-14 hidden flex-col items-center gap-2 rounded-3xl border border-purdark-300/15   bg-white bg-opacity-50 p-4 text-base font-semibold text-purdark-600 shadow-xl   supports-[backdrop-filter]:backdrop-blur  dark:border-red-300/5 dark:bg-purdark-800 dark:bg-opacity-70 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+    <div class="flex flex-col items-center gap-2 bg-cover">
+      <div for="edit-profile-img"
+        class="relative inline-block h-16 w-16 rounded-full bg-purdark-200 bg-cover dark:bg-purdark-800">
+        <img id="profile-img-setting" src="./public/img/avatar.png" class="h-16 w-16 rounded-full" alt="avatar" />
+        <span id="edit-profile-img"
+          class="material-symbols-rounded absolute right-0 top-11 h-6 w-6 cursor-pointer content-center items-center rounded-full bg-purdark-200 text-center text-base shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700 dark:hover:bg-purdark-600 hover:dark:text-white">
+          edit
+        </span>
+      </div>
+      <div id="greeting">
+        <span class="font-normal">Halo,</span>
+        <span id="account-name" class="font-semibold"></span>
+      </div>
+    </div>
+    <ul class="overflow-style mt-2 h-80 max-h-fit space-y-1 overflow-y-auto border-t p-2 dark:border-purdark-700">
+      <li id="change-profile"
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
+        <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
+          person_edit
+        </span>
+        <span>Change Profile</span>
+      </li>
+      <li id="change-password"
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
+        <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
+          lock
+        </span>
+        <span>Change Password</span>
+      </li>
+      <li id="toggle-darkmode"
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
+        <span id="icon-darkmode" class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
+          dark_mode
+        </span>
+        <span id="text-darkmode">Dark Mode</span>
+      </li>
+      <li id="logout"
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
+        <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
+          logout
+        </span>
+        <span>Logout</span>
+      </li>
+      <li class="flex items-center gap-2 rounded-md px-2 py-1">
+        <span class="pl-2">Choose Timezone</span>
+      </li>
+
+      <li id="tz-utc"
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
+        <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
+          schedule
+        </span>
+        <span>UTC</span>
+      </li>
+      <li id="tz-gmt7"
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
+        <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
+          schedule
+        </span>
+        <span>WIB / Jakarta</span>
+      </li>
+      <li id="tz-gmt8"
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
+        <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
+          schedule
+        </span>
+        <span>WITA / Makassar</span>
+      </li>
+      <li id="tz-gmt9"
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
+        <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
+          schedule
+        </span>
+        <span>WIT / Jayapura</span>
+      </li>
+      <li class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-purple-700 hover:text-white">
+        <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
+          license
+        </span>
+        <span>Licences</span>
+      </li>
+    </ul>
+  </div>
 
   <section>
     <!--Ini adalah container menu-->
