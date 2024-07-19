@@ -37,6 +37,16 @@
   input[type='checkbox']:checked:after {
     @apply block;
   }
+  input[type='checkbox']:active {
+    @apply bg-purple-600 ring-purple-500;
+  }
+
+  input[type='checkbox']:focus {
+    @apply bg-purple-700 ring-purple-800;
+  }
+  input[type='checkbox']:checked:focus {
+    @apply bg-purple-700 ring-purple-800;
+  }
 }
 
 @layer utilities {
