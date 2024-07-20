@@ -2776,11 +2776,6 @@ input[type='checkbox']:checked:focus {
   --tw-ring-color: rgb(0 0 0 / 0.05) !important;
 }
 
-.hover\:bg-purdark-100:hover {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(244 243 246 / var(--tw-bg-opacity)) !important;
-}
-
 .hover\:bg-purdark-200:hover {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(231 229 235 / var(--tw-bg-opacity)) !important;
@@ -3084,11 +3079,6 @@ input[type='checkbox']:checked:focus {
   border-color: rgb(211 209 219 / 0.05) !important;
 }
 
-.dark\:border-purdark-600:is(.dark *) {
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(81 75 99 / var(--tw-border-opacity)) !important;
-}
-
 .dark\:border-purdark-700:is(.dark *) {
   --tw-border-opacity: 1 !important;
   border-color: rgb(59 55 81 / var(--tw-border-opacity)) !important;
@@ -3101,23 +3091,6 @@ input[type='checkbox']:checked:focus {
 
 .dark\:border-red-300\/5:is(.dark *) {
   border-color: rgb(252 165 165 / 0.05) !important;
-}
-
-.dark\:border-purdark-300:is(.dark *) {
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(211 209 219 / var(--tw-border-opacity)) !important;
-}
-
-.dark\:border-purdark-800\/0:is(.dark *) {
-  border-color: rgb(34 31 55 / 0) !important;
-}
-
-.dark\:border-purdark-800\/10:is(.dark *) {
-  border-color: rgb(34 31 55 / 0.1) !important;
-}
-
-.dark\:border-purdark-700\/0:is(.dark *) {
-  border-color: rgb(59 55 81 / 0) !important;
 }
 
 .dark\:border-opacity-30:is(.dark *) {
@@ -3142,6 +3115,10 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(34 31 55 / var(--tw-bg-opacity)) !important;
 }
 
+.dark\:bg-purdark-800\/50:is(.dark *) {
+  background-color: rgb(34 31 55 / 0.5) !important;
+}
+
 .dark\:bg-purdark-800\/70:is(.dark *) {
   background-color: rgb(34 31 55 / 0.7) !important;
 }
@@ -3164,10 +3141,6 @@ input[type='checkbox']:checked:focus {
 .dark\:bg-yellow-600:is(.dark *) {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity)) !important;
-}
-
-.dark\:bg-purdark-800\/50:is(.dark *) {
-  background-color: rgb(34 31 55 / 0.5) !important;
 }
 
 .dark\:bg-opacity-10:is(.dark *) {
