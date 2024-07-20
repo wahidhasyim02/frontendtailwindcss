@@ -17,9 +17,11 @@ module.exports = {
         inter: 'Inter',
       },
       backgroundImage: {
-        'hero-light':
+        'hero-light': "url('/public/img/docs@tinypng.d9e4dcdc.png')",
+        'hero-light2':
           "url('https://wahidhasyim02.github.io/public/img/bg_light.jpg')",
-        'hero-dark':
+        'hero-dark': "url('/public/img/docs-dark@tinypng.1bbe175e.png')",
+        'hero-dark2':
           "url('https://wahidhasyim02.github.io/public/img/bg_dark.jpg')",
       },
 
