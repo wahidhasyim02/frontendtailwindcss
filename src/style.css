@@ -2138,8 +2138,8 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-white\/50 {
-  background-color: rgb(255 255 255 / 0.5) !important;
+.bg-white\/70 {
+  background-color: rgb(255 255 255 / 0.7) !important;
 }
 
 .bg-white\/85 {
@@ -3141,6 +3141,10 @@ input[type='checkbox']:checked:focus {
 .dark\:bg-yellow-600:is(.dark *) {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity)) !important;
+}
+
+.dark\:bg-purdark-800\/80:is(.dark *) {
+  background-color: rgb(34 31 55 / 0.8) !important;
 }
 
 .dark\:bg-opacity-10:is(.dark *) {
