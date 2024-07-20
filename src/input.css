@@ -47,6 +47,43 @@
   input[type='checkbox']:checked:focus {
     @apply bg-purple-700 ring-purple-800;
   }
+
+  /* .bar-of-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: medium;
+    border-radius: 0;
+    background-color: currentcolor;
+    z-index: 10000;
+    height: 2px;
+    color: rgb(147, 51, 234);
+    opacity: 0;
+    width: 0; /* Start with width 0 */
+  /*  transition:
+      width 2s ease-out,
+      opacity 0.5s 0.2s; /* Change width transition duration to 2s */
+  /* }*/
+  .bar-of-progress {
+    @apply fixed left-0 top-0 z-1200 m-0 h-[2px] w-0 rounded-none bg-current p-0 text-purple-500 opacity-0;
+    border: medium;
+    /* Start with width 0 */
+    transition:
+      width 2s ease-out,
+      opacity 0.5s 0.2s; /* Change width transition duration to 2s */
+  }
+
+  .glow {
+    @apply h-full opacity-[0.4];
+    box-shadow: 3px 0px 8px;
+  }
+
+  .finished {
+    @apply w-full opacity-100; /* When finished, width is 100% */
+    /* When finished, opacity is 1 */
+  }
 }
 
 @layer utilities {

@@ -24,44 +24,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
     integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    .bar-of-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      margin: 0;
-      padding: 0;
-      border: medium;
-      border-radius: 0;
-      background-color: currentcolor;
-      z-index: 10000;
-      height: 2px;
-      color: rgb(56, 189, 248);
-      opacity: 0;
-      width: 0;
-      /* Start with width 0 */
-      transition: width 0.1s ease-out, opacity 0.5s 0.2s;
-    }
 
-    .glow {
-      opacity: 0.4;
-      box-shadow: 3px 0px 8px;
-      height: 100%;
-    }
 
-    .finished {
-      width: 100%;
-      /* When finished, width is 100% */
-      opacity: 1;
-      /* When finished, opacity is 1 */
-    }
-  </style>
 
 
 </head>
 
 <body
   class="transition-colors duration-500 m-0 h-screen w-full min-w-full bg-purdark-100 bg-hero-light bg-cover bg-no-repeat font-inter text-base text-purdark-600 selection:bg-fuchsia-900 selection:text-fuchsia-400 dark:bg-purdark-950 dark:bg-hero-dark dark:text-purdark-400 dark:selection:bg-fuchsia-400 dark:selection:text-fuchsia-900">
+
+  <div class="bar-of-progress" id="progress-bar">
+    <div class="glow"></div>
+  </div>
+
+
   <header id="header" class="fixed top-0 z-1000 hidden w-full">
     <div
       class="flex items-center justify-between border-b border-purdark-300/15 bg-white/70 px-6 py-1 shadow-sm supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/0 dark:supports-[backdrop-filter]:backdrop-blur">
@@ -177,10 +153,6 @@
     </div>
   </header>
 
-  <div class="bar-of-progress finished" id="progress-bar"
-    style="position: fixed; top: 0px; left: 0px; margin: 0px; padding: 0px; border: medium; border-radius: 0px; background-color: currentcolor; z-index: 10000; height: 2px; color: rgb(56, 189, 248); opacity: 0; width: 100%; transition: width 0.1s ease-out, opacity 0.5s 0.2s;">
-    <div class="glow" style="opacity: 0.4; box-shadow: 3px 0px 8px; height: 100%;"></div>
-  </div>
 
 
 
@@ -3204,16 +3176,9 @@
       </div>
     </div>
   </section>
-  <script>
-    // Function to start the progress bar animation
-    function startProgressBar() {
-      const progressBar = document.getElementById('progress-bar');
-      progressBar.classList.add('finished');
-    }
 
-    // Call the function to start the animation after 1 second
-    setTimeout(startProgressBar, 1000);
-  </script>
+
+
 
 
 

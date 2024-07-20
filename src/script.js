@@ -91,3 +91,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 });
+
+// Function to start the progress bar animation
+function startProgressBar() {
+  const progressBar = document.getElementById('progress-bar');
+  progressBar.classList.add('finished');
+
+  // Remove the 'finished' class and add 'hidden' class after animation
+  setTimeout(() => {
+    progressBar.classList.remove('finished');
+    progressBar.classList.add('hidden');
+  }, 2400); // Adjust time based on the duration of your animation
+}
+
+// Call the function to start the animation after 1 second
+setTimeout(startProgressBar, 1000);
