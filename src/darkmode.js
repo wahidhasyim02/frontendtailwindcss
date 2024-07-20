@@ -1,3 +1,8 @@
+// Memeriksa preferensi tema yang disimpan di local storage dan menerapkan sebelum halaman selesai dimuat
+if (localStorage.getItem('darkMode') === 'true') {
+  document.documentElement.classList.add('dark');
+}
+
 // Dark Mode
 document.addEventListener('DOMContentLoaded', function () {
   var toggleDarkMode = document.getElementById('toggle-darkmode');
