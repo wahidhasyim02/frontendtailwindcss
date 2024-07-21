@@ -74,7 +74,7 @@ document.getElementById('btn-login').addEventListener('click', function () {
     document
       .getElementById('login-username')
       .classList.remove(
-        'border-purdark-400',
+        'border-xai-400',
         'focus:ring-violet-400',
         'focus:border-violet-400',
       );
@@ -104,7 +104,7 @@ document.getElementById('btn-login').addEventListener('click', function () {
     document
       .getElementById('login-password')
       .classList.remove(
-        'border-purdark-400',
+        'border-xai-400',
         'focus:ring-violet-400',
         'focus:border-violet-400',
       );

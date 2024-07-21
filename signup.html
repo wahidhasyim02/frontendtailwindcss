@@ -22,11 +22,11 @@
 </head>
 
 <body
-  class="m-0 h-screen w-full min-w-full bg-purdark-100 bg-hero-light bg-cover bg-no-repeat font-inter text-base text-purdark-500 dark:bg-purdark-900 dark:text-purdark-400">
+  class="m-0 h-screen w-full min-w-full bg-xai-100 bg-hero-light bg-cover bg-no-repeat font-inter text-base text-xai-500 dark:bg-xai-900 dark:text-xai-400">
   <!--Ini adalah Popup signup-->
   <div id="popup-signup" class="fixed left-1/2 top-18 hidden w-auto -translate-x-1/2 py-10">
     <div
-      class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-purdark-700 shadow-xl backdrop-blur-sm dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-95 dark:text-purdark-300 dark:backdrop-blur-sm">
+      class="mx-auto flex flex-col rounded-3xl border border-xai-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-xai-700 shadow-xl backdrop-blur-sm dark:border-xai-300/5 dark:bg-xai-800 dark:bg-opacity-95 dark:text-xai-300 dark:backdrop-blur-sm">
       <div class="flex content-center items-center justify-center">
         <img src="./public/img/logo_app.png" class="inline h-24 w-24 rounded-full" alt="" />
       </div>
@@ -35,7 +35,7 @@
           <label for="signup-username" class="">Username</label>
           <div>
             <input id="signup-username" type="text" placeholder="Username"
-              class="w-full rounded-md border border-purdark-400 bg-white px-3 py-1 focus:border focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50 dark:bg-purdark-800 dark:ring-opacity-30" />
+              class="w-full rounded-md border border-xai-400 bg-white px-3 py-1 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30" />
           </div>
           <p id="not-fill-username" class="invisible text-xs text-pink-600 peer-invalid:visible"></p>
         </div>
@@ -43,18 +43,18 @@
           <label for="signup-password" class="">Create Password</label>
           <div>
             <input id="signup-password" type="password" placeholder="******"
-              class="w-full rounded-md border border-purdark-400 bg-white px-3 py-1 focus:border focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50 dark:bg-purdark-800 dark:ring-opacity-30" />
+              class="w-full rounded-md border border-xai-400 bg-white px-3 py-1 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30" />
           </div>
           <p id="not-fill-password" class="invisible text-xs text-pink-600 peer-invalid:visible"></p>
         </div>
         <div class="flex-col space-y-2">
           <button id="btn-signup"
-            class="flex w-full content-center items-center justify-center gap-2 rounded-full border-2 border-purdark-300/20 bg-purple-700 px-6 py-2 text-base text-white hover:bg-purple-800 dark:border-purdark-300/20 hover:dark:bg-purple-600">
+            class="flex w-full content-center items-center justify-center gap-2 rounded-full border-2 border-xai-300/20 bg-lightblue-700 px-6 py-2 text-base text-white hover:bg-lightblue-800 dark:border-xai-300/20 hover:dark:bg-lightblue-600">
             Sign up
           </button>
           <a href="login.html">
             <button id="btn-to-login"
-              class="flex w-full content-center items-center justify-center gap-2 rounded-full px-6 py-2 text-base text-purdark-700 hover:text-purple-600 dark:text-purdark-300">
+              class="flex w-full content-center items-center justify-center gap-2 rounded-full px-6 py-2 text-base text-xai-700 hover:text-lightblue-600 dark:text-xai-300">
               Login
             </button></a>
         </div>
@@ -65,41 +65,39 @@
   <!--Ini adalah Popup signup-->
   <div id="popup-signup-skeleton" class="fixed left-1/2 top-18 hidden w-auto -translate-x-1/2 py-10">
     <div
-      class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-purdark-700 shadow-xl backdrop-blur-sm dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-95 dark:text-purdark-300 dark:backdrop-blur-sm">
+      class="mx-auto flex flex-col rounded-3xl border border-xai-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-xai-700 shadow-xl backdrop-blur-sm dark:border-xai-300/5 dark:bg-xai-800 dark:bg-opacity-95 dark:text-xai-300 dark:backdrop-blur-sm">
       <div class="flex content-center items-center justify-center">
-        <img
-          class="inline h-24 w-24 animate-pulse rounded-md bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700"
+        <img class="inline h-24 w-24 animate-pulse rounded-md bg-xai-300 text-xai-300 dark:bg-xai-700 dark:text-xai-700"
           alt="" />
       </div>
       <div class="mt-6 flex-col space-y-2">
         <div class="flex-col space-y-2">
-          <label
-            class="animate-pulse rounded-md bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700">Username
+          <label class="animate-pulse rounded-md bg-xai-300 text-xai-300 dark:bg-xai-700 dark:text-xai-700">Username
             <div>
               <input type="text"
-                class="peer w-full animate-pulse rounded-md bg-purdark-300 px-3 py-1 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700" />
+                class="peer w-full animate-pulse rounded-md bg-xai-300 px-3 py-1 text-xai-300 dark:bg-xai-700 dark:text-xai-700" />
             </div>
           </label>
           <p class="text-xs text-pink-600 peer-invalid:visible"></p>
         </div>
         <div class="flex-col space-y-2">
           <label for="login-username"
-            class="animate-pulse rounded-md bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700">Password
+            class="animate-pulse rounded-md bg-xai-300 text-xai-300 dark:bg-xai-700 dark:text-xai-700">Password
             <div>
               <input
-                class="peer w-full animate-pulse rounded-md bg-purdark-300 px-3 py-1 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700" />
+                class="peer w-full animate-pulse rounded-md bg-xai-300 px-3 py-1 text-xai-300 dark:bg-xai-700 dark:text-xai-700" />
             </div>
           </label>
           <p class="text-xs text-pink-600 peer-invalid:visible"></p>
         </div>
         <div class="flex-col space-y-2">
           <button
-            class="flex w-full animate-pulse content-center items-center justify-center gap-2 rounded-md bg-purdark-300 px-6 py-2 text-base text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700">
+            class="flex w-full animate-pulse content-center items-center justify-center gap-2 rounded-md bg-xai-300 px-6 py-2 text-base text-xai-300 dark:bg-xai-700 dark:text-xai-700">
             Sign up
           </button>
           <a href="login.html">
             <button
-              class="flex w-full animate-pulse content-center items-center justify-center gap-2 rounded-md bg-purdark-300 px-6 py-2 text-base text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700">
+              class="flex w-full animate-pulse content-center items-center justify-center gap-2 rounded-md bg-xai-300 px-6 py-2 text-base text-xai-300 dark:bg-xai-700 dark:text-xai-700">
               Login
             </button></a>
         </div>
@@ -111,9 +109,9 @@
   <div id="popup-alert-signup"
     class="fixed left-1/2 top-6 z-1200 hidden w-auto -translate-x-1/2 rounded-3xl border-l-4 border-green-600">
     <div
-      class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-purdark-700 shadow-xl backdrop-blur-sm dark:border-purdark-300/5 dark:bg-purdark-800 dark:bg-opacity-95 dark:text-purdark-300 dark:backdrop-blur-sm">
+      class="mx-auto flex flex-col rounded-3xl border border-xai-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-xai-700 shadow-xl backdrop-blur-sm dark:border-xai-300/5 dark:bg-xai-800 dark:bg-opacity-95 dark:text-xai-300 dark:backdrop-blur-sm">
       <div id="close-popup-alert"
-        class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-purdark-200 font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/70 dark:hover:bg-purdark-600 hover:dark:text-white">
+        class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-xai-200 font-semibold shadow-md hover:bg-xai-300 hover:text-xai-800 dark:bg-xai-700/70 dark:hover:bg-xai-600 hover:dark:text-white">
         <span class="material-symbols-rounded text-l m-auto content-center">
           close
         </span>

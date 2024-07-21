@@ -47,7 +47,7 @@ document.getElementById('btn-signup').addEventListener('click', function () {
     document
       .getElementById('signup-username')
       .classList.remove(
-        'border-purdark-400',
+        'border-xai-400',
         'focus:ring-violet-400',
         'focus:border-violet-400',
       );
@@ -77,7 +77,7 @@ document.getElementById('btn-signup').addEventListener('click', function () {
     document
       .getElementById('signup-password')
       .classList.remove(
-        'border-purdark-400',
+        'border-xai-400',
         'focus:ring-violet-400',
         'focus:border-violet-400',
       );

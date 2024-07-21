@@ -141,13 +141,13 @@ document
       const td = row.querySelector('td').innerText.toLowerCase();
 
       if (th.includes(searchValue) || td.includes(searchValue)) {
-        row.classList.remove('bg-purple-50', 'dark:bg-purdark-800');
+        row.classList.remove('bg-lightblue-50', 'dark:bg-xai-800');
         row.classList.add('bg-yellow-50');
         row.classList.remove('hidden');
       } else {
         row.classList.add('hidden');
         row.classList.remove('bg-yellow-50');
-        row.classList.add('bg-purple-50', 'dark:bg-purdark-800');
+        row.classList.add('bg-lightblue-50', 'dark:bg-xai-800');
       }
     });
   });
