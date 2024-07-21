@@ -24,23 +24,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
     integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-
 </head>
 
 <body
-  class="transition-colors duration-500 m-0 h-screen w-full min-w-full bg-purdark-100 bg-hero-light bg-cover bg-no-repeat font-inter text-base text-purdark-600 selection:bg-fuchsia-900 selection:text-fuchsia-400 dark:bg-purdark-950 dark:bg-hero-dark dark:text-purdark-400 dark:selection:bg-fuchsia-400 dark:selection:text-fuchsia-900">
-
+  class="m-0 h-screen w-full min-w-full bg-purdark-100 bg-hero-light bg-cover bg-no-repeat font-inter text-base text-purdark-600 transition-colors duration-500 selection:bg-fuchsia-900 selection:text-fuchsia-400 dark:bg-purdark-950 dark:bg-hero-dark dark:text-purdark-400 dark:selection:bg-fuchsia-400 dark:selection:text-fuchsia-900">
   <div class="bar-of-progress" id="progress-bar">
     <div class="glow"></div>
   </div>
 
-
   <header id="header" class="fixed top-0 z-1000 hidden w-full">
     <div
-      class="flex items-center justify-between border-b border-purdark-300/15 bg-white/70 px-6 py-1 shadow-sm supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/0 dark:supports-[backdrop-filter]:backdrop-blur">
+      class="flex items-center justify-between border-b border-purdark-300/15 bg-white/50 px-6 py-1 shadow-sm backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/0">
       <div class="flex gap-3">
         <div id="tombol-menu"
           class="flex cursor-pointer items-center gap-3 hover:text-purdark-800 hover:dark:text-white">
@@ -105,7 +99,7 @@
   </header>
   <header id="header-skeleton" class="fixed top-0 z-1000 hidden w-full">
     <div
-      class="flex items-center justify-between border-b border-purdark-300/15 bg-white/70 px-6 py-1 shadow-sm supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/0 dark:supports-[backdrop-filter]:backdrop-blur">
+      class="flex items-center justify-between border-b border-purdark-300/15 bg-white/70 px-6 py-1 shadow-sm backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/0">
       <div
         class="flex animate-pulse gap-3 rounded-md bg-purdark-300 text-purdark-300 dark:bg-purdark-700 dark:text-purdark-700">
         <div class="flex cursor-pointer items-center gap-3">
@@ -134,7 +128,6 @@
                 expand_more
               </span>
             </div>
-
           </div>
           <!--Menu notification-->
           <div
@@ -153,12 +146,9 @@
     </div>
   </header>
 
-
-
-
   <!--Ini adalah menu setting-->
   <div id="popup-setting"
-    class="fixed right-24 top-14 hidden flex-col items-center gap-2 rounded-3xl border border-purdark-300/15 bg-white/70 p-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-red-300/5 dark:bg-purdark-800/80 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+    class="fixed right-24 top-14 hidden flex-col items-center gap-2 rounded-3xl border border-purdark-300/15 bg-white/70 p-4 text-base font-semibold text-purdark-600 shadow-xl backdrop-blur dark:border-red-300/5 dark:bg-purdark-800/80 dark:text-purdark-400">
     <div class="flex flex-col items-center gap-2 bg-cover">
       <div for="edit-profile-img"
         class="relative inline-block h-16 w-16 rounded-full bg-white bg-cover dark:bg-purdark-800">
@@ -247,7 +237,7 @@
     <!--Ini adalah container menu-->
     <div id="menu" class="fixed left-1/2 top-16 hidden max-h-fit w-10/12 -translate-x-1/2">
       <div
-        class="mx-auto flex h-[80%] flex-col rounded-3xl border-white border-opacity-50 bg-white/70 p-8 text-base text-purdark-700 supports-[backdrop-filter]:backdrop-blur dark:border-purdark-700 dark:border-opacity-30 dark:bg-purdark-800/80 dark:text-purdark-100 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="mx-auto flex h-[80%] flex-col rounded-3xl border-white border-opacity-50 bg-white/70 p-8 text-base text-purdark-700 backdrop-blur dark:border-purdark-700 dark:border-opacity-30 dark:bg-purdark-800/80 dark:text-purdark-100">
         <div id="close-menu"
           class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
           <span class="material-symbols-rounded text-l m-auto content-center">
@@ -397,7 +387,7 @@
     <!--Ini adalah Popup Change Profile-->
     <div id="popup-change-profile" class="fixed left-1/2 top-16 hidden w-auto -translate-x-1/2">
       <div
-        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white/70 p-12 text-base font-normal text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white/70 p-12 text-base font-normal text-purdark-600 shadow-xl backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400">
         <div id="close-change-profile"
           class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
           <span class="material-symbols-rounded text-l m-auto content-center">
@@ -436,11 +426,10 @@
       </div>
     </div>
 
-
     <!--Ini adalah Popup Change Password-->
     <div id="popup-change-password" class="fixed left-1/2 top-16 hidden w-auto -translate-x-1/2">
       <div
-        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white/70 p-12 text-base font-normal text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white/70 p-12 text-base font-normal text-purdark-600 shadow-xl backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400">
         <div id="close-change-password"
           class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
           <span class="material-symbols-rounded text-l m-auto content-center">
@@ -1158,7 +1147,7 @@
     <!--Ini adalah Filter Billing Cash-->
     <div id="filter-billing-cash" class="fixed top-16 z-50 mx-[2%] hidden max-h-fit w-96% max-w-full">
       <div
-        class="justify-left flex max-h-fit items-center gap-2 rounded-lg border border-purdark-300/15 bg-white/70 p-2 text-base font-semibold text-purdark-600 supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="justify-left flex max-h-fit items-center gap-2 rounded-lg border border-purdark-300/15 bg-white/70 p-2 text-base font-semibold text-purdark-600 backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400">
         <div class="">
           <div class="rounded-md bg-white dark:bg-purdark-800">
             <input type="text" id="search-billing-cash" placeholder="Search..."
@@ -1179,7 +1168,7 @@
             </span>
           </button>
           <div id="list-years"
-            class="absolute mt-1 hidden w-24 rounded-md border border-purdark-300/15 bg-white/85 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+            class="absolute mt-1 hidden w-24 rounded-md border border-purdark-300/15 bg-white/85 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400">
             <ul class="overflow-style h-40 flex-col items-center justify-center gap-3 overflow-y-auto text-center">
               <li
                 class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-purple-600 hover:text-white">
@@ -1237,7 +1226,7 @@
             </span>
           </button>
           <div id="list-months"
-            class="absolute mt-1 hidden w-36 rounded-md border border-purdark-300/15 bg-white/85 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+            class="absolute mt-1 hidden w-36 rounded-md border border-purdark-300/15 bg-white/85 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400">
             <ul class="overflow-style h-40 flex-col items-center justify-center gap-3 overflow-y-auto text-center">
               <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-purple-600 hover:text-white">
                 January
@@ -1287,7 +1276,7 @@
             </span>
           </button>
           <div id="list-days"
-            class="absolute mt-1 hidden w-18 rounded-md border border-purdark-300/15 bg-white/85 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+            class="absolute mt-1 hidden w-18 rounded-md border border-purdark-300/15 bg-white/85 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400">
             <ul class="overflow-style h-40 flex-col items-center justify-center gap-3 overflow-y-auto text-center">
               <li
                 class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-purple-600 hover:text-white">
@@ -1437,7 +1426,7 @@
     <!--Ini adalah Action-->
     <div id="action" class="fixed left-50% top-[40%] z-50 hidden max-h-fit max-w-fit -translate-x-50% shadow-md">
       <div
-        class="flex max-h-fit items-center justify-center gap-2 rounded-lg border border-purdark-300/15 bg-white/70 p-2 text-base font-semibold text-purdark-600 supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="flex max-h-fit items-center justify-center gap-2 rounded-lg border border-purdark-300/15 bg-white/70 p-2 text-base font-semibold text-purdark-600 backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400">
         <span>Action:</span>
         <div>
           <button id="btn-list-action"
@@ -1448,7 +1437,7 @@
             </span>
           </button>
           <div id="list-actions"
-            class="absolute mt-1 hidden w-44 rounded-md border border-purdark-300/15 bg-white/70 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+            class="absolute mt-1 hidden w-44 rounded-md border border-purdark-300/15 bg-white/70 px-2 py-4 text-base font-semibold text-purdark-600 shadow-xl backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400">
             <ul class="style-1 cursor-pointer flex-col flex-wrap items-center justify-center gap-3">
               <li class="flex items-center justify-start rounded-md px-2 py-1 hover:bg-purple-600 hover:text-white">
                 ------------
@@ -3157,7 +3146,7 @@
     <div id="popup-alert"
       class="fixed left-1/2 top-20 z-1200 hidden w-auto -translate-x-1/2 rounded-3xl border-l-4 border-green-600">
       <div
-        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white/70 p-12 text-base font-normal text-purdark-600 shadow-xl supports-[backdrop-filter]:backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400 dark:supports-[backdrop-filter]:backdrop-blur">
+        class="mx-auto flex flex-col rounded-3xl border border-purdark-300/15 bg-white/70 p-12 text-base font-normal text-purdark-600 shadow-xl backdrop-blur dark:border-purdark-300/5 dark:bg-purdark-800/80 dark:text-purdark-400">
         <div id="close-popup-alert"
           class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white font-semibold shadow-md hover:bg-purdark-300 hover:text-purdark-800 dark:bg-purdark-700/40 dark:hover:bg-purdark-600 hover:dark:text-white">
           <span class="material-symbols-rounded text-l m-auto content-center">
@@ -3176,13 +3165,6 @@
       </div>
     </div>
   </section>
-
-
-
-
-
-
-
 
   <script src="./src/script.js"></script>
   <script src="./src/accountset.js"></script>
