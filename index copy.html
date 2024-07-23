@@ -28,10 +28,45 @@
 </head>
 
 <body
-  class="m-0 h-screen w-full min-w-full bg-xai-100 bg-hero-light bg-cover bg-no-repeat font-inter text-base text-xai-600 dark:bg-xai-950 dark:bg-hero-dark dark:text-xai-400">
+  class="m-0 h-screen w-full min-w-full bg-xai-100 bg-heroLight bg-cover bg-no-repeat font-inter text-base text-xai-600 dark:bg-xai-950 dark:bg-heroDark dark:text-xai-400">
   <div class="top-32 m-auto">
     <i class="ri-home-line bg-lightblue-700 p-4 text-xl text-xai-50"></i>
   </div>
+
+
+
+  <!-- Menggunakan Gap -->
+  <div class="flex gap-4">
+    <div class="border gap-2">
+      <div class="bg-red-500">Item 1we</div>
+      <div class="bg-blue-500">Item 2</div>
+      <div class="bg-green-500">Item 3weweewe</div>
+    </div>
+    <div class="border gap-2">
+      <div class="bg-red-500">Item 1we</div>
+      <div class="bg-blue-500">Item 2</div>
+      <div class="bg-green-500">Item 3weweewe</div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- Menggunakan Space -->
+  <div class="flex space-y-4">
+    <div class="border">
+      <div class="bg-red-500">Item 1we</div>
+      <div class="bg-blue-500">Item 2</div>
+      <div class="bg-green-500">Item 3weweewe</div>
+    </div>
+    <div class="border">
+      <div class="bg-red-500">Item 1we</div>
+      <div class="bg-blue-500">Item 2</div>
+      <div class="bg-green-500">Item 3weweewe</div>
+    </div>
+  </div>
+
+  </div>
+
 
   <ul role="list">
     {#each people as person}
@@ -132,6 +167,15 @@
     </div>
   </div>
 
+  <ul class="*:bg-sky-500">
+    <li class="bg-red-500">Sales</li>
+    <li>Marketing</li>
+    <li>SEOhfhfh</li>
+    <!-- ... -->
+  </ul>
+
+
+
   <div class="mx-auto max-w-lg border-r p-8">
     <details
       class="rounded-lg p-6 open:bg-white open:shadow-lg open:ring-1 open:ring-black/5 dark:open:bg-xai-800 dark:open:ring-white/10"
@@ -151,7 +195,7 @@
   </div>
 
   <div class="*:border *:border-red-500 *:bg-lime-500">
-    <div class="content-visible">Satu</div>
+    <div class="content-visible">Satudfdfdff</div>
     <div class="content-hidden">DUa</div>
     <div>Tiga</div>
   </div>
@@ -222,7 +266,7 @@
     <div class="bg-fuchsia-500">
       <h2>Categories</h2>
       <ul
-        class="bg-red-600 p-3 *:w-fit *:rounded-full *:border *:border-lightblue-100 *:bg-lightblue-50 *:px-2 *:py-0.5 dark:text-lightblue-300 dark:*:border-lightblue-500/15 dark:*:bg-lightblue-500/10">
+        class="  p-3 *:w-fit *:rounded-full *:border *:border-lightblue-100 *:bg-lightblue-50 *:px-2 *:py-0.5 dark:text-lightblue-300 dark:*:border-lightblue-500/15 dark:*:bg-lightblue-500/10">
         <li>Sales</li>
         <li>Marketing</li>
         <li>SEO</li>
@@ -243,7 +287,7 @@
       </button>
     </form>
 
-    <dialog id="myDialog" class="m-20 rounded-lg p-4 backdrop:bg-white open:bg-lightblue-600" open>
+    <dialog id="myDialog" class="m-20 hidden rounded-lg p-4 backdrop:bg-white open:bg-lightblue-600" open>
       <form method="dialog">
         <p>
           <label>Enter your name: <input type="text" name="name" /></label>
@@ -271,6 +315,28 @@
         Your post will be publicly visible on your site.
       </div>
     </fieldset>
+
+
+    <label class="block m-6">
+      <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+        Email
+      </span>
+      <input type="email" name="email"
+        class="mt-1 w-20 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1"
+        placeholder="you@example.com" />
+    </label>
+
+
+
+    <div class="group p-4 border bg-lime-50 w-96 text-red-600">
+      <img src="./public/img/favicon.png" alt="Avatar" class="w-16 h-16 rounded-full">
+      <span class="text-lg font-semibold after:content-['*'] after:ml-0.5">Spencer Sharp</span>
+      <div class="hidden w-6 h-6 text-gray-500 group-has-[a]:block" fill="currentColor" viewBox="0 0 24 24">
+        <span class="material-symbols-rounded">home</span>
+      </div>
+      <p class="mt-2 text-gray-700">Product Designer at <a href="https://planeteria.tech"
+          class="text-blue-500">planeteria.tech</a></p>
+    </div>
 
     <div class="... group">
       <img src="..." />
@@ -308,7 +374,7 @@
     </div>
 
     <div class="left-[30%] bg-lightblue-500 p-8">
-      <ul class="bg-lightblue-600 p-1 text-white">
+      <ul class="has-[a]-bg-lightblue-600 p-1 text-white">
         <li>Satu</li>
         <li class="bg-red-600">Dua</li>
         <li>Tiga</li>

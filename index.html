@@ -27,7 +27,7 @@
 </head>
 
 <body
-  class="m-0 h-screen w-full min-w-full bg-xai-100 bg-hero-light bg-cover bg-no-repeat font-inter text-base text-xai-600 transition-colors duration-500 selection:bg-fuchsia-900 selection:text-fuchsia-400 dark:bg-xai-950 dark:bg-hero-dark dark:text-xai-400 dark:selection:bg-fuchsia-400 dark:selection:text-fuchsia-900">
+  class="m-0 h-screen w-full min-w-full bg-xai-100 bg-heroLight bg-cover bg-no-repeat font-inter text-base text-xai-600 transition-colors duration-500 selection:bg-fuchsia-900 selection:text-fuchsia-400 dark:bg-xai-950 dark:bg-heroDark dark:text-xai-400 dark:selection:bg-fuchsia-400 dark:selection:text-fuchsia-900">
   <div class="bar-of-progress" id="progress-bar">
     <div class="glow"></div>
   </div>
@@ -39,7 +39,7 @@
         <div id="tombol-menu" class="flex cursor-pointer items-center gap-3 hover:text-xai-800 hover:dark:text-white">
           <img src="./public/img/logo_app.png" alt="icon-menu" class="h-10 bg-cover" />
 
-          <span class="material-symbols-rounded hidden content-center text-3xl">
+          <span class="material-symbols-rounded hidden  content-center text-3xl">
             apps
           </span>
           <span id="text-menu" class="max-sm:hidden">Menu</span>
@@ -82,7 +82,7 @@
             </span>
             <span id="notification-badge" class="absolute right-2 top-2 h-2 w-2 items-center justify-center">
               <span
-                class="absolute flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-75 dark:bg-sky-400"></span>
+                class="absolute flex h-full w-full animate-ping rounded-full bg-sky-500/75 dark:bg-sky-400/75"></span>
               <span class="relative flex h-2 w-2 rounded-full bg-sky-600"></span>
             </span>
           </div>
@@ -234,7 +234,7 @@
     <!--Ini adalah container menu-->
     <div id="menu" class="fixed left-1/2 top-16 hidden max-h-fit w-10/12 -translate-x-1/2">
       <div
-        class="mx-auto flex h-[80%] flex-col rounded-3xl border-white border-opacity-50 bg-white/70 p-8 text-base text-xai-700 backdrop-blur dark:border-xai-700 dark:border-opacity-30 dark:bg-xai-800/80 dark:text-xai-100">
+        class="mx-auto flex h-[80%] flex-col rounded-3xl border-white/50 bg-white/70 p-8 text-base text-xai-700 backdrop-blur dark:border-xai-700/30 dark:bg-xai-800/80 dark:text-xai-100">
         <div id="close-menu"
           class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white font-semibold shadow-md hover:bg-xai-300 hover:text-xai-800 dark:bg-xai-700/40 dark:hover:bg-xai-600 hover:dark:text-white">
           <span class="material-symbols-rounded text-l m-auto content-center">
@@ -247,7 +247,7 @@
             search
           </label>
           <input type="text" id="search-menu" placeholder="Search..."
-            class="w-full rounded-r-xl border border-xai-300/10 bg-white px-3 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800/50 dark:ring-opacity-30" />
+            class="w-full rounded-r-xl border border-xai-300/10 bg-white px-3 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400/50 dark:bg-xai-800/50 " />
           <button id="btn-search" for="search"
             class="material-symbols-rounded hidden content-center rounded-r-xl bg-lightblue-700 px-3 py-2 text-xl text-white hover:bg-lightblue-800 dark:border-xai-700 hover:dark:bg-lightblue-600">
             search
@@ -589,8 +589,12 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div>DHF85959393L</div>
-                <div>NM849595995</div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  5959393Lfiwegfiefiefgeifgi
+                </div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  93Lfiwegfiefiefgeifgi
+                </div>
               </th>
             </tr>
             <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
@@ -646,8 +650,12 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div>KSL858585</div>
-                <div>NHDJD8585</div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  5959393Lfiwegfiefiefgeifgi
+                </div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  93Lfiwegfiefiefgeifgi
+                </div>
               </th>
             </tr>
             <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
@@ -703,8 +711,12 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div>DHF85959393L</div>
-                <div>NM849595995</div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  5959393Lfiwegfiefiefgeifgi
+                </div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  93Lfiwegfiefiefgeifgi
+                </div>
               </th>
             </tr>
             <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
@@ -760,8 +772,12 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div>KSL858585</div>
-                <div>NHDJD8585</div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  5959393Lfiwegfiefiefgeifgi
+                </div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  93Lfiwegfiefiefgeifgi
+                </div>
               </th>
             </tr>
             <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
@@ -817,8 +833,12 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div>DHF85959393L</div>
-                <div>NM849595995</div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  5959393Lfiwegfiefiefgeifgi
+                </div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  93Lfiwegfiefiefgeifgi
+                </div>
               </th>
             </tr>
             <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
@@ -874,8 +894,12 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div>KSL858585</div>
-                <div>NHDJD8585</div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  5959393Lfiwegfiefiefgeifgi
+                </div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  93Lfiwegfiefiefgeifgi
+                </div>
               </th>
             </tr>
             <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
@@ -931,8 +955,12 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div>DHF85959393L</div>
-                <div>NM849595995</div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  5959393Lfiwegfiefiefgeifgi
+                </div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  93Lfiwegfiefiefgeifgi
+                </div>
               </th>
             </tr>
             <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
@@ -988,8 +1016,12 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div>KSL858585</div>
-                <div>NHDJD8585</div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  5959393Lfiwegfiefiefgeifgi
+                </div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  93Lfiwegfiefiefgeifgi
+                </div>
               </th>
             </tr>
             <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
@@ -1045,8 +1077,12 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div>DHF85959393L</div>
-                <div>NM849595995</div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  5959393Lfiwegfiefiefgeifgi
+                </div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  93Lfiwegfiefiefgeifgi
+                </div>
               </th>
             </tr>
             <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
@@ -1102,8 +1138,12 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div>DHF85959393L</div>
-                <div>NM849595995</div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  5959393Lfiwegfiefiefgeifgi
+                </div>
+                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                  93Lfiwegfiefiefgeifgi
+                </div>
               </th>
             </tr>
           </tbody>
