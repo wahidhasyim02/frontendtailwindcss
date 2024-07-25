@@ -33,6 +33,16 @@ function toggleActionVisibility() {
   } else {
     action.classList.add('hidden');
   }
+  // Set the indeterminate state
+  const allChecked = Array.from(checkboxes).every(
+    (checkbox) => checkbox.checked,
+  );
+  const someChecked = Array.from(checkboxes).some(
+    (checkbox) => checkbox.checked,
+  );
+
+  headCheckbox.checked = allChecked;
+  headCheckbox.indeterminate = !allChecked && someChecked;
 }
 
 // Fungsi untuk menghapus status checked dari semua checkbox
@@ -81,7 +91,7 @@ document
     uncheckAllCheckboxes();
     document.getElementById('action').classList.add('hidden');
   });
-
+/*
 function toggleVisibility(buttonId, listId, textId) {
   const button = document.getElementById(buttonId);
   const list = document.getElementById(listId);
@@ -93,9 +103,9 @@ function toggleVisibility(buttonId, listId, textId) {
 
   document.addEventListener('click', function (event) {
     if (
-      !list.contains(event.target) &&
-      !button.contains(event.target) &&
-      !text.contains(event.target)
+     < !list.contains(event.target) &&
+     < !button.contains(event.target) &&
+     < !text.contains(event.target)
     ) {
       list.classList.add('hidden');
     }
@@ -110,7 +120,7 @@ function toggleVisibility(buttonId, listId, textId) {
       list.classList.add('hidden');
     });
   });
-}
+}*/
 
 // Initialize the toggle functionality for each button and list pair
 toggleVisibility('btn-years', 'list-years', 'text-years');
