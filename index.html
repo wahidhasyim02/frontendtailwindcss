@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-full">
+<html lang="en" class="h-full" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
@@ -37,9 +37,9 @@
       class="flex items-center justify-between border-b border-xai-300/15 bg-white/50 px-6 py-1 shadow-sm backdrop-blur dark:border-xai-300/5 dark:bg-xai-800/0">
       <div class="flex gap-3">
         <div id="tombol-menu" class="flex cursor-pointer items-center gap-3 hover:text-xai-800 hover:dark:text-white">
-          <img src="./public/img/logo_app.png" alt="icon-menu" class="h-10 bg-cover" />
+          <img id="logo-menu" src="./public/img/logo_app.png" alt="icon-menu" class="h-10 bg-cover" />
 
-          <span class="material-symbols-rounded hidden  content-center text-3xl">
+          <span class="material-symbols-rounded hidden content-center text-3xl">
             apps
           </span>
           <span id="text-menu" class="max-sm:hidden">Menu</span>
@@ -247,7 +247,7 @@
             search
           </label>
           <input type="text" id="search-menu" placeholder="Search..."
-            class="w-full rounded-r-xl border border-xai-300/10 bg-white px-3 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400/50 dark:bg-xai-800/50 " />
+            class="w-full rounded-r-xl border border-xai-300/10 bg-white px-3 placeholder:italic placeholder:text-xai-500 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400/50 dark:bg-xai-800/50 dark:placeholder:text-xai-500" />
           <button id="btn-search" for="search"
             class="material-symbols-rounded hidden content-center rounded-r-xl bg-lightblue-700 px-3 py-2 text-xl text-white hover:bg-lightblue-800 dark:border-xai-700 hover:dark:bg-lightblue-600">
             search
@@ -397,7 +397,7 @@
           <div class="flex">
             <label for="change-username" class="flex-auto">Username</label><input id="change-username" type="text"
               placeholder="Username"
-              class="ml-16 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30" />
+              class="ml-16 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
           </div>
 
           <div class="flex-col space-y-4">
@@ -446,19 +446,19 @@
           <div class="flex w-full">
             <label for="old-password" class="w-56">Old Password</label>
             <input id="old-password" type="password" placeholder="********"
-              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30" />
+              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
           </div>
 
           <div class="flex w-full">
             <label for="new-password" class="w-56">New password</label><input id="new-password" type="password"
               placeholder="********"
-              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30" />
+              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
           </div>
 
           <div class="flex w-full">
             <label for="confirm-password" class="w-56">New password confirmation</label><input id="confirm-password"
               type="password" placeholder="********"
-              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30" />
+              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
           </div>
         </div>
 
@@ -536,7 +536,8 @@
             </tr>
           </thead>
           <tbody id="body-billing-cash" class="font-normal">
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 1.
               </th>
@@ -589,15 +590,16 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   5959393Lfiwegfiefiefgeifgi
                 </div>
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   93Lfiwegfiefiefgeifgi
                 </div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 2.
               </th>
@@ -650,15 +652,16 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   5959393Lfiwegfiefiefgeifgi
                 </div>
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   93Lfiwegfiefiefgeifgi
                 </div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 3.
               </th>
@@ -711,15 +714,16 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   5959393Lfiwegfiefiefgeifgi
                 </div>
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   93Lfiwegfiefiefgeifgi
                 </div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 4.
               </th>
@@ -772,15 +776,16 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   5959393Lfiwegfiefiefgeifgi
                 </div>
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   93Lfiwegfiefiefgeifgi
                 </div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 5.
               </th>
@@ -833,15 +838,17 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   5959393Lfiwegfiefiefgeifgi
                 </div>
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   93Lfiwegfiefiefgeifgi
                 </div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 6.
               </th>
@@ -894,15 +901,16 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   5959393Lfiwegfiefiefgeifgi
                 </div>
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   93Lfiwegfiefiefgeifgi
                 </div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 7.
               </th>
@@ -955,15 +963,16 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   5959393Lfiwegfiefiefgeifgi
                 </div>
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   93Lfiwegfiefiefgeifgi
                 </div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 8.
               </th>
@@ -1016,15 +1025,16 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   5959393Lfiwegfiefiefgeifgi
                 </div>
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   93Lfiwegfiefiefgeifgi
                 </div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 9.
               </th>
@@ -1077,15 +1087,16 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   5959393Lfiwegfiefiefgeifgi
                 </div>
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   93Lfiwegfiefiefgeifgi
                 </div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 10.
               </th>
@@ -1138,10 +1149,10 @@
                 <div>NML</div>
               </th>
               <th class="py-3 font-normal">
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   5959393Lfiwegfiefiefgeifgi
                 </div>
-                <div class="text-left ml-4 overflow-hidden whitespace-nowrap text-ellipsis w-40">
+                <div class="ml-4 w-40 overflow-hidden text-ellipsis whitespace-nowrap text-left">
                   93Lfiwegfiefiefgeifgi
                 </div>
               </th>
@@ -1189,7 +1200,7 @@
         <div class="">
           <div class="rounded-md bg-white dark:bg-xai-800">
             <input type="text" id="search-billing-cash" placeholder="Search..."
-              class="w-[230px] rounded-md border border-xai-200 bg-white px-3 py-1 hover:bg-xai-200 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:border-xai-700 dark:bg-xai-800 dark:ring-opacity-30 hover:dark:bg-xai-700 max-sm:w-[120px]" />
+              class="w-[230px] rounded-md border border-xai-200 bg-white px-3 py-1 placeholder:font-normal placeholder:italic placeholder:text-xai-500 hover:bg-xai-200 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:border-xai-700 dark:bg-xai-800/50 dark:ring-opacity-30 dark:placeholder:text-xai-500 hover:dark:bg-xai-700 max-sm:w-[120px]" />
           </div>
         </div>
         <div
@@ -1554,7 +1565,8 @@
             </tr>
           </thead>
           <tbody id="body_billing_charge" class="font-normal">
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-1" aria-label="checkbox" class="checkbox" />
               </th>
@@ -1607,7 +1619,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-2" aria-label="checkbox" class="checkbox" />
               </th>
@@ -1660,7 +1673,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-3" aria-label="checkbox" class="checkbox" />
               </th>
@@ -1713,7 +1727,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-5" aria-label="checkbox" class="checkbox" />
               </th>
@@ -1766,7 +1781,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-6" aria-label="checkbox" class="checkbox" />
               </th>
@@ -1819,7 +1835,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-7" aria-label="checkbox" class="checkbox" />
               </th>
@@ -1872,7 +1889,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-8" aria-label="checkbox" class="checkbox" />
               </th>
@@ -1925,7 +1943,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-9" aria-label="checkbox" class="checkbox" />
               </th>
@@ -1978,7 +1997,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-10" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2031,7 +2051,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-12" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2084,7 +2105,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-13" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2137,7 +2159,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-14" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2190,7 +2213,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-15" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2243,7 +2267,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-16" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2296,7 +2321,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-17" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2349,7 +2375,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-18" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2402,7 +2429,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-19" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2455,7 +2483,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-20" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2508,7 +2537,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-21" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2561,7 +2591,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-22" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2614,7 +2645,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-23" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2667,7 +2699,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-24" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2720,7 +2753,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-25" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2773,7 +2807,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-26" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2826,7 +2861,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-27" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2879,7 +2915,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-28" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2932,7 +2969,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-29" aria-label="checkbox" class="checkbox" />
               </th>
@@ -2985,7 +3023,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-30" aria-label="checkbox" class="checkbox" />
               </th>
@@ -3038,7 +3077,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-50 font-normal hover:bg-lightblue-200 dark:bg-xai-800 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-31" aria-label="checkbox" class="checkbox" />
               </th>
@@ -3091,7 +3131,8 @@
                 <div>NML</div>
               </th>
             </tr>
-            <tr class="bg-lightblue-100 font-normal hover:bg-lightblue-200 dark:bg-xai-900 dark:hover:bg-xai-700">
+            <tr
+              class="odd:bg-lightblue-50 even:bg-lightblue-100  font-normal hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
               <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-32" aria-label="checkbox" class="checkbox" />
               </th>

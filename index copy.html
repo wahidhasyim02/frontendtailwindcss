@@ -34,6 +34,18 @@
   </div>
 
 
+  <!-- Kotak utama -->
+  <div class="p-4">
+    <!-- Kotak dalam, berjejer dengan gap 4px -->
+    <div class="flex gap-1.5"> <!-- Menggunakan gap-1.5 untuk gap 4px -->
+      <!-- Kotak 1 -->
+      <div class="w-20 h-20 bg-red-300 hover:outline"></div>
+      <!-- Kotak 2 -->
+      <div class="w-20 h-20 bg-green-300 hover:outline"></div>
+      <!-- Kotak 3 -->
+      <div class="w-20 h-20 bg-blue-300 hover:outline"></div>
+    </div>
+  </div>
 
   <!-- Menggunakan Gap -->
   <div class="flex gap-4">
@@ -176,7 +188,7 @@
 
 
 
-  <div class="mx-auto max-w-lg border-r p-8">
+  <div class="mx-auto my-6 max-w-lg border-r p-8 border border-red-500">
     <details
       class="rounded-lg p-6 open:bg-white open:shadow-lg open:ring-1 open:ring-black/5 dark:open:bg-xai-800 dark:open:ring-white/10"
       open>
@@ -246,9 +258,9 @@
       <!-- ... -->
     </table>
 
-    <div class="selection:bg-lime-600 selection:text-white aria-checked:border aria-checked:border-red-600"
+    <div class="selection:bg-lime-600 selection:text-slate-900 aria-checked:border aria-checked:border-red-600"
       aria-checked="true">
-      <p class="bg-lime-500 print:hidden">
+      <p class="bg-blue-500 print:hidden">
         So I started to walk into the water. I won't lie to you boys, I was
         terrified. But I pressed on, and as I made my way past the breakers a
         strange calm came over me. I don't know if it was divine intervention
@@ -287,7 +299,7 @@
       </button>
     </form>
 
-    <dialog id="myDialog" class="m-20 hidden rounded-lg p-4 backdrop:bg-white open:bg-lightblue-600" open>
+    <dialog id="myDialog" class="m-20 rounded-lg p-4 backdrop:bg-white open:bg-lightblue-600" open>
       <form method="dialog">
         <p>
           <label>Enter your name: <input type="text" name="name" /></label>
@@ -318,7 +330,7 @@
 
 
     <label class="block m-6">
-      <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+      <span class="after:content-['*'] after:ml-0.5  after:text-red-500 block text-sm font-medium text-slate-700">
         Email
       </span>
       <input type="email" name="email"
@@ -326,6 +338,23 @@
         placeholder="you@example.com" />
     </label>
 
+    <blockquote class="text-2xl font-semibold italic text-center bg-slate-100 text-slate-900">
+      When you look
+      <span
+        class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+        <span class="relative text-white">annoyed</span>
+      </span>
+      all the time, <span class="bg-red-600 -skew-y-2">people think that you're busy.</span>
+    </blockquote>
+
+    <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
+      When you look
+      <span class="relative">
+        <span class="block absolute -inset-1 -skew-y-3 bg-red-500" aria-hidden="true"></span>
+        <span class="relative text-white">annoyed</span>
+      </span>
+      all the time, people think that you're busy.
+    </blockquote>
 
 
     <div class="group p-4 border bg-lime-50 w-96 text-red-600">

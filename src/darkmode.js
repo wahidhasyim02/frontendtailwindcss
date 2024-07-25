@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var toggleDarkMode = document.getElementById('toggle-darkmode');
   var textDarkMode = document.getElementById('text-darkmode');
   var iconDarkMode = document.getElementById('icon-darkmode');
+  var logoMenu = document.getElementById('logo-menu');
 
   // Fungsi untuk mengatur tema
   function setTheme(isDarkMode) {
@@ -15,10 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
       document.documentElement.classList.add('dark');
       textDarkMode.textContent = 'Light Mode';
       iconDarkMode.textContent = 'light_mode';
+      logoMenu.src = './public/img/logo_app_white.png';
     } else {
       document.documentElement.classList.remove('dark');
       textDarkMode.textContent = 'Dark Mode';
       iconDarkMode.textContent = 'dark_mode';
+      logoMenu.src = './public/img/logo_app.png';
     }
   }
 

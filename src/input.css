@@ -19,7 +19,7 @@
   }
 
   input[type='checkbox'] {
-    @apply bg-xai-300 ring-xai-300 mx-auto flex h-4 w-4 cursor-pointer appearance-none items-center justify-center rounded border-2 border-white outline-none ring-2;
+    @apply mx-auto flex h-4 w-4 cursor-pointer appearance-none items-center justify-center rounded border-2 border-white bg-xai-300 outline-none ring-2 ring-xai-300;
     -webkit-appearance: none;
   }
 
@@ -67,7 +67,7 @@
       opacity 0.5s 0.2s; /* Change width transition duration to 2s */
   /* }*/
   .bar-of-progress {
-    @apply text-lightblue-500 fixed left-0 top-0 z-1200 m-0 h-[2px] w-0 rounded-none bg-current p-0 opacity-0;
+    @apply fixed left-0 top-0 z-1200 m-0 h-[2px] w-0 rounded-none bg-current p-0 text-lightblue-500 opacity-0;
     border: medium;
     /* Start with width 0 */
     transition:

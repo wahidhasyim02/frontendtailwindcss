@@ -1,132 +1,188 @@
 <!doctype html>
 <html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Frontend - Tailwindcs</title>
+    <link rel="icon" href="./public/img/favicon.ico" />
+    <link rel="shortcut icon" href="./public/img/favicon.ico" />
+    <link rel="msapplication-square64x64logo" href="./public/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="./public/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - Frontend - Tailwindcs</title>
-  <link rel="icon" href="./public/img/favicon.ico" />
-  <link rel="shortcut icon" href="./public/img/favicon.ico" />
-  <link rel="msapplication-square64x64logo" href="./public/img/favicon.ico" />
-  <link rel="apple-touch-icon" href="./public/img/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./src/style.css" />
-</head>
-
-<body
-  class="m-0 h-screen w-full min-w-full bg-xai-100 bg-heroLight bg-cover bg-no-repeat font-inter text-base text-xai-500 dark:bg-xai-900 dark:text-xai-400">
-  <!--Ini adalah Popup Login-->
-  <div id="popup-login" class="fixed left-1/2 top-18 hidden w-auto -translate-x-1/2 py-10">
+  <body
+    class="m-0 h-screen w-full min-w-full bg-xai-100 bg-heroLight bg-cover bg-no-repeat font-inter text-base text-xai-500 dark:bg-xai-900 dark:text-xai-400"
+  >
+    <!--Ini adalah Popup Login-->
     <div
-      class="mx-auto flex flex-col rounded-3xl border border-xai-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-xai-700 shadow-xl backdrop-blur-sm dark:border-xai-300/5 dark:bg-xai-800 dark:bg-opacity-95 dark:text-xai-300 dark:backdrop-blur-sm">
-      <div class="flex content-center items-center justify-center">
-        <img src="./public/img/logo_app.png" class="inline h-24 w-24 rounded-full bg-cover" alt="" />
-      </div>
-      <div class="mt-6 flex-col space-y-2">
-        <div class="flex-col space-y-2">
-          <label for="login-username" class="">Username</label>
-          <div>
-            <input id="login-username" type="text" placeholder="Username"
-              class="peer w-full rounded-md border border-xai-400 bg-white px-3 py-1 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30" />
-          </div>
-
-          <p id="username-wrong" class="text-xs text-pink-600 peer-invalid:visible"></p>
+      id="popup-login"
+      class="fixed left-1/2 top-18 hidden w-auto -translate-x-1/2 py-10"
+    >
+      <div
+        class="mx-auto flex flex-col rounded-3xl border border-xai-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-xai-700 shadow-xl backdrop-blur-sm dark:border-xai-300/5 dark:bg-xai-800 dark:bg-opacity-95 dark:text-xai-300 dark:backdrop-blur-sm"
+      >
+        <div class="flex content-center items-center justify-center">
+          <img
+            src="./public/img/logo_app.png"
+            class="inline h-24 w-24 rounded-full bg-cover"
+            alt=""
+          />
         </div>
-        <div class="flex-col space-y-2">
-          <label for="login-password" class="">Password</label>
-          <div>
-            <input id="login-password" type="password" placeholder="******"
-              class="peer w-full rounded-md border border-xai-400 bg-white px-3 py-1 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30" />
-          </div>
-          <p id="password-wrong" class="text-xs text-pink-600 peer-invalid:visible"></p>
-        </div>
-        <div class="flex-col space-y-2">
-          <button id="btn-login"
-            class="flex w-full content-center items-center justify-center gap-2 rounded-full border-2 border-xai-300/20 bg-lightblue-700 px-6 py-2 text-base text-white hover:bg-lightblue-800 dark:border-xai-300/20 hover:dark:bg-lightblue-600">
-            Login
-          </button>
-          <a href="signup.html">
-            <button id="btn-create-account"
-              class="flex w-full content-center items-center justify-center gap-2 rounded-full px-6 py-2 text-base text-xai-700 hover:text-lightblue-600 dark:text-xai-300">
-              Create an account
-            </button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Ini adalah Popup Login Skeleton-->
-  <div id="popup-login-skeleton" class="fixed left-1/2 top-18 hidden w-auto -translate-x-1/2 py-10">
-    <div
-      class="mx-auto flex flex-col rounded-3xl border border-xai-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-xai-700 shadow-xl backdrop-blur-sm dark:border-xai-300/5 dark:bg-xai-800 dark:bg-opacity-95 dark:text-xai-300 dark:backdrop-blur-sm">
-      <div class="flex content-center items-center justify-center">
-        <div
-          class="inline h-24 w-24 animate-pulse rounded-md border border-xai-300 bg-xai-300 text-xai-300 dark:border-xai-700 dark:bg-xai-700 dark:text-xai-700"
-          alt=""></div>
-      </div>
-      <div class="mt-6 flex-col space-y-2">
-        <div class="flex-col space-y-2">
-          <label class="animate-pulse rounded-md bg-xai-300 text-xai-300 dark:bg-xai-700 dark:text-xai-700">Username
-            <div>
-              <input type="text"
-                class="peer w-full animate-pulse rounded-md bg-xai-300 px-3 py-1 text-xai-300 dark:bg-xai-700 dark:text-xai-700" />
-            </div>
-          </label>
-          <p class="text-xs text-pink-600 peer-invalid:visible"></p>
-        </div>
-        <div class="flex-col space-y-2">
-          <label for="login-username"
-            class="animate-pulse rounded-md bg-xai-300 text-xai-300 dark:bg-xai-700 dark:text-xai-700">Password
+        <div class="mt-6 flex-col space-y-2">
+          <div class="flex-col space-y-2">
+            <label for="login-username" class="">Username</label>
             <div>
               <input
-                class="peer w-full animate-pulse rounded-md bg-xai-300 px-3 py-1 text-xai-300 dark:bg-xai-700 dark:text-xai-700" />
+                id="login-username"
+                type="text"
+                placeholder="Username"
+                class="peer w-full rounded-md border border-xai-400 bg-white px-3 py-1 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30"
+              />
             </div>
-          </label>
-          <p class="text-xs text-pink-600 peer-invalid:visible"></p>
-        </div>
-        <div class="flex-col space-y-2">
-          <button
-            class="flex w-full animate-pulse content-center items-center justify-center gap-2 rounded-md bg-xai-300 px-6 py-2 text-base text-xai-300 dark:bg-xai-700 dark:text-xai-700">
-            Login
-          </button>
-          <a>
+
+            <p
+              id="username-wrong"
+              class="text-xs text-pink-600 peer-invalid:visible"
+            ></p>
+          </div>
+          <div class="flex-col space-y-2">
+            <label for="login-password" class="">Password</label>
+            <div>
+              <input
+                id="login-password"
+                type="password"
+                placeholder="******"
+                class="peer w-full rounded-md border border-xai-400 bg-white px-3 py-1 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30"
+              />
+            </div>
+            <p
+              id="password-wrong"
+              class="text-xs text-pink-600 peer-invalid:visible"
+            ></p>
+          </div>
+          <div class="flex-col space-y-2">
             <button
-              class="flex w-full animate-pulse content-center items-center justify-center gap-2 rounded-md bg-xai-300 px-6 py-2 text-base text-xai-300 dark:bg-xai-700 dark:text-xai-700">
-              Create an account
-            </button></a>
+              id="btn-login"
+              class="flex w-full content-center items-center justify-center gap-2 rounded-full border-2 border-xai-300/20 bg-lightblue-700 px-6 py-2 text-base text-white hover:bg-lightblue-800 dark:border-xai-300/20 hover:dark:bg-lightblue-600"
+            >
+              Login
+            </button>
+            <a href="signup.html">
+              <button
+                id="btn-create-account"
+                class="flex w-full content-center items-center justify-center gap-2 rounded-full px-6 py-2 text-base text-xai-700 hover:text-lightblue-600 dark:text-xai-300"
+              >
+                Create an account
+              </button></a
+            >
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!--Ini adalah Popup Alert-->
-  <div id="popup-alert-login"
-    class="fixed left-1/2 top-20 z-1200 hidden w-auto -translate-x-1/2 rounded-3xl border-l-4 border-green-600">
+    <!--Ini adalah Popup Login Skeleton-->
     <div
-      class="mx-auto flex flex-col rounded-3xl border border-xai-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-xai-600 shadow-xl backdrop-blur-sm dark:border-xai-300/5 dark:bg-xai-800 dark:bg-opacity-95 dark:text-xai-400 dark:backdrop-blur-sm">
-      <div id="close-popup-alert-login"
-        class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-xai-200 font-semibold shadow-md hover:bg-xai-300 hover:text-xai-800 dark:bg-xai-700/40 dark:hover:bg-xai-600 hover:dark:text-white">
-        <span class="material-symbols-rounded text-l m-auto content-center">
-          close
-        </span>
-      </div>
-      <div id="content-alert-login" class="flex flex-row gap-2 text-green-600">
-        <span id="icon-alert-login" class="material-symbols-rounded"> </span>
-        <div class="flex flex-col space-y-2">
-          <span id="name-alert-login" class="font-semibold"></span>
-          <p id="text-alert-login"></p>
+      id="popup-login-skeleton"
+      class="fixed left-1/2 top-18 hidden w-auto -translate-x-1/2 py-10"
+    >
+      <div
+        class="mx-auto flex flex-col rounded-3xl border border-xai-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-xai-700 shadow-xl backdrop-blur-sm dark:border-xai-300/5 dark:bg-xai-800 dark:bg-opacity-95 dark:text-xai-300 dark:backdrop-blur-sm"
+      >
+        <div class="flex content-center items-center justify-center">
+          <div
+            class="inline h-24 w-24 animate-pulse rounded-md border border-xai-300 bg-xai-300 text-xai-300 dark:border-xai-700 dark:bg-xai-700 dark:text-xai-700"
+            alt=""
+          ></div>
+        </div>
+        <div class="mt-6 flex-col space-y-2">
+          <div class="flex-col space-y-2">
+            <label
+              class="animate-pulse rounded-md bg-xai-300 text-xai-300 dark:bg-xai-700 dark:text-xai-700"
+              >Username
+              <div>
+                <input
+                  type="text"
+                  class="peer w-full animate-pulse rounded-md bg-xai-300 px-3 py-1 text-xai-300 dark:bg-xai-700 dark:text-xai-700"
+                />
+              </div>
+            </label>
+            <p class="text-xs text-pink-600 peer-invalid:visible"></p>
+          </div>
+          <div class="flex-col space-y-2">
+            <label
+              for="login-username"
+              class="animate-pulse rounded-md bg-xai-300 text-xai-300 dark:bg-xai-700 dark:text-xai-700"
+              >Password
+              <div>
+                <input
+                  class="peer w-full animate-pulse rounded-md bg-xai-300 px-3 py-1 text-xai-300 dark:bg-xai-700 dark:text-xai-700"
+                />
+              </div>
+            </label>
+            <p class="text-xs text-pink-600 peer-invalid:visible"></p>
+          </div>
+          <div class="flex-col space-y-2">
+            <button
+              class="flex w-full animate-pulse content-center items-center justify-center gap-2 rounded-md bg-xai-300 px-6 py-2 text-base text-xai-300 dark:bg-xai-700 dark:text-xai-700"
+            >
+              Login
+            </button>
+            <a>
+              <button
+                class="flex w-full animate-pulse content-center items-center justify-center gap-2 rounded-md bg-xai-300 px-6 py-2 text-base text-xai-300 dark:bg-xai-700 dark:text-xai-700"
+              >
+                Create an account
+              </button></a
+            >
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="./src/login.js"></script>
-</body>
 
+    <!--Ini adalah Popup Alert-->
+    <div
+      id="popup-alert-login"
+      class="fixed left-1/2 top-20 z-1200 hidden w-auto -translate-x-1/2 rounded-3xl border-l-4 border-green-600"
+    >
+      <div
+        class="mx-auto flex flex-col rounded-3xl border border-xai-300/15 bg-white bg-opacity-90 p-12 text-base font-normal text-xai-600 shadow-xl backdrop-blur-sm dark:border-xai-300/5 dark:bg-xai-800 dark:bg-opacity-95 dark:text-xai-400 dark:backdrop-blur-sm"
+      >
+        <div
+          id="close-popup-alert-login"
+          class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-xai-200 font-semibold shadow-md hover:bg-xai-300 hover:text-xai-800 dark:bg-xai-700/40 dark:hover:bg-xai-600 hover:dark:text-white"
+        >
+          <span class="material-symbols-rounded text-l m-auto content-center">
+            close
+          </span>
+        </div>
+        <div
+          id="content-alert-login"
+          class="flex flex-row gap-2 text-green-600"
+        >
+          <span id="icon-alert-login" class="material-symbols-rounded"> </span>
+          <div class="flex flex-col space-y-2">
+            <span id="name-alert-login" class="font-semibold"></span>
+            <p id="text-alert-login"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/login.js"></script>
+  </body>
 </html>
