@@ -1,4 +1,3 @@
-// Script memunculkan Account Setting
 document.addEventListener('DOMContentLoaded', function () {
   var accountSetting = document.getElementById('account-setting');
   var popupsetting = document.getElementById('popup-setting');
@@ -87,18 +86,39 @@ document.addEventListener('DOMContentLoaded', function () {
 // Account Logic
 window.addEventListener('load', function () {
   const accountNameElement = document.getElementById('account-name');
-  if (accountNameElement) {
-    const username = localStorage.getItem('username');
-    if (username) {
-      accountNameElement.innerText = username;
-    }
+  const initialUsernameElement = document.getElementById('initial-username');
+  const initialUsernameElement2 = document.getElementById('initial-username2');
+  const profileImgHeader = document.getElementById('profile-img-header');
+  const profileImgChange = document.getElementById('profile-img-change');
+  const profileImgSetting = document.getElementById('profile-img-setting');
+
+  const username = localStorage.getItem('username');
+  const avatar = localStorage.getItem('avatar');
+
+  if (username) {
+    accountNameElement.innerText = username;
+    let initials = username
+      .split(' ')
+      .map((word) => word[0])
+      .join('')
+      .slice(0, 2)
+      .toUpperCase();
+    initialUsernameElement.innerText = initials;
+    initialUsernameElement2.innerText = initials;
   }
 
-  const avatar = localStorage.getItem('avatar');
   if (avatar) {
-    document.getElementById('profile-img-header').src = avatar;
-    document.getElementById('profile-img-change').src = avatar;
-    document.getElementById('profile-img-setting').src = avatar;
+    profileImgHeader.src = avatar;
+    profileImgChange.src = avatar;
+    profileImgSetting.src = avatar;
+    initialUsernameElement.classList.replace('flex', 'hidden');
+    initialUsernameElement2.classList.replace('flex', 'hidden');
+    profileImgHeader.classList.remove('hidden');
+  } else {
+    profileImgHeader.classList.add('hidden');
+    profileImgSetting.classList.add('hidden');
+    initialUsernameElement.classList.replace('hidden', 'flex');
+    initialUsernameElement2.classList.replace('hidden', 'flex');
   }
 });
 
@@ -140,8 +160,16 @@ document
 
     if (newUsername) {
       localStorage.setItem('username', newUsername);
+      let initials = newUsername
+        .split(' ')
+        .map((word) => word[0])
+        .join('')
+        .slice(0, 2)
+        .toUpperCase();
       setTimeout(() => {
         document.getElementById('account-name').innerText = newUsername;
+        document.getElementById('initial-username').innerText = initials;
+        document.getElementById('initial-username2').innerText = initials;
       }, 3000);
     }
 
@@ -154,6 +182,18 @@ document
           document.getElementById('profile-img-header').src = dataURL;
           document.getElementById('profile-img-change').src = dataURL;
           document.getElementById('profile-img-setting').src = dataURL;
+          document
+            .getElementById('initial-username')
+            .classList.replace('flex', 'hidden');
+          document
+            .getElementById('initial-username2')
+            .classList.replace('flex', 'hidden');
+          document
+            .getElementById('profile-img-header')
+            .classList.remove('hidden');
+          document
+            .getElementById('profile-img-setting')
+            .classList.remove('hidden');
         }, 3000);
       };
       reader.readAsDataURL(file);

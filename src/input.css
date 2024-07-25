@@ -11,7 +11,7 @@
     @apply w-[6px] bg-white;
   }
   .overflow-style::-webkit-scrollbar-thumb {
-    @apply bg-lightblue-600;
+    @apply bg-blue-500;
   }
   .overflow-style::-webkit-scrollbar-track {
     @apply bg-white;
@@ -32,24 +32,24 @@
     @apply bg-xai-400;
   }
   input[type='checkbox']:checked {
-    @apply bg-lightblue-600 ring-lightblue-500;
+    @apply bg-blue-500 ring-blue-500;
   }
 
   input[type='checkbox']:indeterminate {
-    @apply bg-lightblue-600 ring-lightblue-500;
+    @apply bg-blue-500 ring-blue-500;
   }
   input[type='checkbox']:checked:after {
     @apply block;
   }
   input[type='checkbox']:active {
-    @apply bg-lightblue-600 ring-lightblue-500;
+    @apply bg-blue-500 ring-blue-500;
   }
 
   input[type='checkbox']:focus {
-    @apply bg-lightblue-700 ring-lightblue-800;
+    @apply bg-blue-600 ring-blue-800;
   }
   input[type='checkbox']:checked:focus {
-    @apply bg-lightblue-700 ring-lightblue-800;
+    @apply bg-blue-600 ring-blue-800;
   }
 
   /* .bar-of-progress {
@@ -71,7 +71,7 @@
       opacity 0.5s 0.2s; /* Change width transition duration to 2s */
   /* }*/
   .bar-of-progress {
-    @apply fixed left-0 top-0 z-1200 m-0 h-[2px] w-0 rounded-none bg-current p-0 text-lightblue-500 opacity-0;
+    @apply fixed left-0 top-0 z-1200 m-0 h-[2px] w-0 rounded-none bg-current p-0 text-blue-500 opacity-0;
     border: medium;
     /* Start with width 0 */
     transition:

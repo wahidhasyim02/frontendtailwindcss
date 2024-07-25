@@ -1293,7 +1293,7 @@ select {
 
 .overflow-style::-webkit-scrollbar-thumb {
   --tw-bg-opacity: 1;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .overflow-style::-webkit-scrollbar-track {
@@ -1346,16 +1346,16 @@ input[type='checkbox']:hover {
 
 input[type='checkbox']:checked {
   --tw-bg-opacity: 1;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(14 165 233 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
 
 input[type='checkbox']:indeterminate {
   --tw-bg-opacity: 1;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(14 165 233 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
 
 input[type='checkbox']:checked:after {
@@ -1364,23 +1364,23 @@ input[type='checkbox']:checked:after {
 
 input[type='checkbox']:active {
   --tw-bg-opacity: 1;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(14 165 233 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
 
 input[type='checkbox']:focus {
   --tw-bg-opacity: 1;
-  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(7 89 133 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
 }
 
 input[type='checkbox']:checked:focus {
   --tw-bg-opacity: 1;
-  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(7 89 133 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
 }
 
 /* .bar-of-progress {
@@ -1416,7 +1416,7 @@ input[type='checkbox']:checked:focus {
   background-color: currentColor;
   padding: 0px;
   --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
+  color: rgb(59 130 246 / var(--tw-text-opacity));
   opacity: 0;
   border: medium;
   /* Start with width 0 */
@@ -2111,19 +2111,19 @@ input[type='checkbox']:checked:focus {
   border-top-width: 1px !important;
 }
 
+.border-blue-200 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(191 219 254 / var(--tw-border-opacity)) !important;
+}
+
+.border-blue-500 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity)) !important;
+}
+
 .border-green-600 {
   --tw-border-opacity: 1 !important;
   border-color: rgb(22 163 74 / var(--tw-border-opacity)) !important;
-}
-
-.border-lightblue-200 {
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(186 230 253 / var(--tw-border-opacity)) !important;
-}
-
-.border-lightblue-500 {
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(14 165 233 / var(--tw-border-opacity)) !important;
 }
 
 .border-pink-400 {
@@ -2191,9 +2191,24 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(147 197 253 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-blue-400 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-blue-50 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-blue-500 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-blue-600 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-fuchsia-500 {
@@ -2209,26 +2224,6 @@ input[type='checkbox']:checked:focus {
 .bg-green-500 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-lightblue-50 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(240 249 255 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-lightblue-500 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-lightblue-600 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-lightblue-700 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(3 105 161 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-lime-50 {
@@ -2494,6 +2489,11 @@ input[type='checkbox']:checked:focus {
   color: rgb(59 130 246 / var(--tw-text-opacity)) !important;
 }
 
+.text-blue-600 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(37 99 235 / var(--tw-text-opacity)) !important;
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1 !important;
   color: rgb(107 114 128 / var(--tw-text-opacity)) !important;
@@ -2507,16 +2507,6 @@ input[type='checkbox']:checked:focus {
 .text-green-600 {
   --tw-text-opacity: 1 !important;
   color: rgb(22 163 74 / var(--tw-text-opacity)) !important;
-}
-
-.text-lightblue-500 {
-  --tw-text-opacity: 1 !important;
-  color: rgb(14 165 233 / var(--tw-text-opacity)) !important;
-}
-
-.text-lightblue-600 {
-  --tw-text-opacity: 1 !important;
-  color: rgb(2 132 199 / var(--tw-text-opacity)) !important;
 }
 
 .text-pink-600 {
@@ -2702,9 +2692,9 @@ input[type='checkbox']:checked:focus {
   border-width: 1px !important;
 }
 
-.\*\:border-lightblue-100 > * {
+.\*\:border-blue-100 > * {
   --tw-border-opacity: 1 !important;
-  border-color: rgb(224 242 254 / var(--tw-border-opacity)) !important;
+  border-color: rgb(219 234 254 / var(--tw-border-opacity)) !important;
 }
 
 .\*\:border-red-500 > * {
@@ -2712,9 +2702,9 @@ input[type='checkbox']:checked:focus {
   border-color: rgb(239 68 68 / var(--tw-border-opacity)) !important;
 }
 
-.\*\:bg-lightblue-50 > * {
+.\*\:bg-blue-50 > * {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(240 249 255 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity)) !important;
 }
 
 .\*\:bg-lime-500 > * {
@@ -2737,12 +2727,12 @@ input[type='checkbox']:checked:focus {
   padding-bottom: 0.125rem !important;
 }
 
-.marker\:text-lightblue-400 *::marker {
-  color: rgb(56 189 248 ) !important;
+.marker\:text-blue-400 *::marker {
+  color: rgb(96 165 250 ) !important;
 }
 
-.marker\:text-lightblue-400::marker {
-  color: rgb(56 189 248 ) !important;
+.marker\:text-blue-400::marker {
+  color: rgb(96 165 250 ) !important;
 }
 
 .selection\:bg-fuchsia-900 *::-moz-selection {
@@ -3010,19 +3000,19 @@ input[type='checkbox']:checked:focus {
   content: var(--tw-content) !important;
 }
 
-.odd\:bg-lightblue-400:nth-child(odd) {
+.odd\:bg-blue-300:nth-child(odd) {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity)) !important;
 }
 
-.odd\:bg-lightblue-50:nth-child(odd) {
+.odd\:bg-blue-50:nth-child(odd) {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(240 249 255 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity)) !important;
 }
 
-.even\:bg-lightblue-100:nth-child(even) {
+.even\:bg-blue-100:nth-child(even) {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(224 242 254 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity)) !important;
 }
 
 .even\:bg-red-500:nth-child(even) {
@@ -3030,9 +3020,9 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity)) !important;
 }
 
-.open\:bg-lightblue-600[open] {
+.open\:bg-blue-500[open] {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
 }
 
 .open\:bg-white[open] {
@@ -3056,29 +3046,33 @@ input[type='checkbox']:checked:focus {
   --tw-ring-color: rgb(0 0 0 / 0.05) !important;
 }
 
-.hover\:bg-lightblue-200:hover {
+.hover\:bg-blue-200:hover {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(186 230 253 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity)) !important;
 }
 
-.hover\:bg-lightblue-500:hover {
+.hover\:bg-blue-400:hover {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity)) !important;
 }
 
-.hover\:bg-lightblue-600:hover {
+.hover\:bg-blue-500:hover {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
 }
 
-.hover\:bg-lightblue-700:hover {
+.hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(3 105 161 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity)) !important;
 }
 
-.hover\:bg-lightblue-800:hover {
+.hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(7 89 133 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity)) !important;
+}
+
+.hover\:bg-blue-700\/50:hover {
+  background-color: rgb(29 78 216 / 0.5) !important;
 }
 
 .hover\:bg-slate-100:hover {
@@ -3106,14 +3100,18 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(202 138 4 / var(--tw-bg-opacity)) !important;
 }
 
-.hover\:text-lightblue-600:hover {
-  --tw-text-opacity: 1 !important;
-  color: rgb(2 132 199 / var(--tw-text-opacity)) !important;
+.hover\:bg-blue-700\/90:hover {
+  background-color: rgb(29 78 216 / 0.9) !important;
 }
 
-.hover\:text-lightblue-800:hover {
+.hover\:text-blue-600:hover {
   --tw-text-opacity: 1 !important;
-  color: rgb(7 89 133 / var(--tw-text-opacity)) !important;
+  color: rgb(37 99 235 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-blue-800:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(30 64 175 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:text-white:hover {
@@ -3144,9 +3142,9 @@ input[type='checkbox']:checked:focus {
   border-width: 1px !important;
 }
 
-.focus\:border-lightblue-400:focus {
+.focus\:border-blue-400:focus {
   --tw-border-opacity: 1 !important;
-  border-color: rgb(56 189 248 / var(--tw-border-opacity)) !important;
+  border-color: rgb(96 165 250 / var(--tw-border-opacity)) !important;
 }
 
 .focus\:border-pink-400:focus {
@@ -3164,9 +3162,9 @@ input[type='checkbox']:checked:focus {
   border-color: rgb(167 139 250 / var(--tw-border-opacity)) !important;
 }
 
-.focus\:bg-lightblue-400:focus {
+.focus\:bg-blue-300:focus {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity)) !important;
 }
 
 .focus\:outline-none:focus {
@@ -3186,13 +3184,13 @@ input[type='checkbox']:checked:focus {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000) !important;
 }
 
-.focus\:ring-lightblue-400:focus {
+.focus\:ring-blue-400:focus {
   --tw-ring-opacity: 1 !important;
-  --tw-ring-color: rgb(56 189 248 / var(--tw-ring-opacity)) !important;
+  --tw-ring-color: rgb(96 165 250 / var(--tw-ring-opacity)) !important;
 }
 
-.focus\:ring-lightblue-400\/50:focus {
-  --tw-ring-color: rgb(56 189 248 / 0.5) !important;
+.focus\:ring-blue-400\/50:focus {
+  --tw-ring-color: rgb(96 165 250 / 0.5) !important;
 }
 
 .focus\:ring-pink-400:focus {
@@ -3214,9 +3212,9 @@ input[type='checkbox']:checked:focus {
   --tw-ring-opacity: 0.5 !important;
 }
 
-.active\:bg-lightblue-400:active {
+.active\:bg-blue-300:active {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity)) !important;
 }
 
 .disabled\:cursor-not-allowed:disabled {
@@ -3295,8 +3293,8 @@ input[type='checkbox']:checked:focus {
   outline-width: 4px !important;
 }
 
-.group:hover .group-hover\:outline-lightblue-800\/50 {
-  outline-color: rgb(7 89 133 / 0.5) !important;
+.group:hover .group-hover\:outline-blue-800\/50 {
+  outline-color: rgb(30 64 175 / 0.5) !important;
 }
 
 .peer\/draft:checked ~ .peer-checked\/draft\:block {
@@ -3307,14 +3305,14 @@ input[type='checkbox']:checked:focus {
   display: block !important;
 }
 
-.peer\/draft:checked ~ .peer-checked\/draft\:text-lightblue-500 {
+.peer\/draft:checked ~ .peer-checked\/draft\:text-blue-500 {
   --tw-text-opacity: 1 !important;
-  color: rgb(14 165 233 / var(--tw-text-opacity)) !important;
+  color: rgb(59 130 246 / var(--tw-text-opacity)) !important;
 }
 
-.peer\/published:checked ~ .peer-checked\/published\:text-lightblue-500 {
+.peer\/published:checked ~ .peer-checked\/published\:text-blue-500 {
   --tw-text-opacity: 1 !important;
-  color: rgb(14 165 233 / var(--tw-text-opacity)) !important;
+  color: rgb(59 130 246 / var(--tw-text-opacity)) !important;
 }
 
 .peer:invalid ~ .peer-invalid\:visible {
@@ -3454,9 +3452,9 @@ input[type='checkbox']:checked:focus {
   background-image: url('/public/img/bg.png') !important;
 }
 
-.dark\:text-lightblue-300:is(.dark *) {
+.dark\:text-blue-300:is(.dark *) {
   --tw-text-opacity: 1 !important;
-  color: rgb(125 211 252 / var(--tw-text-opacity)) !important;
+  color: rgb(147 197 253 / var(--tw-text-opacity)) !important;
 }
 
 .dark\:text-slate-400:is(.dark *) {
@@ -3499,12 +3497,12 @@ input[type='checkbox']:checked:focus {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
 }
 
-.dark\:\*\:border-lightblue-500\/15 > *:is(.dark *) {
-  border-color: rgb(14 165 233 / 0.15) !important;
+.dark\:\*\:border-blue-500\/15 > *:is(.dark *) {
+  border-color: rgb(59 130 246 / 0.15) !important;
 }
 
-.dark\:\*\:bg-lightblue-500\/10 > *:is(.dark *) {
-  background-color: rgb(14 165 233 / 0.1) !important;
+.dark\:\*\:bg-blue-400\/10 > *:is(.dark *) {
+  background-color: rgb(96 165 250 / 0.1) !important;
 }
 
 .dark\:selection\:bg-fuchsia-400 *:is(.dark *)::-moz-selection {
@@ -3606,9 +3604,9 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(61 78 90 / var(--tw-bg-opacity)) !important;
 }
 
-.hover\:dark\:bg-lightblue-600:is(.dark *):hover {
+.hover\:dark\:bg-blue-500:is(.dark *):hover {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
 }
 
 .hover\:dark\:bg-xai-700:is(.dark *):hover {
@@ -3621,9 +3619,9 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity)) !important;
 }
 
-.hover\:dark\:text-lightblue-600:is(.dark *):hover {
+.hover\:dark\:text-blue-600:is(.dark *):hover {
   --tw-text-opacity: 1 !important;
-  color: rgb(2 132 199 / var(--tw-text-opacity)) !important;
+  color: rgb(37 99 235 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:dark\:text-white:is(.dark *):hover {
@@ -3631,8 +3629,8 @@ input[type='checkbox']:checked:focus {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.dark\:hover\:outline-lightblue-600\/50:hover:is(.dark *) {
-  outline-color: rgb(2 132 199 / 0.5) !important;
+.dark\:hover\:outline-blue-600\/50:hover:is(.dark *) {
+  outline-color: rgb(37 99 235 / 0.5) !important;
 }
 
 .hover\:dark\:file\:bg-xai-700:is(.dark *):hover::file-selector-button {
@@ -3645,9 +3643,9 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity)) !important;
 }
 
-.group:hover .group-hover\:dark\:bg-lightblue-500:is(.dark *) {
+.group:hover .group-hover\:dark\:bg-blue-400:is(.dark *) {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity)) !important;
 }
 
 .group:hover .group-hover\:dark\:bg-xai-700:is(.dark *) {
