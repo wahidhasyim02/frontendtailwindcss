@@ -2121,11 +2121,6 @@ input[type='checkbox']:checked:focus {
   border-color: rgb(59 130 246 / var(--tw-border-opacity)) !important;
 }
 
-.border-blue-600 {
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(37 99 235 / var(--tw-border-opacity)) !important;
-}
-
 .border-green-600 {
   --tw-border-opacity: 1 !important;
   border-color: rgb(22 163 74 / var(--tw-border-opacity)) !important;
@@ -3051,11 +3046,6 @@ input[type='checkbox']:checked:focus {
   background-color: rgb(191 219 254 / var(--tw-bg-opacity)) !important;
 }
 
-.hover\:bg-blue-400:hover {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity)) !important;
-}
-
 .hover\:bg-blue-500:hover {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
@@ -3154,11 +3144,6 @@ input[type='checkbox']:checked:focus {
   border-color: rgb(167 139 250 / var(--tw-border-opacity)) !important;
 }
 
-.focus\:bg-blue-300:focus {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity)) !important;
-}
-
 .focus\:bg-blue-400:focus {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(96 165 250 / var(--tw-bg-opacity)) !important;
@@ -3207,11 +3192,6 @@ input[type='checkbox']:checked:focus {
 
 .focus\:ring-opacity-50:focus {
   --tw-ring-opacity: 0.5 !important;
-}
-
-.active\:bg-blue-300:active {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity)) !important;
 }
 
 .active\:bg-blue-400:active {
