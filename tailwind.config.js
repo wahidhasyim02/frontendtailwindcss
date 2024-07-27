@@ -14,7 +14,8 @@ module.exports = {
         // tambahkan ukuran blur lainnya sesuai kebutuhan
       },
       fontFamily: {
-        inter: 'Inter',
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Noto Serif', 'serif'],
       },
       backgroundImage: {
         heroLight: "url('/public/img/bg_l.png')",
