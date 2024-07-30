@@ -28,15 +28,13 @@
 </head>
 
 <body
-  class="m-0 h-screen w-full min-w-full bg-xai-100 bg-heroLight bg-cover bg-no-repeat font-sans text-base text-xai-600 transition-colors duration-500 selection:bg-blue-700 selection:text-white dark:bg-xai-950 dark:bg-heroDark dark:text-xai-400 dark:selection:bg-blue-500 dark:selection:text-xai-900">
-  <div class="bar-of-progress" id="progress-bar">
+  class="m-0 h-screen w-full min-w-full bg-xai-100 bg-heroLight bg-cover bg-no-repeat font-sans text-base text-xai-600 transition-colors duration-500 selection:bg-lightblue-700 selection:text-white dark:bg-xai-950 dark:bg-heroDark dark:text-xai-400 dark:selection:bg-lightblue-500 dark:selection:text-xai-900">
+  <div class="bar-of-progress z-1500" id="progress-bar">
     <div class="glow"></div>
   </div>
 
 
-
-
-  <header id="header" class="fixed top-0 z-1000 hidden w-full">
+  <header id="header" class="fixed top-0 hidden w-full">
     <div
       class="flex items-center justify-between border-b border-xai-300/15 bg-white/50 px-6 py-1 shadow-sm backdrop-blur dark:border-xai-300/5 dark:bg-xai-800/0">
       <div class="flex gap-3">
@@ -71,9 +69,9 @@
               class="group flex cursor-pointer content-center items-center justify-center gap-1 rounded-full bg-white px-2 py-1 font-semibold hover:bg-xai-300 hover:text-xai-800 dark:bg-xai-700/40 dark:hover:bg-xai-600 hover:dark:text-white max-sm:px-1">
 
               <div
-                class="bg-white  h-8 w-8 cursor-pointer flex  rounded-full items-center justify-center bg-cover group-hover:outline group-hover:outline-4 group-hover:outline-blue-800/50 dark:bg-xai-800 dark:hover:outline-blue-600/50">
+                class="bg-white h-8 w-8 cursor-pointer flex  rounded-full items-center justify-center bg-cover group-hover:outline group-hover:outline-4 group-hover:outline-lightblue-800/50 dark:bg-xai-800 dark:hover:outline-lightblue-600/50">
                 <div id="initial-username"
-                  class="text-sm hidden bg-blue-600 text-white h-8 w-8 rounded-full  items-center justify-center">
+                  class="text-sm hidden bg-lightblue-600 text-white h-8 w-8 rounded-full  items-center justify-center">
                 </div>
                 <img id="profile-img-header" src="" class="hidden h-8 w-8 items-center justify-center rounded-full"
                   alt="" />
@@ -159,7 +157,7 @@
         class="relative inline-block h-16 w-16 rounded-full bg-white bg-cover dark:bg-xai-800">
         <img id="profile-img-setting" src="" class="h-16 w-16 rounded-full" alt="avatar" />
         <div id="initial-username2"
-          class="text-3xl  h-16 w-16 cursor-pointer flex  rounded-full bg-blue-600 text-white items-center justify-center bg-cover group-hover:outline group-hover:outline-4 group-hover:outline-blue-800/50  dark:hover:outline-blue-600/50">
+          class="text-3xl  h-16 w-16 cursor-pointer flex  rounded-full bg-lightblue-600 text-white items-center justify-center bg-cover group-hover:outline group-hover:outline-4 group-hover:outline-lightblue-800/50  dark:hover:outline-lightblue-600/50">
         </div>
         <span id="edit-profile-img"
           class="material-symbols-rounded absolute right-0 top-11 h-6 w-6 cursor-pointer content-center items-center rounded-full bg-white text-center text-base shadow-md hover:bg-xai-300 hover:text-xai-800 dark:bg-xai-700 dark:hover:bg-xai-600 hover:dark:text-white">
@@ -173,28 +171,28 @@
     </div>
     <ul class="overflow-style mt-2 h-80 max-h-fit space-y-1 overflow-y-auto border-t p-2 dark:border-xai-700">
       <li id="change-profile"
-        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-white">
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-lightblue-600 hover:text-white">
         <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
           person_edit
         </span>
         <span>Change Profile</span>
       </li>
       <li id="change-password"
-        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-white">
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-lightblue-600 hover:text-white">
         <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
           lock
         </span>
         <span>Change Password</span>
       </li>
       <li id="toggle-darkmode"
-        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-white">
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-lightblue-600 hover:text-white">
         <span id="icon-darkmode" class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
           dark_mode
         </span>
         <span id="text-darkmode">Dark Mode</span>
       </li>
       <li id="logout"
-        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-white">
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-lightblue-600 hover:text-white">
         <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
           logout
         </span>
@@ -205,34 +203,34 @@
       </li>
 
       <li id="tz-utc"
-        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-white">
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-lightblue-600 hover:text-white">
         <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
           schedule
         </span>
         <span>UTC</span>
       </li>
       <li id="tz-gmt7"
-        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-white">
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-lightblue-600 hover:text-white">
         <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
           schedule
         </span>
         <span>WIB / Jakarta</span>
       </li>
       <li id="tz-gmt8"
-        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-white">
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-lightblue-600 hover:text-white">
         <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
           schedule
         </span>
         <span>WITA / Makassar</span>
       </li>
       <li id="tz-gmt9"
-        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-white">
+        class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-lightblue-600 hover:text-white">
         <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
           schedule
         </span>
         <span>WIT / Jayapura</span>
       </li>
-      <li class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-white">
+      <li class="flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-lightblue-600 hover:text-white">
         <span class="material-symbols-rounded h-8 w-8 items-center text-center text-2xl">
           license
         </span>
@@ -245,7 +243,7 @@
     <!--Ini adalah container menu-->
     <div id="menu" class="fixed left-1/2 top-16 hidden max-h-fit w-10/12 -translate-x-1/2">
       <div
-        class="mx-auto flex h-[80%] flex-col rounded-3xl border-white/50 bg-white/70 p-8 text-base text-xai-700 backdrop-blur dark:border-xai-700/30 dark:bg-xai-800/80 dark:text-xai-100">
+        class="mx-auto flex h-[80%] flex-col rounded-3xl  border-white/50 bg-white/70 p-8 text-base text-xai-700 backdrop-blur dark:border-xai-700/30 dark:bg-xai-800/80 dark:text-xai-100">
         <div id="close-menu"
           class="absolute right-2 top-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white font-semibold shadow-md hover:bg-xai-300 hover:text-xai-800 dark:bg-xai-700/40 dark:hover:bg-xai-600 hover:dark:text-white">
           <span class="material-symbols-rounded text-l m-auto content-center">
@@ -258,9 +256,9 @@
             search
           </label>
           <input type="text" id="search-menu" placeholder="Search..."
-            class="w-full rounded-r-xl border border-xai-300/10 bg-white px-3 placeholder:italic placeholder:text-xai-500 focus:border focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400/50 dark:bg-xai-800/50 dark:placeholder:text-xai-500" />
+            class="w-full rounded-r-xl border border-xai-300/10 bg-white px-3 placeholder:italic placeholder:text-xai-500 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400/50 dark:bg-xai-800/50 dark:placeholder:text-xai-500" />
           <button id="btn-search" for="search"
-            class="material-symbols-rounded hidden content-center rounded-r-xl bg-blue-600 px-3 py-2 text-xl text-white hover:bg-blue-700 dark:border-xai-700 hover:dark:bg-blue-500">
+            class="material-symbols-rounded hidden content-center rounded-r-xl bg-lightblue-600 px-3 py-2 text-xl text-white hover:bg-lightblue-700 dark:border-xai-700 hover:dark:bg-lightblue-500">
             search
           </button>
         </div>
@@ -278,14 +276,16 @@
         <!--Ini adalah list menu-menu-->
         <div id="list-menu"
           class="overflow-style mb-4 flex max-h-56 max-w-full flex-wrap items-start justify-start gap-12 overflow-y-auto p-1">
-          <a id="btn_home" href="/" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          <a id="btn_home" href="/"
+            class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12 group-hover:animate-pulse" src="./public/img/home.png" alt="" />
             </div>
             <div class="mt-4 w-24">Home</div>
           </a>
-          <a id="btn_billing_cash" href="/" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          <a id="btn_billing_cash" href="/"
+            class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/billing_cash.png" alt="" />
@@ -293,7 +293,7 @@
             <div class="mt-4 w-24">Billing Cash</div>
           </a>
           <a id="btn_billing_charge" href="/"
-            class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+            class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/billing_charge.png" alt="" />
@@ -302,42 +302,42 @@
           </a>
 
           <a id="btn_announce_manual" href=""
-            class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+            class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/announce_manual.png" alt="" />
             </div>
             <div class="mt-4 w-24">Announce Manual</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          <a href="" class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/adv.png" alt="" />
             </div>
             <div class="mt-4 w-24">ADV</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          <a href="" class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/announcer_queue.png" alt="" />
             </div>
             <div class="mt-4 w-24">Announce Queue</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          <a href="" class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/atv.png" alt="" />
             </div>
             <div class="mt-4 w-24">ATV</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          <a href="" class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/baggage_handling.png" alt="" />
             </div>
             <div class="mt-4 w-24">Baggage Handling</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          <a href="" class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/barix_monitor.png" alt="" />
@@ -345,14 +345,14 @@
             <div class="mt-4 w-24">Barix Monitor</div>
           </a>
 
-          <a href="" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          <a href="" class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/cucs.png" alt="" />
             </div>
             <div class="mt-4 w-24">CUCS</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          <a href="" class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/daily_rotation.png" alt="" />
@@ -367,20 +367,20 @@
         <hr class="mb-4 dark:border-xai-700" />
         <div id="favorites-menu"
           class="overflow-style mb-2 flex max-h-[100px] max-w-full items-start gap-12 overflow-y-auto">
-          <a href="" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          <a href="" class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/cucs.png" alt="" />
             </div>
             <div class="mt-4 w-24">CUCS</div>
-          </a><a href="" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          </a><a href="" class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/billing_charge.png" alt="" />
             </div>
             <div class="mt-4 w-24">Billing Charge</div>
           </a>
-          <a href="" class="group w-24 text-center hover:text-blue-800 hover:dark:text-blue-600">
+          <a href="" class="group w-24 text-center hover:text-lightblue-800 hover:dark:text-lightblue-600">
             <div
               class="flex h-24 w-24 items-center justify-center rounded-3xl bg-white/70 group-hover:bg-xai-300 group-hover:bg-opacity-30 group-hover:shadow-xl dark:bg-xai-700 dark:bg-opacity-10 group-hover:dark:bg-xai-700 group-hover:dark:bg-opacity-30">
               <img class="h-12" src="./public/img/daily_rotation.png" alt="" />
@@ -406,7 +406,7 @@
           <div class="flex">
             <label for="change-username" class="flex-auto">Username</label><input min="2" max="20" id="change-username"
               type="text" placeholder="Username"
-              class="ml-16 flex-1 autofill:bg-blue-200 dark:autofill:bg-xai-600 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-blue-400 in-range:border-green-400 focus:outline-none focus:ring-2 focus:ring-blue-400 out-of-range:border-pink-400  focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
+              class="ml-16 flex-1 autofill:bg-lightblue-200 dark:autofill:bg-xai-600 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-lightblue-400 in-range:border-green-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 out-of-range:border-pink-400  focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
           </div>
 
           <div class="flex-col space-y-4">
@@ -420,13 +420,13 @@
         </div>
         <div class="mt-8 flex gap-2">
           <button id="btn-save-profile"
-            class="flex content-center items-center gap-2 rounded-full border-2 border-xai-300/20 bg-blue-600 py-2 pl-5 pr-6 text-base text-white hover:bg-blue-700 dark:border-xai-300/20 hover:dark:bg-blue-500">
+            class="flex content-center items-center gap-2 rounded-full border-2 border-xai-300/20 bg-lightblue-600 py-2 pl-5 pr-6 text-base text-white hover:bg-lightblue-700 dark:border-xai-300/20 hover:dark:bg-lightblue-500">
             <span id="icon-save" class="material-symbols-rounded">save</span><span id="icon-spin"
               class="material-symbols-rounded hidden animate-spin">
               progress_activity </span>Save Changes
           </button>
           <button id="btn-cancel-profile"
-            class="flex content-center items-center gap-2 rounded-full px-6 py-2 text-base text-xai-600 hover:text-blue-600 dark:text-xai-400">
+            class="flex content-center items-center gap-2 rounded-full px-6 py-2 text-base text-xai-600 hover:text-lightblue-600 dark:text-xai-400">
             Cancel
           </button>
         </div>
@@ -455,32 +455,32 @@
           <div class="flex w-full">
             <label for="old-password" class="w-56">Old Password</label>
             <input id="old-password" type="password" placeholder="********"
-              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
+              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
           </div>
 
           <div class="flex w-full">
             <label for="new-password" class="w-56">New password</label><input id="new-password" type="password"
               placeholder="********"
-              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
+              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
           </div>
 
           <div class="flex w-full">
             <label for="confirm-password" class="w-56">New password confirmation</label><input id="confirm-password"
               type="password" placeholder="********"
-              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
+              class="ml-4 flex-1 rounded-md border border-xai-400 bg-white px-3 py-1 placeholder:italic placeholder:text-xai-500 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:bg-xai-800 dark:ring-opacity-30 dark:placeholder:text-xai-500" />
           </div>
         </div>
 
         <div class="mt-8 flex gap-2">
           <button id="btn-save-password"
-            class="flex content-center items-center gap-2 rounded-full border-2 border-xai-300/20 bg-blue-600 py-2 pl-5 pr-6 text-base text-white hover:bg-blue-700 dark:border-xai-300/20 hover:dark:bg-blue-500">
+            class="flex content-center items-center gap-2 rounded-full border-2 border-xai-300/20 bg-lightblue-600 py-2 pl-5 pr-6 text-base text-white hover:bg-lightblue-700 dark:border-xai-300/20 hover:dark:bg-lightblue-500">
             <span id="icon-save-password" class="material-symbols-rounded">save</span><span id="icon-spin-password"
               class="material-symbols-rounded hidden animate-spin">
               progress_activity </span>Save Changes
           </button>
 
           <button id="btn-cancel-password"
-            class="flex content-center items-center gap-2 rounded-full px-6 py-2 text-xai-600 hover:text-blue-600 dark:text-xai-400">
+            class="flex content-center items-center gap-2 rounded-full px-6 py-2 text-xai-600 hover:text-lightblue-600 dark:text-xai-400">
             Cancel
           </button>
         </div>
@@ -494,85 +494,95 @@
           <thead class="w-96% min-w-full text-white">
             <tr class="">
               <th
-                class="sticky top-0 w-16 items-center justify-center rounded-tl-lg bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+                class="sticky top-0 w-16 items-center justify-center rounded-tl-lg bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 No.
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Callsign
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Registration
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Scope
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Airport
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Schedule
               </th>
 
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Block
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Actual
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Terminal
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Avio
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Fstate
               </th>
               <th
-                class="sticky top-0 items-center justify-center rounded-tr-lg bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+                class="sticky top-0 items-center justify-center rounded-tr-lg bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Invoice Number
               </th>
             </tr>
           </thead>
           <tbody id="body-billing-cash" class="font-normal">
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 1.
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>LNI-222</div>
                 <div>GIA-211</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>I</div>
                 <div>I</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>I</div>
                 <div>I</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -584,7 +594,7 @@
                   </span>
                 </div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>NML</div>
                 <div>NML</div>
               </th>
@@ -598,43 +608,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 2.
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -646,7 +656,7 @@
                   </span>
                 </div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>NML</div>
                 <div>NML</div>
               </th>
@@ -660,43 +670,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 3.
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>I</div>
                 <div>I</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>I</div>
                 <div>I</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -708,7 +718,7 @@
                   </span>
                 </div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>NML</div>
                 <div>NML</div>
               </th>
@@ -722,43 +732,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 4.
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -770,7 +780,7 @@
                   </span>
                 </div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>NML</div>
                 <div>NML</div>
               </th>
@@ -784,43 +794,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 5.
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>I</div>
                 <div>I</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>I</div>
                 <div>I</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -832,7 +842,7 @@
                   </span>
                 </div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>NML</div>
                 <div>NML</div>
               </th>
@@ -847,43 +857,43 @@
             </tr>
 
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 6.
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -895,7 +905,7 @@
                   </span>
                 </div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>NML</div>
                 <div>NML</div>
               </th>
@@ -909,43 +919,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 7.
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>I</div>
                 <div>I</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>I</div>
                 <div>I</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -957,7 +967,7 @@
                   </span>
                 </div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>NML</div>
                 <div>NML</div>
               </th>
@@ -971,43 +981,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 8.
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -1019,7 +1029,7 @@
                   </span>
                 </div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>NML</div>
                 <div>NML</div>
               </th>
@@ -1033,43 +1043,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 9.
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>I</div>
                 <div>I</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>I</div>
                 <div>I</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -1081,7 +1091,7 @@
                   </span>
                 </div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>NML</div>
                 <div>NML</div>
               </th>
@@ -1095,43 +1105,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 10.
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -1143,7 +1153,7 @@
                   </span>
                 </div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>NML</div>
                 <div>NML</div>
               </th>
@@ -1159,33 +1169,33 @@
           </tbody>
         </table>
         <div id="pagination-billing-cash"
-          class="fixed top-[90%] z-50 flex w-96% items-center justify-center gap-2 rounded-b-lg bg-blue-600 py-1 text-center font-semibold text-white">
+          class="fixed top-[90%] z-50 flex w-96% items-center justify-center gap-2 rounded-b-lg bg-lightblue-600 py-1 text-center font-semibold text-white">
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 active:bg-lightblue-400">
             <span class="material-symbols-rounded"> chevron_left </span>
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 focus:bg-blue-400 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 focus:bg-lightblue-400 active:bg-lightblue-400">
             1
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 focus:bg-blue-400 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 focus:bg-lightblue-400 active:bg-lightblue-400">
             2
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 focus:bg-blue-400 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 focus:bg-lightblue-400 active:bg-lightblue-400">
             3
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 focus:bg-blue-400 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 focus:bg-lightblue-400 active:bg-lightblue-400">
             ...
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 focus:bg-blue-400 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 focus:bg-lightblue-400 active:bg-lightblue-400">
             300
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 active:bg-lightblue-400">
             <span class="material-symbols-rounded"> chevron_right </span>
           </button>
         </div>
@@ -1199,7 +1209,7 @@
         <div class="">
           <div class="rounded-md bg-white dark:bg-xai-800">
             <input type="text" id="search-billing-cash" placeholder="Search..."
-              class="w-[230px] rounded-md border border-xai-200 bg-white px-3 py-1 placeholder:font-normal placeholder:italic placeholder:text-xai-500 hover:bg-xai-200 focus:border focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 dark:border-xai-700 dark:bg-xai-800/50 dark:ring-opacity-30 dark:placeholder:text-xai-500 hover:dark:bg-xai-700 max-sm:w-[120px]" />
+              class="w-[230px] rounded-md border border-xai-200 bg-white px-3 py-1 placeholder:font-normal placeholder:italic placeholder:text-xai-500 hover:bg-xai-200 focus:border focus:border-lightblue-400 focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50 dark:border-xai-700 dark:bg-xai-800/50 dark:ring-opacity-30 dark:placeholder:text-xai-500 hover:dark:bg-xai-700 max-sm:w-[120px]" />
           </div>
         </div>
         <div
@@ -1219,47 +1229,47 @@
             class="absolute mt-1 hidden w-24 rounded-md border border-xai-300/15 bg-white/95 px-2 py-4 text-base font-semibold text-xai-600 shadow-xl backdrop-blur dark:border-xai-300/5 dark:bg-xai-800/95 dark:text-xai-400">
             <ul class="overflow-style h-40 flex-col items-center justify-center gap-3 overflow-y-auto text-center">
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2013
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2014
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2015
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2016
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2017
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2018
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2019
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2020
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2022
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2023
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2024
               </li>
             </ul>
@@ -1276,40 +1286,40 @@
           <div id="list-months"
             class="absolute mt-1 hidden w-36 rounded-md border border-xai-300/15 bg-white/95 px-2 py-4 text-base font-semibold text-xai-600 shadow-xl backdrop-blur dark:border-xai-300/5 dark:bg-xai-800/95 dark:text-xai-400">
             <ul class="overflow-style h-40 flex-col items-center justify-center gap-3 overflow-y-auto text-center">
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 January
               </li>
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 February
               </li>
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 March
               </li>
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 April
               </li>
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 May
               </li>
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 June
               </li>
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 July
               </li>
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 August
               </li>
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 Septermber
               </li>
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 October
               </li>
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 November
               </li>
-              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex cursor-pointer rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 December
               </li>
             </ul>
@@ -1327,134 +1337,134 @@
             class="absolute mt-1 hidden w-18 rounded-md border border-xai-300/15 bg-white/95 px-2 py-4 text-base font-semibold text-xai-600 shadow-xl backdrop-blur dark:border-xai-300/5 dark:bg-xai-800/95 dark:text-xai-400">
             <ul class="overflow-style h-40 flex-col items-center justify-center gap-3 overflow-y-auto text-center">
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 1
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 2
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 3
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 4
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 5
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 6
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 7
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 8
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 9
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 10
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 11
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 12
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 13
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 14
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 15
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 16
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 17
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 18
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 19
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 20
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 21
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 22
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 23
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 24
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 25
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 26
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 27
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 28
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 29
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 30
               </li>
               <li
-                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-blue-500 hover:text-white">
+                class="flex cursor-pointer items-center justify-center rounded-md px-2 py-1 text-center hover:bg-lightblue-500 hover:text-white">
                 31
               </li>
             </ul>
           </div>
         </div>
         <button id="btn-search-filter"
-          class="flex h-[34px] content-center items-center gap-2 rounded-md border-2 border-xai-300/20 bg-blue-600 px-3 text-white hover:bg-blue-700 dark:border-xai-300/20 hover:dark:bg-blue-500 max-md:block max-md:h-[34px] max-md:w-[34px] max-md:border max-md:px-1 max-sm:block max-sm:h-[34px] max-sm:w-[34px] max-sm:border max-sm:px-1">
+          class="flex h-[34px] content-center items-center gap-2 rounded-md border-2 border-xai-300/20 bg-lightblue-600 px-3 text-white hover:bg-lightblue-700 dark:border-xai-300/20 hover:dark:bg-lightblue-500 max-md:block max-md:h-[34px] max-md:w-[34px] max-md:border max-md:px-1 max-sm:block max-sm:h-[34px] max-sm:w-[34px] max-sm:border max-sm:px-1">
           <span id="icon-search" class="material-symbols-rounded text-2xl ease-in-out">search</span>
           <span class="max-md:hidden max-sm:hidden"> Search</span>
         </button>
@@ -1487,20 +1497,20 @@
           <div id="list-actions"
             class="absolute mt-1 hidden w-44 rounded-md border border-xai-300/15 bg-white/70 px-2 py-4 text-base font-semibold text-xai-600 shadow-xl backdrop-blur dark:border-xai-300/5 dark:bg-xai-800/80 dark:text-xai-400">
             <ul class="style-1 cursor-pointer flex-col flex-wrap items-center justify-center gap-3">
-              <li class="flex items-center justify-start rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex items-center justify-start rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 ------------
               </li>
-              <li class="flex items-center justify-start rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex items-center justify-start rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 Delete Selected
               </li>
-              <li class="flex items-center justify-start rounded-md px-2 py-1 hover:bg-blue-500 hover:text-white">
+              <li class="flex items-center justify-start rounded-md px-2 py-1 hover:bg-lightblue-500 hover:text-white">
                 Move Selected
               </li>
             </ul>
           </div>
         </div>
         <button id="btn-go-action"
-          class="flex content-center items-center gap-2 rounded-md border-2 border-xai-300/20 bg-blue-600 pl-2 pr-3 text-white hover:bg-blue-700 dark:border-xai-300/20 hover:dark:bg-blue-500">
+          class="flex content-center items-center gap-2 rounded-md border-2 border-xai-300/20 bg-lightblue-600 pl-2 pr-3 text-white hover:bg-lightblue-700 dark:border-xai-300/20 hover:dark:bg-lightblue-500">
           Go
         </button>
         <span class="font-normal">1 of 100 selected</span>
@@ -1518,81 +1528,90 @@
           <thead class="w-96% min-w-full text-white">
             <tr class="">
               <th
-                class="sticky top-0 w-16 items-center justify-center rounded-tl-lg bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+                class="sticky top-0 w-16 items-center justify-center rounded-tl-lg bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 <input type="checkbox" id="head-checkbox" aria-label="checkbox" />
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Callsign
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Registration
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Scope
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Airport
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Schedule
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Estimate
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Block
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Actual
               </th>
-              <th class="sticky top-0 items-center justify-center bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+              <th
+                class="sticky top-0 items-center justify-center bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Avio
               </th>
               <th
-                class="sticky top-0 items-center justify-center rounded-tr-lg bg-blue-600 px-2 py-4 text-center hover:bg-blue-700">
+                class="sticky top-0 items-center justify-center rounded-tr-lg bg-lightblue-600 px-2 py-4 text-center hover:bg-lightblue-700">
                 Fstate
               </th>
             </tr>
           </thead>
           <tbody id="body_billing_charge" class="font-normal">
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-1" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -1610,43 +1629,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-2" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -1664,43 +1683,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-3" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -1718,43 +1737,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-5" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -1772,43 +1791,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-6" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -1826,43 +1845,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-7" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -1880,43 +1899,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-8" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -1934,43 +1953,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-9" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -1988,43 +2007,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-10" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2042,43 +2061,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-12" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2096,43 +2115,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-13" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2150,43 +2169,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-14" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2204,43 +2223,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-15" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2258,43 +2277,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-16" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2312,43 +2331,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-17" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2366,43 +2385,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-18" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2420,43 +2439,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-19" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2474,43 +2493,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-20" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2528,43 +2547,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-21" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2582,43 +2601,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-22" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2636,43 +2655,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-23" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2690,43 +2709,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-24" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2744,43 +2763,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-25" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2798,43 +2817,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-26" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2852,43 +2871,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-27" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2906,43 +2925,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-28" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -2960,43 +2979,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-29" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -3014,43 +3033,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-30" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -3068,43 +3087,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-31" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -3122,43 +3141,43 @@
               </th>
             </tr>
             <tr
-              class="font-normal odd:bg-blue-50 even:bg-blue-100 hover:bg-blue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              class="font-normal odd:bg-lightblue-50 even:bg-lightblue-100 hover:bg-lightblue-200 dark:odd:bg-xai-800 dark:even:bg-xai-900 dark:hover:bg-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <input type="checkbox" id="checkbox-32" aria-label="checkbox" class="checkbox" />
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>JT-235</div>
                 <div>JT-235</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>PKLHP</div>
                 <div>B320</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>D</div>
                 <div>D</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>WAAA</div>
                 <div>WRRR</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/11:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/09:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/10:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div>03/08:00</div>
                 <div>03/08:00</div>
               </th>
-              <th class="border-r border-blue-200 py-3 font-normal dark:border-xai-700">
+              <th class="border-r border-lightblue-200 py-3 font-normal dark:border-xai-700">
                 <div id="checked">
                   <span class="material-symbols-rounded text-base text-green-600">
                     check_circle
@@ -3178,33 +3197,33 @@
           </tbody>
         </table>
         <div id="pagination-billing-charge"
-          class="fixed top-[90%] z-50 flex w-96% items-center justify-center gap-2 rounded-b-lg bg-blue-600 py-1 text-center font-semibold text-white">
+          class="fixed top-[90%] z-50 flex w-96% items-center justify-center gap-2 rounded-b-lg bg-lightblue-600 py-1 text-center font-semibold text-white">
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 active:bg-lightblue-400">
             <span class="material-symbols-rounded"> chevron_left </span>
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 focus:bg-blue-400 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 focus:bg-lightblue-400 active:bg-lightblue-400">
             1
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 focus:bg-blue-400 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 focus:bg-lightblue-400 active:bg-lightblue-400">
             2
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 focus:bg-blue-400 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 focus:bg-lightblue-400 active:bg-lightblue-400">
             3
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 focus:bg-blue-400 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 focus:bg-lightblue-400 active:bg-lightblue-400">
             ...
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 focus:bg-blue-400 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 focus:bg-lightblue-400 active:bg-lightblue-400">
             300
           </button>
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-md border border-blue-500 hover:bg-blue-500 active:bg-blue-400">
+            class="flex h-10 w-10 items-center justify-center rounded-md border border-lightblue-500 hover:bg-lightblue-500 active:bg-lightblue-400">
             <span class="material-symbols-rounded"> chevron_right </span>
           </button>
         </div>

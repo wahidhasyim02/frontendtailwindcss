@@ -8,6 +8,11 @@ module.exports = {
   important: true,
   theme: {
     extend: {
+      aspectRatio: {
+        auto: 'auto',
+        square: '1 / 1',
+        video: '16 / 9',
+      },
       backdropBlur: {
         xs: '2px',
         sm: '4px',
