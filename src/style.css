@@ -2087,10 +2087,6 @@ input[type='checkbox']:checked:focus {
   overflow-y: scroll !important;
 }
 
-.overscroll-contain {
-  overscroll-behavior: contain !important;
-}
-
 .overscroll-none {
   overscroll-behavior: none !important;
 }
@@ -2652,6 +2648,11 @@ input[type='checkbox']:checked:focus {
 .text-green-600 {
   --tw-text-opacity: 1 !important;
   color: rgb(22 163 74 / var(--tw-text-opacity)) !important;
+}
+
+.text-lightblue-600 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(2 132 199 / var(--tw-text-opacity)) !important;
 }
 
 .text-pink-600 {
