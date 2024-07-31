@@ -153,14 +153,16 @@
   <div id="popup-setting"
     class="fixed right-24 top-14 hidden flex-col items-center gap-2 rounded-3xl border border-xai-300/15 bg-white/70 p-4 text-base font-semibold text-xai-600 shadow-xl backdrop-blur dark:border-red-300/5 dark:bg-xai-800/80 dark:text-xai-400">
     <div class="flex flex-col items-center gap-2 bg-cover">
-      <div for="edit-profile-img"
-        class="relative inline-block h-16 w-16 rounded-full bg-white bg-cover dark:bg-xai-800">
-        <img id="profile-img-setting" src="" class="h-16 w-16 rounded-full" alt="avatar" />
+      <div for="edit-profile-img" id="edit-profile-img"
+        class="relative inline-block h-16 w-16 rounded-full group bg-white bg-cover dark:bg-xai-800">
+        <img id="profile-img-setting" src=""
+          class="h-16 w-16 ring-4 ring-xai-300 ring-offset-0 dark:ring-xai-700 bg-cover  group-hover:ring-4 group-hover:ring-lightblue-800/50 dark:group-hover:ring-lightblue-800/50 rounded-full"
+          alt="avatar" />
         <div id="initial-username2"
-          class="text-3xl  h-16 w-16 cursor-pointer flex  rounded-full bg-lightblue-600 text-white items-center justify-center bg-cover group-hover:outline group-hover:outline-4 group-hover:outline-lightblue-800/50  dark:hover:outline-lightblue-600/50">
+          class="text-3xl  h-16 w-16 cursor-pointer flex ring-4 ring-xai-300 ring-offset-0 dark:ring-xai-700  rounded-full bg-lightblue-600 text-white items-center justify-center bg-cover  group-hover:ring-4 group-hover:ring-lightblue-800/50 dark:group-hover:ring-lightblue-800/50 ">
         </div>
-        <span id="edit-profile-img"
-          class="material-symbols-rounded absolute right-0 top-11 h-6 w-6 cursor-pointer content-center items-center rounded-full bg-white text-center text-base shadow-md hover:bg-xai-300 hover:text-xai-800 dark:bg-xai-700 dark:hover:bg-xai-600 hover:dark:text-white">
+        <span
+          class="material-symbols-rounded absolute right-0 top-11 h-6 w-6 cursor-pointer content-center items-center rounded-full bg-white text-center text-base shadow-md group-hover:bg-xai-300 group-hover:text-xai-800 dark:bg-xai-700 dark:group-hover:bg-xai-600 dark:group-hover:text-white">
           edit
         </span>
       </div>
@@ -411,7 +413,7 @@
 
           <div class="flex-col space-y-4">
             <label for="choose-file">Profile Picture</label>
-            <img id="profile-img-change" src="./public/img/avatar.png" class="w-24" alt="" />
+            <img id="profile-img-change" src="./public/img/avatar.png" class="w-24 rounded-md" alt="" />
             <div>
               <input type="file" id="choose-file"
                 class="file:mr-4 file:w-fit file:appearance-none file:items-center file:justify-between file:gap-1 file:rounded-md file:border file:border-solid file:border-xai-300 file:bg-white file:px-3 file:py-1 file:text-xai-600 hover:file:bg-xai-200 dark:file:border-xai-700 dark:file:bg-xai-800 dark:file:text-xai-400 hover:dark:file:bg-xai-700" />
