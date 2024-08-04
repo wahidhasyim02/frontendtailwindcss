@@ -130,11 +130,15 @@ document
     const fileInput = document.getElementById('choose-file');
     const file = fileInput.files[0];
 
+    document.getElementById('btn-save-profile').classList.add('cursor-wait');
     document.getElementById('icon-save').classList.add('hidden');
     document.getElementById('icon-spin').classList.remove('hidden');
     setTimeout(() => {
       document.getElementById('icon-spin').classList.add('hidden');
       document.getElementById('icon-save').classList.remove('hidden');
+      document
+        .getElementById('btn-save-profile')
+        .classList.remove('cursor-wait');
     }, 3000);
     setTimeout(() => {
       document.getElementById('popup-change-profile').classList.add('hidden');

@@ -19,8 +19,17 @@ module.exports = {
         // tambahkan ukuran blur lainnya sesuai kebutuhan
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        serif: ['Noto Serif', 'serif'],
+        sans: [
+          'Inter',
+          'ui-sans-serif',
+          'system-ui',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji',
+        ],
+        serif: ['Noto Serif', 'ui-serif', 'serif'],
       },
       backgroundImage: {
         heroLight: "url('/public/img/bg_l.png')",

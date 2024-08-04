@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 @layer components {
-  .btn-primary {
-    @apply rounded-full bg-violet-500 px-5 py-2 font-semibold text-white shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+  button {
+    @apply transition-colors duration-300;
   }
 
   .overflow-style::-webkit-scrollbar {
-    @apply w-[6px] bg-white;
+    @apply w-[6px] bg-xai-50;
   }
   .overflow-style::-webkit-scrollbar-thumb {
-    @apply bg-lightblue-500;
+    @apply bg-lightblue-500 py-4;
   }
   .overflow-style::-webkit-scrollbar-track {
-    @apply bg-white;
+    @apply my-4 bg-xai-50;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
 

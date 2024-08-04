@@ -77,11 +77,15 @@ document
       localStorage.setItem('password', newPassword);
 
       // Show loading spinner
+      document.getElementById('btn-save-password').classList.add('cursor-wait');
       document.getElementById('icon-save-password').classList.add('hidden');
       document.getElementById('icon-spin-password').classList.remove('hidden');
 
       // Hide loading spinner and show save icon after 3 seconds
       setTimeout(() => {
+        document
+          .getElementById('btn-save-password')
+          .classList.remove('cursor-wait');
         document.getElementById('icon-spin-password').classList.add('hidden');
         document
           .getElementById('icon-save-password')
