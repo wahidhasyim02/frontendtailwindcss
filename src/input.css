@@ -11,7 +11,7 @@
     @apply w-[6px] bg-xai-50;
   }
   .overflow-style::-webkit-scrollbar-thumb {
-    @apply bg-lightblue-500 py-4;
+    @apply bg-bluev3-500 py-4;
   }
   .overflow-style::-webkit-scrollbar-track {
     @apply my-4 bg-xai-50;
@@ -32,28 +32,28 @@
     @apply bg-xai-400;
   }
   input[type='checkbox']:checked {
-    @apply bg-lightblue-500 ring-lightblue-500;
+    @apply bg-bluev3-500 ring-bluev3-500;
   }
 
   input[type='checkbox']:indeterminate {
-    @apply bg-lightblue-500 ring-lightblue-500;
+    @apply bg-bluev3-500 ring-bluev3-500;
   }
   input[type='checkbox']:checked:after {
     @apply block;
   }
   input[type='checkbox']:active {
-    @apply bg-lightblue-500 ring-lightblue-500;
+    @apply bg-bluev3-500 ring-bluev3-500;
   }
 
   input[type='checkbox']:focus {
-    @apply bg-lightblue-600 ring-lightblue-800;
+    @apply bg-bluev3-600 ring-bluev3-800;
   }
   input[type='checkbox']:checked:focus {
-    @apply bg-lightblue-600 ring-lightblue-800;
+    @apply bg-bluev3-600 ring-bluev3-800;
   }
 
   .bar-of-progress {
-    @apply fixed left-0 top-0 z-1200 m-0 h-[3px] w-0 rounded-none bg-current p-0 text-lightblue-500 opacity-0;
+    @apply fixed left-0 top-0 z-1200 m-0 h-[3px] w-0 rounded-none bg-current p-0 text-bluev3-500 opacity-0;
     border: medium;
     /* Start with width 0 */
     transition:
@@ -75,5 +75,40 @@
 @layer utilities {
   .content-auto {
     content-visibility: auto;
+  }
+
+  .border-gradient {
+    /* Gradien dari kiri atas ke kanan bawah */
+    background-image: linear-gradient(
+      115deg,
+      rgba(56, 189, 248, 0) 0%,
+      rgba(56, 189, 248, 0) 20%,
+
+      rgba(56, 189, 248, 0.8) 55%,
+
+      rgba(56, 189, 248, 0.8) 55%,
+      rgba(56, 189, 248, 0) 70%,
+
+      rgba(56, 189, 248, 0) 100%
+    );
+  }
+  .border-gradient-dark {
+    /* Gradien dari kiri atas ke kanan bawah */
+    background-image: linear-gradient(
+      115deg,
+      rgba(61, 78, 90, 0) 0%,
+      rgba(61, 78, 90, 0) 10%,
+
+      rgba(61, 78, 90, 0.9) 55%,
+
+      rgba(61, 78, 90, 0.8) 55%,
+      rgba(61, 78, 90, 0) 90%,
+
+      rgba(61, 78, 90, 0) 100%
+    );
+  }
+
+  option {
+    @apply mx-2 cursor-pointer appearance-none items-center justify-center rounded-md px-2 py-1 text-center hover:bg-red-500 hover:text-white;
   }
 }
